@@ -136,21 +136,35 @@ pdf.chapter_body(
 pdf.add_page()
 pdf.chapter_title('Dowody Wizualne')
 
+base_dir = os.getcwd()
+img_timeline = os.path.join(base_dir, 'images/impact_timeline_pl.png')
+img_gene = os.path.join(base_dir, 'images/impact_by_gene_pl.png')
+img_map = os.path.join(base_dir, 'images/impact_map_pl.png')
+
 pdf.chapter_body('1. Utrzymująca się użyteczność diagnostyczna (Liczba diagnoz w czasie)')
-if os.path.exists('images/impact_timeline_pl.png'):
-    pdf.image('images/impact_timeline_pl.png', x=10, w=190)
+if os.path.exists(img_timeline):
+    print(f"Adding image: {img_timeline}")
+    pdf.image(img_timeline, x=10, w=190)
+else:
+    print(f"Image not found: {img_timeline}")
 pdf.ln(5)
 
 pdf.add_page()
 pdf.chapter_body('2. Wpływ specyficzny dla genu (Liczba diagnoz wg genu)')
-if os.path.exists('images/impact_by_gene_pl.png'):
-    pdf.image('images/impact_by_gene_pl.png', x=10, w=190)
+if os.path.exists(img_gene):
+    print(f"Adding image: {img_gene}")
+    pdf.image(img_gene, x=10, w=190)
+else:
+    print(f"Image not found: {img_gene}")
 pdf.ln(5)
 
 pdf.add_page()
 pdf.chapter_body('3. Globalna adopcja kliniczna (Mapa ośrodków)')
-if os.path.exists('images/impact_map_pl.png'):
-    pdf.image('images/impact_map_pl.png', x=10, w=190)
+if os.path.exists(img_map):
+    print(f"Adding image: {img_map}")
+    pdf.image(img_map, x=10, w=190)
+else:
+    print(f"Image not found: {img_map}")
 pdf.ln(5)
 
 pdf.chapter_body(
