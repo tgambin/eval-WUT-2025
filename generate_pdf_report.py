@@ -128,8 +128,27 @@ pdf.chapter_body(
 # Key Findings
 pdf.chapter_title('Kluczowe Wyniki')
 pdf.chapter_body(
-    f'- Całkowita liczba diagnoz (zgłoszeń): {len(df)}\n'
     '- Zasięg globalny: Diagnozy zgłaszane przez ośrodki w ponad 15 krajach, w tym USA, Niemcy, Finlandia, Korea Południowa, Brazylia i Łotwa.'
+)
+
+# Computational Achievements
+pdf.add_page()
+pdf.chapter_title('Kluczowe Osiągnięcia Informatyczne')
+pdf.chapter_body(
+    'Wpływ kliniczny opisany w niniejszym raporcie był możliwy dzięki zastosowaniu nowatorskich metod obliczeniowych '
+    'i algorytmicznych, które pozwoliły na odkrycie wariantów niewykrywalnych standardowymi metodami:\n\n'
+    '1. Algorytm HMZDelFinder\n'
+    'Autorskie narzędzie bioinformatyczne zaprojektowane do identyfikacji rzadkich, wewnątrzgenowych delecji '
+    'homozygotycznych i hemizygotycznych w danych z sekwencjonowania eksomowego (WES). '
+    'Algorytm ten odegrał kluczową rolę w odkryciu patogennych delecji w genie TANGO2 (w tym częstej delecji eksonów 3-9), '
+    'które są systematycznie pomijane przez standardowe procedury analityczne.\n\n'
+    '2. Zaawansowana Analiza CNV w Danych NGS\n'
+    'Opracowanie i wdrożenie zoptymalizowanych potoków analitycznych (pipelines) do wykrywania wariantów liczby kopii (CNV) '
+    'bezpośrednio z danych eksomowych. Pozwoliło to na "odzyskanie" diagnoz u pacjentów z negatywnymi wynikami '
+    'standardowych testów sekwencjonowania, znacząco zwiększając wydajność diagnostyczną (np. w przypadkach ANKLE2, PGM3).\n\n'
+    '3. Integracja Danych Wielkoskalowych\n'
+    'Zastosowanie metod statystycznych do analizy porównawczej dużych kohort pacjentów (np. w ramach Centers for Mendelian Genomics), '
+    'co umożliwiło odróżnienie rzadkich wariantów patogennych od łagodnych polimorfizmów w skali całego genomu.'
 )
 
 # Visuals
