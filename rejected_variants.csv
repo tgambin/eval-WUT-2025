@@ -1,0 +1,5 @@
+Gene,Phenotype,Classification,Variant (HGVS),Submission Date,Submitter,Consequence,Review Status,Rejection Reason
+TANGO2,22q11 deletion syndrome (Velocardiofacial / DiGeorge syndrome),Pathogenic,Single allele,2023-03-23,New York Genome Center,,"criteria provided, single submitter",Syndrome/CNV phenotype: 22q11
+TANGO2,Chromosome 22q11.2 microduplication syndrome,Pathogenic,GRCh37/hg19 22q11.1-12.1(chr22:16888899-26483608)x3,2020-09-16,"Department of Medical Genetics, Oslo University Hospital",,no assertion criteria provided,Syndrome/CNV phenotype: 22q11
+CORO1A,16p11.2 duplication syndrome,Pathogenic,GRCh37/hg19 16p11.2(chr16:29590554-30197341)x3,2022-01-03,"Medicover Genetics GmbH, Medicover Humangenetik Berlin-Lichtenberg MVZ",,no assertion criteria provided,Syndrome/CNV phenotype: 16p11
+CORO1A,16p11.2 Microdeletion,Pathogenic,16p11.2 recurrent region (BP4-BP5),2013-03-26,GeneReviews,,no assertion criteria provided,Syndrome/CNV phenotype: 16p11
