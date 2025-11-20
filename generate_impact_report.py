@@ -9,8 +9,8 @@ from shapely.geometry import Point
 if not os.path.exists("images"):
     os.makedirs("images")
 
-# Load Data
-df = pd.read_csv("clinvar_results.csv")
+# Load the filtered data
+df = pd.read_csv("clinvar_results_filtered.csv")
 
 # Filter for 2022-2025
 def parse_date(date_str):
