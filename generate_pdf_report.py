@@ -68,6 +68,34 @@ GENE_DATA = {
     "SOHLH1": {
         "disease": "Ovarian dysgenesis 2 (46,XX gonadal dysgenesis)",
         "link": "https://www.cell.com/action/showPdf?pii=S0002-9297%2815%2900245-1"
+    },
+    "FOXF1": {
+        "disease": "Alveolar capillary dysplasia with misalignment of pulmonary veins (ACDMPV)",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/27894351/"
+    },
+    "TBX4": {
+        "disease": "Pulmonary arterial hypertension / Small patella syndrome",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/27894351/"
+    },
+    "FGF10": {
+        "disease": "LADD syndrome / Aplasia of Lacrimal and Salivary Glands (ALSG)",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/27894351/"
+    },
+    "PSMD12": {
+        "disease": "Stankiewicz-Isidor syndrome (Neurodevelopmental disorder)",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/28132692/"
+    },
+    "BPTF": {
+        "disease": "Neurodevelopmental disorder with dysmorphic facies and distal limb anomalies",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/29276005/"
+    },
+    "MEF2C": {
+        "disease": "MEF2C haploinsufficiency syndrome",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/28333229/"
+    },
+    "TRIP12": {
+        "disease": "Clark-Baraitser syndrome",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/28333229/"
     }
 }
 

@@ -38,6 +38,7 @@ ANKLE2,See cases,Pathogenic,GRCh38/hg38 12q24.32-24.33(chr12:126403612-133166920
 ANKLE2,See cases,Pathogenic,GRCh38/hg38 12q24.21-24.33(chr12:115131583-133166920)x3,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
 ANKLE2,See cases,Pathogenic,GRCh38/hg38 12q24.31-24.33(chr12:123444758-133191400)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
 ANKLE2,See cases,Pathogenic,GRCh38/hg38 12q24.23-24.33(chr12:118165459-133182322)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+TANGO2,Not Provided,Pathogenic,NC_000022.11:g.20041486_20075431del,2025-11-13,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",N/A,"criteria provided, single submitter"
 TANGO2,not provided,Pathogenic,NC_000022.11:g.(?_18940000)_(20690000_?)dup,2025-11-05,"Centre for Clinical Genetics and Genomic Diagnostics, Zealand University Hospital",N/A,"criteria provided, single submitter"
 TANGO2,Not Provided,Pathogenic,GRCh37/hg19 22q11.21(chr22:18648855-21800471)x3,2025-10-08,"Applied Translational Genetics Group, University of Auckland",N/A,"criteria provided, single submitter"
 TANGO2,Not Provided,Pathogenic,GRCh37/hg19 22q11.21(chr22:20030823-20068473)x1,2025-09-18,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
@@ -1696,3 +1697,829 @@ SOHLH1,See cases,Pathogenic,GRCh38/hg38 9q34.2-34.3(chr9:134428674-138154922)x1,
 SOHLH1,See cases,Pathogenic,GRCh38/hg38 9q33.2-34.3(chr9:122792658-138124532)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
 SOHLH1,See cases,Pathogenic,GRCh38/hg38 9q33.2-34.3(chr9:121112395-138075224)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
 SOHLH1,See cases,Pathogenic,GRCh38/hg38 9p24.3-q34.3(chr9:193412-138179445)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.385G>T (p.Glu129Ter),2025-09-25,"Clinical Genomics Laboratory, Washington University in St. Louis",nonsense,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.246C>A (p.Phe82Leu),2025-05-21,GeneDx,missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.255C>G (p.Phe85Leu),2025-04-07,3billion,missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,GRCh37/hg19 16q11.2-24.3(chr16:46432879-90294753)x3,2025-03-22,"Pediatrics, Sichuan Provincial Hospital For Women And Children",N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.275G>C (p.Trp92Ser),2025-01-15,"MVZ Martinsried, Medicover Genetics",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,Single allele,2024-10-17,"Suzhou Clinical Center for Rare Diseases in Children, Children's Hospital of Soochow University",N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.229T>C (p.Phe77Leu),2024-07-17,"Laboratory of Medical Genetics, National & Kapodistrian University of Athens",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.286G>A (p.Val96Met),2024-07-17,GeneDx,missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NC_000016.9:g.(?_86544176)_(86602447_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+FOXF1,Not provided,Pathogenic,GRCh37/hg19 16q23.3-24.3(chr16:82865402-90163542)x3,2024-06-18,"Illumina Laboratory Services, Illumina",N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.298C>G (p.Leu100Val),2024-06-04,Baylor Genetics,missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.1138T>A (p.Ter380Arg),2024-06-04,Baylor Genetics,stop lost,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.802_805del (p.Ala268fs),2024-05-15,New York Genome Center,frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.442del (p.Cys148fs),2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+FOXF1,not provided,Pathogenic,GRCh37/hg19 16q24.1-24.2(chr16:84555718-87910245)x1,2024-01-03,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.268C>T (p.Gln90Ter),2023-11-22,GeneDx,nonsense,"criteria provided, single submitter"
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.268C>T (p.Gln90Ter),2025-03-21,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",nonsense,"criteria provided, single submitter"
+FOXF1,FOXF1-related condition,Pathogenic,NM_001451.3(FOXF1):c.310G>T (p.Glu104Ter),2023-10-19,"PreventionGenetics, part of Exact Sciences",nonsense,"criteria provided, single submitter"
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.185A>C (p.Gln62Pro),2023-09-19,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",missense variant,"criteria provided, single submitter"
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Likely pathogenic,NM_001451.3(FOXF1):c.256C>T (p.Arg86Trp),2023-09-19,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",missense variant,"criteria provided, single submitter"
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.797C>A (p.Ser266Ter),2023-09-19,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",nonsense,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.1070_1080del (p.His357fs),2023-05-03,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.21del (p.Lys7fs),2024-07-18,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,GRCh37/hg19 16q24.1-24.2(chr16:86544176-88110267)x1,2025-10-02,CeGaT Center for Human Genetics Tuebingen,N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.841_862del (p.Gly281fs),2025-08-19,"Revvity Omics, Revvity",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.881_902dup (p.Gly302fs),2023-03-21,"Stankiewicz Research Laboratory, Baylor College of Medicine",frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.257G>C (p.Arg86Pro),2022-10-19,GeneDx,missense variant,"criteria provided, single submitter"
+FOXF1,see cases,Pathogenic,NM_001451.3(FOXF1):c.260dup (p.Ser88fs),2024-06-28,"Institute of Human Genetics, University Hospital Muenster",frameshift variant,"criteria provided, single submitter"
+FOXF1,see cases,Likely pathogenic,NM_001451.3(FOXF1):c.191C>T (p.Ser64Leu),2022-10-04,"Institute of Human Genetics, University Hospital Muenster",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,GRCh37/hg19 16q22.2-24.3(chr16:71641395-90161959)x3,2022-09-29,"Department of Pediatric and Adolescent Medicine, University of Erlangen",N/A,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.899del (p.Leu300fs),2022-07-13,GeneDx,frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.899del (p.Leu300fs),2025-10-28,"Women's Health and Genetics/Laboratory Corporation of America, LabCorp",frameshift variant,"criteria provided, single submitter"
+FOXF1,not provided,Pathogenic,Single allele,2022-05-16,"Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital",N/A,"criteria provided, single submitter"
+FOXF1,not provided,Pathogenic,GRCh37/hg19 16q11.2-24.3(chr16:46503968-90155062)x3,2022-04-05,"Shanghai First Maternity and Infant Hospital, Tongji University",N/A,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.121dup (p.Ala41fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not provided,Pathogenic,GRCh37/hg19 16q23.2-24.3(chr16:80386595-90163348)x3,2021-12-16,"Illumina Laboratory Services, Illumina",N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.889del (p.Ala297fs),2025-08-19,"Revvity Omics, Revvity",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.852_856del (p.Tyr284_Lys286delinsTer),2021-10-29,"Equipe Genetique des Anomalies du Developpement, Université de Bourgogne",nonsense,"criteria provided, single submitter"
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Likely pathogenic,NM_001451.3(FOXF1):c.179C>T (p.Ala60Val),2021-10-15,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.276G>A (p.Trp92Ter),2021-10-18,"Molecular Diagnostics Laboratory, M Health Fairview: University of Minnesota",nonsense,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.668C>A (p.Ser223Ter),2021-02-21,Baylor Genetics,nonsense,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.668C>A (p.Ser223Ter),2022-05-16,"Daryl Scott Lab, Baylor College of Medicine",nonsense,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.238_239del (p.Ser80fs),2021-02-18,"Stankiewicz Research Laboratory, Baylor College of Medicine",frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.302C>T (p.Ser101Leu),2021-02-18,"Stankiewicz Research Laboratory, Baylor College of Medicine",missense variant,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.302C>T (p.Ser101Leu),2025-09-28,"Juno Genomics, Hangzhou Juno Genomics, Inc",missense variant,"criteria provided, single submitter"
+FOXF1,not provided,Pathogenic,NM_001451.3(FOXF1):c.75del (p.Met26fs),2020-11-26,"Clinical Genetics and Genomics, Karolinska University Hospital",frameshift variant,"criteria provided, single submitter"
+FOXF1,not provided,Likely pathogenic,NM_001451.3(FOXF1):c.322A>G (p.Lys108Glu),2020-11-26,"Clinical Genetics and Genomics, Karolinska University Hospital",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.965del (p.Pro322fs),2020-06-17,"Division of Human Genetics, Children's Hospital of Philadelphia",frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.266A>G (p.Tyr89Cys),2020-06-17,"Division of Human Genetics, Children's Hospital of Philadelphia",missense variant,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.286G>T (p.Val96Leu),2020-06-17,"Division of Human Genetics, Children's Hospital of Philadelphia",missense variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.57_60del (p.Gly20fs),2020-06-21,"Institute for Medical Genetics and Human Genetics, Charité - Universitätsmedizin Berlin",frameshift variant,"criteria provided, single submitter"
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.253T>C (p.Phe85Leu),2020-06-05,OMIM,missense variant,no assertion criteria provided
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.1057_1078dup (p.Gly360fs),2020-06-04,OMIM,frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NC_000016.9:g.86243180_87703229del,2020-01-10,"Clinical Genetics, Erasmus University Medical Center",N/A,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.950del (p.Asn317fs),2020-01-10,"Clinical Genetics, Erasmus University Medical Center",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.166C>G (p.Leu56Val),2020-01-10,"Clinical Genetics, Erasmus University Medical Center",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.166C>G (p.Leu56Val),2025-10-22,"Laboratoire Génétique Moléculaire, CHRU TOURS",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.413G>C (p.Arg138Pro),2019-09-17,"Genomic Medicine Lab, University of California San Francisco",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,GRCh37/hg19 16q24.1-24.2(chr16:84872102-87678641),2020-01-28,"Institute of Human Genetics Munich, TUM University Hospital",N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.145C>G (p.Pro49Ala),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",missense variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.849_850del (p.Ile285fs),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.316T>C (p.Phe106Leu),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",missense variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.862C>T (p.Gln288Ter),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",nonsense,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.294C>A (p.His98Gln),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",missense variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.539C>A (p.Ser180Ter),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",nonsense,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.221T>A (p.Ile74Asn),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",missense variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.1139G>C (p.Ter380Ser),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",stop lost,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.191C>A (p.Ser64Ter),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",nonsense,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.899_903dup (p.Gly302fs),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.872_879del (p.Leu290_Ser291insTer),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",nonsense,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.89C>A (p.Ser30Ter),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",nonsense,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.145C>T (p.Pro49Ser),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",missense variant,no assertion criteria provided
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.1031_1032del (p.Phe344fs),2019-04-10,OMIM,frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.1031_1032del (p.Phe344fs),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",frameshift variant,no assertion criteria provided
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.691_698del (p.Ala231fs),2019-09-20,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.691_698del (p.Ala231fs),2019-10-03,"Stankiewicz Research Laboratory, Baylor College of Medicine",frameshift variant,no assertion criteria provided
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.691_698del (p.Ala231fs),2020-08-04,"Johns Hopkins Genomics, Johns Hopkins University",frameshift variant,"criteria provided, single submitter"
+FOXF1,not provided,Pathogenic,NM_001451.3(FOXF1):c.691_698del (p.Ala231fs),2020-11-26,"Clinical Genetics and Genomics, Karolinska University Hospital",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.691_698del (p.Ala231fs),2023-08-23,GeneDx,frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.691_698del (p.Ala231fs),2024-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",frameshift variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.3(FOXF1):c.691_698del (p.Ala231fs),2025-08-19,"Revvity Omics, Revvity",frameshift variant,"criteria provided, single submitter"
+FOXF1,not provided,Pathogenic,GRCh37/hg19 16q23.3-24.3(chr16:82761333-90055381),2019-04-01,Baylor Genetics,N/A,"criteria provided, single submitter"
+FOXF1,not provided,Pathogenic,GRCh37/hg19 16q23.2-24.3(chr16:79400436-90155062)x3,2018-08-16,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+FOXF1,not provided,Pathogenic,GRCh37/hg19 16q22.2-24.3(chr16:72515938-90155062)x3,2018-08-16,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.1140A>C (p.Ter380Cys),2018-07-02,"MVZ Martinsried, Medicover Genetics",stop lost,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh37/hg19 16q24.1-24.2(chr16:85491404-87883528)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh37/hg19 16p13.3-q24.3(chr16:85881-90155062)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh37/hg19 16p13.3-q24.3(chr16:85881-90155062),2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Likely pathogenic,GRCh37/hg19 16q24.1-24.3(chr16:84937273-89836905)x4,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh37/hg19 16q24.1-24.3(chr16:85838574-90155062)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh37/hg19 16q13-24.3(chr16:57051473-89797669)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Likely pathogenic,GRCh37/hg19 16q23.3-24.3(chr16:83001540-90155062)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.939del (p.Leu314fs),2019-01-29,GeneDx,frameshift variant,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh37/hg19 16p13.3-q24.3(chr16:69193-90274381)x3,2017-02-28,ISCA Site 6,N/A,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.280A>T (p.Asn94Tyr),2016-11-12,"Centre for Mendelian Genomics, University Medical Centre Ljubljana",missense variant,"criteria provided, single submitter"
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.280A>T (p.Asn94Tyr),2020-11-24,"Centre for Mendelian Genomics, University Medical Centre Ljubljana",missense variant,"criteria provided, single submitter"
+FOXF1,See Cases,Pathogenic,GRCh37/hg19 16q23.1-24.3(chr16:74872514-90274440)x3,2016-07-13,GeneDx,N/A,"criteria provided, single submitter"
+FOXF1,Not Provided,Pathogenic,NM_001451.2(FOXF1):c.(?_15)_(*58_?)del,2019-03-21,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",N/A,"criteria provided, single submitter"
+FOXF1,not provided,Likely pathogenic,t(5;16)(p15.31;q23.1),2015-11-24,"Advanced Center For Translational And Genetic Medicine, Ann & Robert H. Lurie Children's Hospital Of Chicago",N/A,no assertion criteria provided
+FOXF1,Not Provided,Likely pathogenic,NM_001451.3(FOXF1):c.658G>T (p.Gly220Cys),2015-04-26,"Reutter Lab, Institute of Human Genetics, University Hospital Bonn",missense variant,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q12.2-24.3(chr16:52899183-90088654)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.2-24.3(chr16:80067315-90057871)x3,2014-06-21,ISCA site 8,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q21-24.3(chr16:64389378-90081985)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.1-24.3(chr16:76336203-90088654)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.2-24.3(chr16:80717291-90096662)x3,2014-06-21,ISCA Site 6,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q24.1-24.3(chr16:85552976-90096995)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q21-24.3(chr16:65511483-90096995)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.1-24.3(chr16:75377981-90081992)x3,2014-06-21,ISCA site 4,N/A,no assertion criteria provided
+FOXF1,See cases,Likely pathogenic,GRCh38/hg38 16q23.3-24.3(chr16:83478453-89932910)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q22.1-24.3(chr16:70749398-90096995)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.2-24.3(chr16:80946659-90081985)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,See cases,Likely pathogenic,GRCh38/hg38 16q23.3-24.3(chr16:83988570-90081985)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FOXF1,"Pyloric stenosis, infantile hypertrophic, 5",Likely pathogenic,NM_001451.3(FOXF1):c.416G>A (p.Arg139Gln),2013-02-01,"Human Genetics Research Centre, St George's University of London",missense variant,no assertion criteria provided
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.1-24.2(chr16:78704275-87819342)x1,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.3-24.3(chr16:82173150-90081985)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.1-24.3(chr16:76873569-90081985)x3,2014-06-21,ISCA Site 6,N/A,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q22.1-24.3(chr16:70514631-90081985)x3,2014-06-21,ISCA Site 6,N/A,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q21-24.3(chr16:65313395-90081985)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.3-24.2(chr16:83878992-87223838)x1,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+FOXF1,See cases,Pathogenic,GRCh38/hg38 16q23.1-24.3(chr16:78816291-90081985)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.850dup (p.Tyr284fs),2019-04-10,OMIM,frameshift variant,no assertion criteria provided
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.1138T>C (p.Ter380Arg),2019-04-10,OMIM,stop lost,no assertion criteria provided
+FOXF1,ALVEOLAR CAPILLARY DYSPLASIA WITH MISALIGNMENT OF PULMONARY VEINS,Pathogenic,NM_001451.3(FOXF1):c.225C>A (p.Tyr75Ter),2019-04-10,OMIM,nonsense,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.829C>T (p.Gln277Ter),2025-10-10,3billion,nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1104_1107dup (p.Ser370fs),2025-05-13,"Clinical Biomedical Laboratory, Shriners Hospital For Children - Canada",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely Pathogenic,NM_001321120.2(TBX4):c.932C>G (p.Ser311Ter),2025-01-28,"ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1427_1430dup (p.Leu478fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.186+1G>T,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+TBX4,not provided,Pathogenic,GRCh37/hg19 17q23.2-24.1(chr17:58773496-62757149)x3,2024-12-30,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NC_000017.10:g.(?_59543160)_(59545038_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NC_000017.10:g.(?_59544851)_(59545038_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.549+1G>A,2024-03-14,MVZ Medizinische Genetik Mainz,splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.571A>T (p.Lys191Ter),2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.593del (p.Ile198fs),2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.847C>T (p.Gln283Ter),2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,not provided,Pathogenic,GRCh37/hg19 17q23.1-23.2(chr17:58111095-60355640)x1,2024-12-30,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+TBX4,TBX4-Related Disorders,Likely pathogenic,NM_001321120.2(TBX4):c.748del (p.Arg250fs),2023-09-19,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.721G>T (p.Glu241Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.271A>G (p.Lys91Glu),2023-01-23,"MVZ Martinsried, Medicover Genetics",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.934C>T (p.Gln312Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,GRCh37/hg19 17q23.1-23.2(chr17:58111094-60323067),2022-08-31,"Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital",N/A,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.3G>A (p.Met1Ile),2022-05-21,Mendelics,missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NC_000017.10:g.(?_59533852)_(59560877_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.994del (p.Leu332fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.916G>T (p.Glu306Ter),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1420_1423dup (p.Tyr475fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1122C>A (p.Tyr374Ter),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.985G>T (p.Asp329Tyr),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.789del (p.Ser264fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.561_570dup (p.Lys191fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.748C>T (p.Arg250Trp),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.748C>T (p.Arg250Trp),2025-09-10,"Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.210dup (p.Leu71fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.210dup (p.Leu71fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.179_180dup (p.Glu61fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.379T>A (p.Tyr127Asn),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.316G>A (p.Gly106Ser),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.146del (p.Gly49fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.847dup (p.Gln283fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.64G>T (p.Gly22Ter),2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1167dup (p.Arg390fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.380A>C (p.Tyr127Ser),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.150del (p.Ala52fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.577C>T (p.Gln193Ter),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.664del (p.Thr222fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.781C>T (p.Arg261Ter),2022-04-01,"MVZ Martinsried, Medicover Genetics",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1021+1G>A,2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1021+1G>A,2021-12-08,GeneDx,splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1021+1G>A,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.569A>C (p.His190Pro),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.292C>G (p.Pro98Ala),2024-11-19,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",missense variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.979C>T (p.Gln327Ter),2020-10-20,"Equipe Genetique des Anomalies du Developpement, Université de Bourgogne",nonsense,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NC_000017.10:g.58076721_60362868del,2020-07-23,"Clinical Genetics, Erasmus University Medical Center",N/A,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1579C>T (p.Arg527Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.636del (p.Ala213fs),2025-06-25,GeneDx,frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1163_1170del (p.Thr388fs),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1115dup (p.Pro373fs),2020-08-05,CENTOGENE GmbH and LLC - Guiding Precision Medicine,frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1115dup (p.Pro373fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1115dup (p.Pro373fs),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1115dup (p.Pro373fs),2021-09-08,"Stankiewicz Research Laboratory, Baylor College of Medicine",frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1011_1012delinsTT (p.Lys338Ter),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",nonsense,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1001_1004dup (p.His335fs),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.972del (p.Thr326fs),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.885dup (p.Thr296fs),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.121G>T (p.Gly41Ter),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",nonsense,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.40_49del (p.Phe14fs),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.281+1G>T,2020-01-21,"Institute of Human Genetics Munich, TUM University Hospital",splice donor variant,"criteria provided, single submitter"
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME WITH OR WITHOUT PULMONARY ARTERIAL HYPERTENSION,Pathogenic,NM_001321120.2(TBX4):c.339T>A (p.Tyr113Ter),2020-01-21,OMIM,nonsense,no assertion criteria provided
+TBX4,"AMELIA, POSTERIOR, WITH PELVIC AND PULMONARY HYPOPLASIA SYNDROME",Pathogenic,NM_001321120.2(TBX4):c.339T>A (p.Tyr113Ter),2020-08-04,OMIM,nonsense,no assertion criteria provided
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.339T>A (p.Tyr113Ter),2021-09-09,Kariminejad - Najmabadi Pathology & Genetics Center,nonsense,"criteria provided, single submitter"
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME WITH OR WITHOUT PULMONARY ARTERIAL HYPERTENSION,Pathogenic,NM_001321120.2(TBX4):c.792-1G>C,2019-12-27,OMIM,splice acceptor variant,no assertion criteria provided
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.792-1G>C,2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",splice acceptor variant,"criteria provided, single submitter"
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME,Pathogenic,NM_001321120.2(TBX4):c.1057C>T (p.Arg353Ter),2019-12-27,OMIM,nonsense,no assertion criteria provided
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1057C>T (p.Arg353Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1057C>T (p.Arg353Ter),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",nonsense,"criteria provided, single submitter"
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME WITH PULMONARY ARTERIAL HYPERTENSION,Pathogenic,NM_001321120.2(TBX4):c.251del (p.Gly84fs),2019-12-27,OMIM,frameshift variant,no assertion criteria provided
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.251del (p.Gly84fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,not provided,Pathogenic,GRCh37/hg19 17q23.1-24.2(chr17:57869604-67078443)x3,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.402G>A (p.Trp134Ter),2019-07-26,"Department of Medical Genetics, Nizam's Institute of Medical Sciences",nonsense,"criteria provided, single submitter"
+TBX4,"AMELIA, POSTERIOR, WITH PELVIC AND PULMONARY HYPOPLASIA SYNDROME",Pathogenic,NM_001321120.2(TBX4):c.402G>A (p.Trp134Ter),2020-08-04,OMIM,nonsense,no assertion criteria provided
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME WITH OR WITHOUT PULMONARY ARTERIAL HYPERTENSION,Pathogenic,NM_001321120.2(TBX4):c.402G>A (p.Trp134Ter),2020-08-04,OMIM,nonsense,no assertion criteria provided
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME WITH OR WITHOUT PULMONARY ARTERIAL HYPERTENSION,Pathogenic,NM_001321120.2(TBX4):c.355dup (p.Ile119fs),2019-12-27,OMIM,frameshift variant,no assertion criteria provided
+TBX4,not provided,Likely pathogenic,GRCh37/hg19 17q23.1-23.2(chr17:58121190-60140614),2019-04-01,Baylor Genetics,N/A,"criteria provided, single submitter"
+TBX4,not provided,Pathogenic,GRCh37/hg19 17q22-24.2(chr17:57357088-66306668),2019-04-01,Baylor Genetics,N/A,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1018C>T (p.Arg340Ter),2022-03-02,GeneDx,nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1018C>T (p.Arg340Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1018C>T (p.Arg340Ter),2025-04-07,3billion,nonsense,"criteria provided, single submitter"
+TBX4,not provided,Likely pathogenic,GRCh37/hg19 17q23.2(chr17:58388728-60486746)x1,2018-08-16,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+TBX4,Pulmonary arterial hypertension associated with congenital heart disease,Likely pathogenic,NM_001321120.2(TBX4):c.670_672del (p.Phe224del),2018-06-27,"Wendy Chung Laboratory, Boston Children's Hospital",inframe_deletion,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.749G>A (p.Arg250Gln),2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+TBX4,Pulmonary arterial hypertension associated with congenital heart disease,Likely pathogenic,NM_001321120.2(TBX4):c.538_547del (p.Pro180fs),2018-06-27,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.538_547del (p.Pro180fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.1115del (p.Pro372fs),2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",frameshift variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.1115del (p.Pro372fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TBX4,Pulmonary arterial hypertension associated with congenital heart disease,Likely pathogenic,NM_001321120.2(TBX4):c.293C>G (p.Pro98Arg),2018-06-27,"Wendy Chung Laboratory, Boston Children's Hospital",missense variant,"criteria provided, single submitter"
+TBX4,not provided,Pathogenic,NM_001321120.2(TBX4):c.702+1G>A,2018-02-28,"Mayo Clinic Laboratories, Mayo Clinic",splice donor variant,"criteria provided, single submitter"
+TBX4,TBX4-related condition,Pathogenic,NM_001321120.2(TBX4):c.702+1G>A,2023-10-19,"PreventionGenetics, part of Exact Sciences",splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.702+1G>A,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Likely pathogenic,NM_001321120.2(TBX4):c.702+1G>A,2022-01-10,"Wendy Chung Laboratory, Boston Children's Hospital",splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.281+1G>A,2019-01-29,GeneDx,splice donor variant,"criteria provided, single submitter"
+TBX4,Not Provided,Pathogenic,NM_001321120.2(TBX4):c.709C>T (p.Gln237Ter),2019-01-29,GeneDx,nonsense,"criteria provided, single submitter"
+TBX4,See cases,Pathogenic,GRCh37/hg19 17q22-23.2(chr17:56623275-60285107)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TBX4,See cases,Pathogenic,GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TBX4,See cases,Pathogenic,GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938),2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TBX4,See cases,Pathogenic,GRCh37/hg19 17q21.31-25.3(chr17:42580684-81085615)x3,2017-02-28,ISCA Site 6,N/A,no assertion criteria provided
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME WITH PULMONARY ARTERIAL HYPERTENSION,Pathogenic,NM_001321120.2(TBX4):c.557T>G (p.Leu186Arg),2019-12-27,OMIM,missense variant,no assertion criteria provided
+TBX4,See Cases,Pathogenic,GRCh37/hg19 17q22-23.3(chr17:56321134-62080001)x3,2016-07-13,GeneDx,N/A,"criteria provided, single submitter"
+TBX4,See cases,Pathogenic,GRCh38/hg38 17q23.1-25.1(chr17:36449220-75053130)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TBX4,See cases,Pathogenic,GRCh38/hg38 17q23.2(chr17:60255192-62237942)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TBX4,See cases,Pathogenic,GRCh37/hg19 17q23-24(chr17:59209629-64222315)x3,2014-06-21,ISCA site 17,N/A,"criteria provided, single submitter"
+TBX4,See cases,Pathogenic,GRCh38/hg38 17q23.1-23.2(chr17:60043448-62148729)x1,2014-06-21,ISCA site 15,N/A,"criteria provided, single submitter"
+TBX4,See cases,Pathogenic,GRCh37/hg19 17q23(chr17:58934659-60395826)x1,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+TBX4,See cases,Pathogenic,GRCh38/hg38 17q23.1-23.2(chr17:60095339-62237942)x1,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+TBX4,See cases,Pathogenic,GRCh38/hg38 17q21.33-24.2(chr17:36449220-68170214)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME,Pathogenic,NM_001321120.2(TBX4):c.1595A>G (p.Gln532Arg),2017-01-09,OMIM,missense variant,no assertion criteria provided
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME,Pathogenic,NM_001321120.2(TBX4):c.184C>T (p.Gln62Ter),2017-10-18,OMIM,nonsense,no assertion criteria provided
+TBX4,ISCHIOCOXOPODOPATELLAR SYNDROME,Pathogenic,NM_001321120.2(TBX4):c.743G>T (p.Gly248Val),2016-01-29,OMIM,missense variant,no assertion criteria provided
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.324C>A (p.Tyr108Ter),2025-07-11,"MVZ Martinsried, Medicover Genetics",nonsense,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.626A>G (p.Ter209Trp),2024-10-31,"Institute of Human Genetics, Clinical Exome/Genome Diagnostics Group, University Hospital Bonn",stop lost,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.1_31delinsGCAGCCTTTCAGTTTCAG (p.Met1fs),2024-11-19,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,GRCh37/hg19 5p12-11(chr5:43949281-46116307)x1,2024-03-14,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+FGF10,LADD SYNDROME 3,Pathogenic,NM_004465.2(FGF10):c.234dup (p.Trp79fs),2024-02-01,OMIM,frameshift variant,no assertion criteria provided
+FGF10,see cases,Likely pathogenic,GRCh38/hg38 5p13.3-12(chr5:29299893-45899898)x3,2024-01-03,"Genesolutions, Medical Genetics Institutes, Ho Chi Minh City, Vietnam",N/A,no assertion criteria provided
+FGF10,Not Provided,Pathogenic,NM_004465.2(FGF10):c.237G>A (p.Trp79Ter),2023-10-31,"Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital",nonsense,no assertion criteria provided
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.355G>A (p.Gly119Arg),2023-08-15,"Grupo de Genetica Humana, Facultad de Medicina - Universidad de La Sabana",missense variant,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,NM_004465.2(FGF10):c.*1093A>G,2023-02-20,"Liquid Biopsy and Cancer Interception Group, Pfizer-University of Granada-Junta de Andalucía Centre for Genomics and Oncological Research",3 prime UTR variant,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,NM_004465.2(FGF10):c.101del (p.Pro34fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+FGF10,not provided,Pathogenic,GRCh37/hg19 5p13.3-11(chr5:29348753-46389339)x3,2022-12-28,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.374C>A (p.Ala125Asp),2022-11-30,"Institute of Human Genetics, Clinical Exome/Genome Diagnostics Group, University Hospital Bonn",missense variant,"criteria provided, single submitter"
+FGF10,musculoskeletal system issues,Pathogenic,GRCh37/hg19 5p13.2-11(chr5:36053583-46389339)x3,2022-09-12,"Cytogenetics, Genetics Associates, Inc.",N/A,no assertion criteria provided
+FGF10,Not Provided,Pathogenic,GRCh37/hg19 5p12-11(chr5:43972062-46101844),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,GRCh37/hg19 5p12-11(chr5:43855245-46389339),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,GRCh37/hg19 5p14.1-11(chr5:26382110-46389339),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,NC_000005.9:g.(?_42688972)_(44388784_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,NM_004465.2(FGF10):c.198_199insA (p.Val67fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,NM_004465.2(FGF10):c.190G>T (p.Gly64Ter),2022-12-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",nonsense,"criteria provided, single submitter"
+FGF10,not provided,Pathogenic,NM_004465.2(FGF10):c.190G>T (p.Gly64Ter),2025-08-19,"Revvity Omics, Revvity",nonsense,"criteria provided, single submitter"
+FGF10,not provided,Pathogenic,GRCh37/hg19 5p13.2-11(chr5:34984696-46405042)x3,2021-07-19,"Illumina Laboratory Services, Illumina",N/A,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,NC_000005.9:g.44300489_44312646del,2021-04-12,"Women's and Children's Health, University of Otago",N/A,"criteria provided, single submitter"
+FGF10,See cases,Pathogenic,GRCh37/hg19 5p13.3-12(chr5:29081195-45294031)x3,2021-03-08,"HudsonAlpha Institute for Biotechnology, HudsonAlpha Institute for Biotechnology",N/A,no assertion criteria provided
+FGF10,not provided,Pathogenic,GRCh37/hg19 5p13.1-q11.1(chr5:38432180-49441945)x3,2019-08-28,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+FGF10,not provided,Pathogenic,GRCh37/hg19 5p13.2-11(chr5:34453883-46389339)x3,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+FGF10,not provided,Pathogenic,GRCh37/hg19 5p14.1-12(chr5:27227243-45685844)x3,2024-01-03,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.550G>A (p.Gly184Arg),2017-12-20,"Center for Human Genetics, Inc, Center for Human Genetics, Inc",missense variant,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.401T>A (p.Met134Lys),2017-12-20,"Center for Human Genetics, Inc, Center for Human Genetics, Inc",missense variant,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.356del (p.Gly119fs),2017-12-20,"Center for Human Genetics, Inc, Center for Human Genetics, Inc",frameshift variant,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.256del (p.Thr86fs),2017-12-20,"Center for Human Genetics, Inc, Center for Human Genetics, Inc",frameshift variant,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.232del (p.Arg78fs),2017-12-20,"Center for Human Genetics, Inc, Center for Human Genetics, Inc",frameshift variant,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.1A>G (p.Met1Val),2017-12-20,"Center for Human Genetics, Inc, Center for Human Genetics, Inc",missense variant,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.526del (p.Met176fs),2021-09-26,GeneDx,frameshift variant,"criteria provided, single submitter"
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.267dup (p.Leu90fs),2019-01-29,GeneDx,frameshift variant,"criteria provided, single submitter"
+FGF10,See cases,Likely pathogenic,GRCh37/hg19 5p14.2-11(chr5:24281195-46389339)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FGF10,See cases,Pathogenic,GRCh37/hg19 5p15.1-q35.2(chr5:17628741-176575720)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FGF10,See cases,Pathogenic,GRCh37/hg19 5p15.33-q35.3(chr5:113577-180719789),2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FGF10,See cases,Pathogenic,GRCh37/hg19 5p15.33-q35.3(chr5:113577-180719789)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FGF10,See Cases,Pathogenic,GRCh37/hg19 5p15.2-12(chr5:13461664-46098927)x3,2016-07-13,GeneDx,N/A,"criteria provided, single submitter"
+FGF10,See cases,Pathogenic,GRCh38/hg38 5p15.33-q13.3(chr5:22149-74412725)x3,2014-06-21,ISCA site 4,N/A,no assertion criteria provided
+FGF10,See cases,Pathogenic,GRCh38/hg38 5p13.2-q12.1(chr5:35201559-61903141)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+FGF10,See cases,Pathogenic,GRCh38/hg38 5p15.33-11(chr5:49978-46114984)x3,2014-06-21,ISCA site 17,N/A,no assertion criteria provided
+FGF10,See cases,Pathogenic,GRCh38/hg38 5p13.2-q11.1(chr5:36374107-51103841)x3,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+FGF10,See cases,Pathogenic,GRCh38/hg38 5p13.2-12(chr5:35700480-45260029)x3,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+FGF10,See cases,Pathogenic,GRCh38/hg38 5p15.33-12(chr5:54839-45649861)x3,2014-06-21,ISCA Site 6,N/A,"criteria provided, single submitter"
+FGF10,APLASIA OF LACRIMAL AND SALIVARY GLANDS,Pathogenic,NM_004465.2(FGF10):c.413G>A (p.Gly138Glu),2019-05-24,OMIM,missense variant,no assertion criteria provided
+FGF10,APLASIA OF LACRIMAL AND SALIVARY GLANDS,Pathogenic,NM_004465.2(FGF10):c.240A>C (p.Arg80Ser),2019-05-24,OMIM,missense variant,no assertion criteria provided
+FGF10,Not Provided,Pathogenic,NM_004465.2(FGF10):c.240A>C (p.Arg80Ser),2017-12-20,"Center for Human Genetics, Inc, Center for Human Genetics, Inc",missense variant,"criteria provided, single submitter"
+FGF10,APLASIA OF LACRIMAL AND SALIVARY GLANDS,Pathogenic,NM_004465.2(FGF10):c.409A>T (p.Lys137Ter),2019-05-24,OMIM,nonsense,no assertion criteria provided
+FGF10,LADD SYNDROME 3,Pathogenic,NM_004465.2(FGF10):c.409A>T (p.Lys137Ter),2023-01-07,OMIM,nonsense,no assertion criteria provided
+FGF10,LADD SYNDROME 3,Pathogenic,NM_004465.2(FGF10):c.467T>G (p.Ile156Arg),2019-05-24,OMIM,missense variant,no assertion criteria provided
+FGF10,LADD SYNDROME 3,Pathogenic,NM_004465.2(FGF10):c.317G>T (p.Cys106Phe),2019-05-24,OMIM,missense variant,no assertion criteria provided
+FGF10,APLASIA OF LACRIMAL AND SALIVARY GLANDS,Pathogenic,NC_000005.10:g.(44304226_44304232)_(44357318_44357323)del,2015-06-17,OMIM,N/A,no assertion criteria provided
+FGF10,APLASIA OF LACRIMAL AND SALIVARY GLANDS,Pathogenic,NM_004465.2(FGF10):c.577C>T (p.Arg193Ter),2015-06-17,OMIM,nonsense,no assertion criteria provided
+FGF10,Not Provided,Likely pathogenic,NM_004465.2(FGF10):c.577C>T (p.Arg193Ter),2023-07-18,3billion,nonsense,"criteria provided, single submitter"
+FGF10,Not Provided,Pathogenic,NM_004465.2(FGF10):c.577C>T (p.Arg193Ter),2025-04-23,GeneDx,nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.1246del (p.Gln416fs),2025-11-12,GeneDx,frameshift variant,"criteria provided, single submitter"
+PSMD12,Not Provided,Likely pathogenic,NM_002816.5(PSMD12):c.1284G>A (p.Trp428Ter),2025-06-24,"Cambridge Genomics Laboratory, East Genomic Laboratory Hub, NHS Genomic Medicine Service",nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,pathogenic,NM_002816.5(PSMD12):c.319C>T (p.Gln107Ter),2025-09-16,"Institute of Human Genetics, University of Leipzig Medical Center",nonsense,"criteria provided, single submitter"
+PSMD12,Stankiewicz-Isidor syndrome,Likely pathogenic,NM_002816.5(PSMD12):c.1301C>A (p.Ser434Ter),2025-05-14,"Gharavi Laboratory, Columbia University",nonsense,no assertion criteria provided
+PSMD12,not provided,Likely pathogenic,NM_002816.5(PSMD12):c.539_542del (p.Lys180fs),2024-08-15,"Clinical Genetics Laboratory, Skane University Hospital Lund",frameshift variant,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.415G>T (p.Glu139Ter),2024-07-05,Ambry Genetics,nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.686T>G (p.Leu229Ter),2024-07-05,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Likely pathogenic,NM_002816.5(PSMD12):c.333T>A (p.Tyr111Ter),2024-02-03,"Pediatric/Medical Genetics, Ministry of Health, Qatif Central Hospital",nonsense,"criteria provided, single submitter"
+PSMD12,PSMD12-related condition,Likely pathogenic,NM_002816.5(PSMD12):c.435_438del (p.Thr146fs),2023-10-19,"PreventionGenetics, part of Exact Sciences",frameshift variant,"criteria provided, single submitter"
+PSMD12,not provided,Likely pathogenic,NM_002816.5(PSMD12):c.906C>A (p.Tyr302Ter),2023-08-31,"Molecular Genetics laboratory, Necker Hospital",nonsense,no assertion criteria provided
+PSMD12,Not Provided,Likely pathogenic,NM_002816.5(PSMD12):c.1084-1G>A,2023-01-23,"MVZ Martinsried, Medicover Genetics",splice acceptor variant,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.1078G>T (p.Glu360Ter),2022-05-02,"Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet",nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.430C>T (p.Arg144Ter),2021-12-29,GeneDx,nonsense,"criteria provided, single submitter"
+PSMD12,not provided,Likely pathogenic,NM_002816.5(PSMD12):c.430C>T (p.Arg144Ter),2020-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.430C>T (p.Arg144Ter),2025-08-19,"Revvity Omics, Revvity",nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.1071_1072del (p.Arg357fs),2020-10-09,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+PSMD12,Intellectual disability,Likely pathogenic,NM_002816.5(PSMD12):c.795+1G>A,2020-05-30,"Diagnostic Laboratory, Strasbourg University Hospital",splice donor variant,"criteria provided, single submitter"
+PSMD12,not provided,Pathogenic,NM_002816.5(PSMD12):c.1162-1G>A,2020-02-17,"Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes",splice acceptor variant,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.526del (p.Ser176fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.356del (p.Pro119fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+PSMD12,not provided,Likely pathogenic,GRCh37/hg19 17q24.2(chr17:65289140-65422972)x1,2019-08-28,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.148_149del (p.Leu50fs),2020-01-21,"Institute of Human Genetics Munich, TUM University Hospital",5 prime UTR variant,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.148_149del (p.Leu50fs),2025-10-10,3billion,5 prime UTR variant,"criteria provided, single submitter"
+PSMD12,not provided,Pathogenic,GRCh37/hg19 17q24.1-25.3(chr17:62778720-81041938)x3,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+PSMD12,not provided,Pathogenic,GRCh37/hg19 17q23.1-24.2(chr17:57869604-67078443)x3,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.1033G>T (p.Glu345Ter),2019-05-22,"Undiagnosed Diseases Network, NIH",nonsense,"criteria provided, single submitter"
+PSMD12,not provided,Pathogenic,GRCh37/hg19 17q22-24.2(chr17:57357088-66306668),2019-04-01,Baylor Genetics,N/A,"criteria provided, single submitter"
+PSMD12,not provided,Likely pathogenic,GRCh37/hg19 17q24.1-25.2(chr17:64159738-74891024)x3,2018-10-23,CeGaT Center for Human Genetics Tuebingen,N/A,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.316C>T (p.Gln106Ter),2019-03-13,GeneDx,nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.544C>T (p.Arg182Ter),2024-09-25,GeneDx,nonsense,"criteria provided, single submitter"
+PSMD12,not provided,Pathogenic,GRCh37/hg19 17q24.1-25.3(chr17:63689671-81041938)x3,2018-08-16,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+PSMD12,See cases,Pathogenic,GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+PSMD12,See cases,Pathogenic,GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938),2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+PSMD12,STANKIEWICZ-ISIDOR SYNDROME,Pathogenic,NM_002816.5(PSMD12):c.909-2A>G,2017-06-08,OMIM,splice acceptor variant,no assertion criteria provided
+PSMD12,STANKIEWICZ-ISIDOR SYNDROME,Pathogenic,NM_002816.5(PSMD12):c.601C>T (p.Arg201Ter),2017-06-08,OMIM,nonsense,no assertion criteria provided
+PSMD12,STANKIEWICZ-ISIDOR SYNDROME,Pathogenic,NM_002816.5(PSMD12):c.1274T>G (p.Leu425Ter),2017-06-08,OMIM,nonsense,no assertion criteria provided
+PSMD12,STANKIEWICZ-ISIDOR SYNDROME,Pathogenic,NM_002816.5(PSMD12):c.367C>T (p.Arg123Ter),2017-06-08,OMIM,nonsense,no assertion criteria provided
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.367C>T (p.Arg123Ter),2024-10-02,GeneDx,nonsense,"criteria provided, single submitter"
+PSMD12,Stankiewicz-Isidor syndrome,Pathogenic,NM_002816.5(PSMD12):c.367C>T (p.Arg123Ter),2024-11-10,"Al Jalila Children’s Genomics Center, Al Jalila Childrens Speciality Hospital",nonsense,"criteria provided, single submitter"
+PSMD12,not provided,Pathogenic,NM_002816.5(PSMD12):c.367C>T (p.Arg123Ter),2020-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",nonsense,"criteria provided, single submitter"
+PSMD12,Not Provided,Pathogenic,NM_002816.5(PSMD12):c.367C>T (p.Arg123Ter),2025-08-19,"Revvity Omics, Revvity",nonsense,"criteria provided, single submitter"
+PSMD12,See cases,Pathogenic,GRCh37/hg19 17q21.31-25.3(chr17:42580684-81085615)x3,2017-02-28,ISCA Site 6,N/A,no assertion criteria provided
+PSMD12,See cases,Pathogenic,GRCh38/hg38 17q24.1-24.2(chr17:64634771-67686888)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+PSMD12,See cases,Pathogenic,GRCh38/hg38 17q23.1-25.1(chr17:36449220-75053130)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+PSMD12,See cases,Pathogenic,GRCh38/hg38 17q21.33-24.2(chr17:36449220-68170214)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2597_2600del (p.Lys866fs),2025-10-29,"Molecular Genetics Laboratory, BC Children's and BC Women's Hospitals",frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.5953del (p.His1985fs),2025-10-10,3billion,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.3964C>T (p.Arg1322Ter),2025-10-10,3billion,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.6676_6679dup (p.Thr2227fs),2025-10-10,3billion,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.6406C>T (p.Gln2136Ter),2025-10-22,GeneDx,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.202del (p.Arg68fs),2025-09-30,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.807_808delinsA (p.Asp269fs),2025-08-14,"Medical Genetics Clinic, University of Catania",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.3970C>T (p.Gln1324Ter),2025-06-17,Ambry Genetics,nonsense,"criteria provided, single submitter"
+BPTF,not provided,Pathogenic,GRCh37/hg19 17q24.2(chr17:65870603-65971611)x1,2025-06-24,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.5986C>T (p.Gln1996Ter),2025-06-09,"Laboratorio de Genetica e Diagnostico Molecular, Hospital Israelita Albert Einstein",nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.8260_8261+2del,2025-06-11,GeneDx,splice donor variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.3370C>T (p.Gln1124Ter),2025-04-07,3billion,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.1865-12_1868delinsC,2025-04-07,3billion,splice acceptor variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.8572C>T (p.Arg2858Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+BPTF,neurodevelopmental disorder with dysmorphic facies and distal limb anomalies,Pathogenic,NM_182641.4(BPTF):c.8572C>T (p.Arg2858Ter),2025-04-15,"Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli",nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.8572C>T (p.Arg2858Ter),2025-09-03,GeneDx,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.4177C>T (p.Arg1393Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.4492C>T (p.Arg1498Ter),2025-02-04,"Clinical Genomics Laboratory, Washington University in St. Louis",nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2060_2061delinsACCA (p.Leu687fs),2024-12-31,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.5738A>C (p.Glu1913Ala),2024-12-15,Mendelics,missense variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.8560del (p.Arg2854fs),2025-09-28,"Juno Genomics, Hangzhou Juno Genomics, Inc",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2521C>T (p.Arg841Ter),2024-11-27,GeneDx,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2521C>T (p.Arg841Ter),2025-06-24,"Cambridge Genomics Laboratory, East Genomic Laboratory Hub, NHS Genomic Medicine Service",nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.5854dup (p.Ala1952fs),2024-11-19,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.3074_3075del (p.Glu1025fs),2024-10-02,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.7960_7963del (p.Glu2654fs),2024-07-15,"MVZ Martinsried, Medicover Genetics",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.3157_3158del (p.Lys1053fs),2024-11-19,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.7776dup (p.Arg2593fs),2024-04-10,"Center for Human Genetics and Genomic Medicine, Uniklinik Rwth Aachen",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.8683G>A (p.Glu2895Lys),2024-04-05,"Institute of Human Genetics, University of Leipzig Medical Center",missense variant,"criteria provided, single submitter"
+BPTF,see cases,Pathogenic,NM_182641.4(BPTF):c.8649del (p.Ser2883fs),2024-03-19,"Institute of Human Genetics, University Hospital Muenster",frameshift variant,"criteria provided, single submitter"
+BPTF,not provided,Likely pathogenic,NM_182641.4(BPTF):c.1864+712dup,2025-03-04,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.7747_7750del (p.Asp2583fs),2023-11-06,"Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes",frameshift variant,"criteria provided, single submitter"
+BPTF,not provided,Likely pathogenic,NM_182641.4(BPTF):c.6605del (p.Pro2202fs),2023-08-31,"Molecular Genetics laboratory, Necker Hospital",frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.6116C>T (p.Thr2039Ile),2023-07-26,GeneDx,missense variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.7037_7040dup (p.Gln2348fs),2024-04-19,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.7162C>T (p.Gln2388Ter),2022-12-07,GeneDx,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.1424G>A (p.Arg475Gln),2022-10-06,MGZ Medical Genetics Center,missense variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.5455del (p.Thr1819fs),2022-10-04,"Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.8670del (p.Cys2890fs),2025-10-02,CeGaT Center for Human Genetics Tuebingen,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.7582C>T (p.Gln2528Ter),2022-08-09,"Centre de Biologie Pathologie Génétique, Centre Hospitalier Universitaire de Lille",nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.4035_4036del (p.Cys1345_Glu1346delinsTer),2025-10-02,CeGaT Center for Human Genetics Tuebingen,nonsense,"criteria provided, single submitter"
+BPTF,NEURODEVELOPMENTAL DISORDER WITH DYSMORPHIC FACIES AND DISTAL LIMB ANOMALIES,Pathogenic,NM_182641.4(BPTF):c.209dup (p.Ser71fs),2022-06-08,OMIM,frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.209dup (p.Ser71fs),2025-09-24,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.5212C>T (p.Arg1738Ter),2022-07-06,GeneDx,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.7916T>C (p.Ile2639Thr),2022-05-25,GeneDx,missense variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.1133G>A (p.Arg378Gln),2022-02-16,"Department of Endocrinology and Genetics, Fuzhou Children’s Hospital of Fujian Medical University",missense variant,no assertion criteria provided
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.5564del (p.Pro1855fs),2022-02-16,"Department of Endocrinology and Genetics, Fuzhou Children’s Hospital of Fujian Medical University",frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.5301del (p.Thr1766_Trp1767insTer),2025-10-02,CeGaT Center for Human Genetics Tuebingen,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.1132C>T (p.Arg378Ter),2021-12-21,CENTOGENE GmbH and LLC - Guiding Precision Medicine,nonsense,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.6562_6563del (p.Val2188fs),2022-01-04,"ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.7960_7961del (p.Glu2654fs),2021-11-04,"Clinical Genetics Laboratory, University Hospital Schleswig-Holstein",frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.1999C>T (p.Gln667Ter),2021-11-04,"Clinical Genetics Laboratory, University Hospital Schleswig-Holstein",nonsense,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.5575_5576del (p.Arg1859fs),2021-06-24,"Centre de Biologie Pathologie Génétique, Centre Hospitalier Universitaire de Lille",frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.4469del (p.Ser1490fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.8552T>G (p.Met2851Arg),2021-03-05,Baylor Genetics,missense variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.2798A>T (p.Lys933Met),2021-02-21,Baylor Genetics,missense variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.1447dup (p.Thr483fs),2020-10-09,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2346_2349del (p.Thr783fs),2020-10-09,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2346_2349del (p.Thr783fs),2023-06-21,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely Pathogenic,NM_182641.4(BPTF):c.5587C>T (p.Arg1863Ter),2024-12-05,New York Genome Center,nonsense,"criteria provided, single submitter"
+BPTF,not provided,Pathogenic,GRCh37/hg19 17q24.2(chr17:65709215-65952716)x1,2020-07-31,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.52_61del (p.Glu18fs),2020-08-10,"Clinical Genomics Laboratory, Stanford Medicine",frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.255del (p.Ser86fs),2020-03-06,"HudsonAlpha Institute for Biotechnology, HudsonAlpha Institute for Biotechnology",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.255del (p.Ser86fs),2024-04-19,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.255del (p.Ser86fs),2024-09-25,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.255del (p.Ser86fs),2025-10-02,CeGaT Center for Human Genetics Tuebingen,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.255dup (p.Ser86fs),2022-07-13,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.3302del (p.Asn1101fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.5649del (p.Ile1883fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2245dup (p.Arg749fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.2832_2843del (p.941_944NMDE[1]),2024-10-02,GeneDx,inframe_deletion,"criteria provided, single submitter"
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.8625dup (p.Asn2876Ter),2019-07-31,"Johns Hopkins Genomics, Johns Hopkins University",nonsense,"criteria provided, single submitter"
+BPTF,not provided,Pathogenic,GRCh37/hg19 17q24.1-25.3(chr17:62778720-81041938)x3,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+BPTF,not provided,Pathogenic,GRCh37/hg19 17q23.1-24.2(chr17:57869604-67078443)x3,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+BPTF,not provided,Pathogenic,GRCh37/hg19 17q22-24.2(chr17:57357088-66306668),2019-04-01,Baylor Genetics,N/A,"criteria provided, single submitter"
+BPTF,not provided,Likely pathogenic,GRCh37/hg19 17q24.1-25.2(chr17:64159738-74891024)x3,2018-10-23,CeGaT Center for Human Genetics Tuebingen,N/A,"criteria provided, single submitter"
+BPTF,not provided,Pathogenic,NM_182641.4(BPTF):c.5337_5338del (p.Val1780fs),2024-12-16,"Center for Personalized Medicine, Children's Hospital Los Angeles",frameshift variant,"criteria provided, single submitter"
+BPTF,not provided,Pathogenic,GRCh37/hg19 17q24.1-25.3(chr17:63689671-81041938)x3,2018-08-16,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+BPTF,not provided,Likely pathogenic,NM_182641.4(BPTF):c.5282del (p.Pro1761fs),2018-06-22,"Center for Pediatric Genomic Medicine, Children's Mercy Hospital and Clinics",frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2598dup (p.Glu867fs),2020-10-09,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2598dup (p.Glu867fs),2025-08-06,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.6622C>T (p.Arg2208Ter),2019-01-29,GeneDx,nonsense,"criteria provided, single submitter"
+BPTF,See cases,Pathogenic,GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+BPTF,See cases,Pathogenic,GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938),2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2366del (p.Asn789fs),2017-07-10,Baylor Genetics,frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2366del (p.Asn789fs),2024-04-19,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+BPTF,NEURODEVELOPMENTAL DISORDER WITH DYSMORPHIC FACIES AND DISTAL LIMB ANOMALIES,Pathogenic,NM_182641.4(BPTF):c.989del (p.Leu330fs),2017-11-07,OMIM,frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.989del (p.Leu330fs),2017-07-10,Baylor Genetics,frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.989del (p.Leu330fs),2017-08-03,"Institute of Human Genetics, FAU Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg",frameshift variant,"criteria provided, single submitter"
+BPTF,NEURODEVELOPMENTAL DISORDER WITH DYSMORPHIC FACIES AND DISTAL LIMB ANOMALIES,Pathogenic,NM_182641.4(BPTF):c.8609T>G (p.Met2870Arg),2017-11-07,OMIM,missense variant,no assertion criteria provided
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.8609T>G (p.Met2870Arg),2017-07-10,Baylor Genetics,missense variant,no assertion criteria provided
+BPTF,Not Provided,Likely pathogenic,NM_182641.4(BPTF):c.5392G>A (p.Ala1798Thr),2017-07-10,Baylor Genetics,missense variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2982_2992+1del,2017-07-10,Baylor Genetics,splice donor variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,Single allele,2017-07-10,Baylor Genetics,N/A,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,Single allele,2017-07-10,Baylor Genetics,N/A,no assertion criteria provided
+BPTF,NEURODEVELOPMENTAL DISORDER WITH DYSMORPHIC FACIES AND DISTAL LIMB ANOMALIES,Pathogenic,NM_182641.4(BPTF):c.8701A>T (p.Lys2901Ter),2017-11-07,OMIM,nonsense,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.8701A>T (p.Lys2901Ter),2017-07-10,Baylor Genetics,nonsense,no assertion criteria provided
+BPTF,NEURODEVELOPMENTAL DISORDER WITH DYSMORPHIC FACIES AND DISTAL LIMB ANOMALIES,Pathogenic,NM_182641.4(BPTF):c.4838_4839del (p.Val1613fs),2017-11-07,OMIM,frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.4838_4839del (p.Val1613fs),2024-09-18,GeneDx,frameshift variant,"criteria provided, single submitter"
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.4838_4839del (p.Val1613fs),2017-07-10,Baylor Genetics,frameshift variant,no assertion criteria provided
+BPTF,NEURODEVELOPMENTAL DISORDER WITH DYSMORPHIC FACIES AND DISTAL LIMB ANOMALIES,Pathogenic,NM_182641.4(BPTF):c.2482dup (p.Glu828fs),2017-11-07,OMIM,frameshift variant,no assertion criteria provided
+BPTF,Not Provided,Pathogenic,NM_182641.4(BPTF):c.2482dup (p.Glu828fs),2017-07-10,Baylor Genetics,frameshift variant,no assertion criteria provided
+BPTF,See cases,Pathogenic,GRCh37/hg19 17q21.31-25.3(chr17:42580684-81085615)x3,2017-02-28,ISCA Site 6,N/A,no assertion criteria provided
+BPTF,Neurodevelopmental disorder with dysmorphic facies and distal limb anomalies,Pathogenic,NM_182641.4(BPTF):c.8262-2A>G,2020-07-31,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",splice acceptor variant,"criteria provided, single submitter"
+BPTF,See cases,Pathogenic,GRCh38/hg38 17q24.2(chr17:67584224-68639875)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+BPTF,See cases,Pathogenic,GRCh38/hg38 17q23.1-25.1(chr17:36449220-75053130)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+BPTF,See cases,Pathogenic,GRCh38/hg38 17q24.2-24.3(chr17:67833866-70085854)x1,2014-06-21,ISCA site 15,N/A,"criteria provided, single submitter"
+BPTF,See cases,Pathogenic,GRCh38/hg38 17q21.33-24.2(chr17:36449220-68170214)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.819dup (p.Val274fs),2025-10-28,"Women's Health and Genetics/Laboratory Corporation of America, LabCorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,pathogenic,NM_002397.5(MEF2C):c.55-1G>A,2025-10-14,"Molecular Genetics Department, Kulakov National Medical Research Center for Obstetrics, Gynecology and Perinatology",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.154_158del (p.Asn52fs),2025-10-10,3billion,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,likely pathogenic,NM_002397.5(MEF2C):c.87G>A (p.Met29Ile),2025-10-10,"Institute of Human Genetics, University of Leipzig Medical Center",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,GRCh37/hg19 5q14.3-15(chr5:86457540-93285903)x1,2025-09-18,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.13A>T (p.Lys5Ter),2025-08-19,"Revvity Omics, Revvity",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.838C>T (p.Gln280Ter),2025-10-02,CeGaT Center for Human Genetics Tuebingen,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.810+2T>A,2025-04-07,3billion,splice donor variant,"criteria provided, single submitter"
+MEF2C,Microduplication syndrome,Likely pathogenic,GRCh38/hg38 5q14.3-15(chr5:87973188-93211127)x3,2025-04-03,"Regional Center For Medical Genetics Timis, Louis Turcanu Emergency Hospital for Children Timisoara",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.48C>G (p.Asn16Lys),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.321del (p.Gly108fs),2025-01-10,"Institute of Human Genetics, FAU Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg",frameshift variant,"criteria provided, single submitter"
+MEF2C,not provided,Likely pathogenic,GRCh37/hg19 5q14.1-15(chr5:80522053-92353965)x3,2024-12-30,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.80G>A (p.Gly27Glu),2025-04-17,"Equipe Genetique des Anomalies du Developpement, Université de Bourgogne",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.391C>T (p.Gln131Ter),2025-04-08,"Institute of Human Genetics, University of Leipzig Medical Center",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,Single allele,2024-07-29,"Kasturba Medical College, Manipal, Kasturba Medical College, Manipal, Manipal Academy of Higher Education, Manipal, India",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_88119532)_(88119605_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,5q14.3 microdeletion,Pathogenic,GRCh38/hg38 5q14.3(chr5:86235182-91734581),2024-05-15,New York Genome Center,N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,GRCh37/hg19 5q14.3(chr5:88096182-88406434)x1,2024-03-14,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.728dup (p.Met244fs),2024-03-01,"Institute of Human Genetics, University of Leipzig Medical Center",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.810+2T>C,2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.258+2T>C,2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.403-1G>A,2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.134T>C (p.Leu45Pro),2024-02-02,"Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center",missense variant,"criteria provided, single submitter"
+MEF2C,not provided,Likely pathogenic,NM_002397.5(MEF2C):c.908T>G (p.Leu303Ter),2025-03-04,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.216C>G (p.Tyr72Ter),2023-11-24,"Zotz-Klimas Genetics Lab, MVZ Zotz Klimas",nonsense,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.64_77del (p.Thr22fs),2024-04-19,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+MEF2C,MEF2C Haploinsufficiency Syndrome,Pathogenic,NM_002397.5(MEF2C):c.19C>T (p.Gln7Ter),2023-09-19,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,GRCh38/hg38 5q14.3-15(chr5:88189536-93784597)x1,2023-09-11,"Broad Center for Mendelian Genomics, Broad Institute of MIT and Harvard",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.402+1G>A,2023-07-18,"Laboratory of Medical Genetics, National & Kapodistrian University of Athens",splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.241A>G (p.Asn81Asp),2023-07-17,"Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.210delinsTAC (p.Glu71fs),2023-07-17,"Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.88AAG[1] (p.Lys31del),2023-07-11,"HudsonAlpha Institute for Biotechnology, HudsonAlpha Institute for Biotechnology",inframe_deletion,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.89A>C (p.Lys30Thr),2023-05-22,"Institute of Human Genetics, Cologne University",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.1412G>A (p.Trp471Ter),2023-03-23,"Rare Disease Center, Seoul National University Hospital",nonsense,no assertion criteria provided
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.22A>C (p.Ile8Leu),2023-03-06,"Laboratoire de Génétique Moléculaire, CHU Bordeaux",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.106A>C (p.Ser36Arg),2023-03-06,"Laboratoire de Génétique Moléculaire, CHU Bordeaux",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.109G>A (p.Val37Met),2023-03-01,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.301C>A (p.Pro101Thr),2023-02-15,"Department of Genetics, Rouen University Hospital, Normandy Center for Genomic and Personalized Medicine",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_88056982)_(88119605_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_88100395)_(88119605_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_88100395)_(88100638_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.204_208del (p.Lys68fs),2024-04-19,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.79G>A (p.Gly27Arg),2025-02-05,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.79G>A (p.Gly27Arg),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.881del (p.Pro294fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.999_1000del (p.Ser334fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.468del (p.Tyr157fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.637+1G>T,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.10:g.88731902del,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.258G>A (p.Glu86=),2022-12-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",synonymous variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.939_940del (p.Ala314fs),2022-12-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.908del (p.Leu303fs),2022-12-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_88625195)_(90796047_?)inv,2022-09-23,"Equipe Genetique des Anomalies du Developpement, Université de Bourgogne",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.835-2A>G,2022-09-04,3billion,splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,GRCh37/hg19 5q14.3(chr5:88065061-88406446),2022-08-31,"Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital",N/A,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.44G>C (p.Arg15Pro),2022-05-21,Mendelics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.44G>C (p.Arg15Pro),2024-11-19,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.44G>C (p.Arg15Pro),2025-04-16,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.104T>C (p.Leu35Pro),2022-05-21,Mendelics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.104T>C (p.Leu35Pro),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,GRCh37/hg19 5q14.2-14.3(chr5:82185951-90110454),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_88047654)_(88047880_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.402+184del,2021-12-21,CENTOGENE GmbH and LLC - Guiding Precision Medicine,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.104T>G (p.Leu35Arg),2022-01-04,"Kasturba Medical College, Manipal, Kasturba Medical College, Manipal, Manipal Academy of Higher Education, Manipal, India",missense variant,"criteria provided, single submitter"
+MEF2C,not provided,Pathogenic,NM_002397.5(MEF2C):c.638-2A>G,2022-02-10,"Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.638-2A>G,2024-09-25,GeneDx,splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.258+5G>C,2021-11-05,3billion,intron variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.402+146C>A,2021-11-05,3billion,nonsense,"criteria provided, single submitter"
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.-66A>T,2021-12-02,OMIM,5 prime UTR variant,no assertion criteria provided
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.-26C>T,2021-12-02,OMIM,5 prime UTR variant,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-26C>T,2022-12-19,"Institute of Human Genetics, University of Leipzig Medical Center",5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-26C>T,2022-09-21,GeneDx,5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-26C>T,2024-04-19,Ambry Genetics,5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.220G>T (p.Glu74Ter),2022-02-16,OMIM,nonsense,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.259-1G>A,2021-09-01,GeneDx,splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.106A>G (p.Ser36Gly),2021-08-20,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-8C>T,2021-11-18,"Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes",5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.-8C>T,2021-12-02,OMIM,5 prime UTR variant,no assertion criteria provided
+MEF2C,Not Provided,pathogenic,NM_002397.5(MEF2C):c.-8C>T,2024-01-30,"Institute of Human Genetics, Clinical Exome/Genome Diagnostics Group, University Hospital Bonn",5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-8C>T,2024-10-02,"Institute of Human Genetics, University of Leipzig Medical Center",5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-8C>T,2025-07-02,GeneDx,5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-8C>T,2025-10-02,CeGaT Center for Human Genetics Tuebingen,5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.-8C>T,2025-10-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",5 prime UTR variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.17T>A (p.Ile6Asn),2021-07-08,"MVZ Martinsried, Medicover Genetics",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_88027526)_(88027738_?)del,2022-05-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.559dup (p.Thr187fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_87776690)_(88119605_?)del,2021-01-07,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.637+1G>C,2022-05-04,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.638-1G>A,2023-11-22,GeneDx,splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.638-1G>A,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.170A>G (p.Tyr57Cys),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+MEF2C,not provided,Likely pathogenic,GRCh37/hg19 5q14.3(chr5:88041931-88078617)x1,2020-07-31,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+MEF2C,Intellectual disability,Pathogenic,NM_002397.5(MEF2C):c.810+1G>A,2020-05-30,"Diagnostic Laboratory, Strasbourg University Hospital",splice donor variant,"criteria provided, single submitter"
+MEF2C,Intellectual disability,Likely pathogenic,NM_002397.5(MEF2C):c.1420T>A (p.Ter474Arg),2020-05-30,"Diagnostic Laboratory, Strasbourg University Hospital",stop lost,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.532C>T (p.Gln178Ter),2020-08-07,"Clinical Genomics Laboratory, Stanford Medicine",nonsense,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.658C>T (p.Arg220Ter),2022-05-21,Mendelics,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.658C>T (p.Arg220Ter),2023-03-22,GeneDx,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.658C>T (p.Arg220Ter),2025-05-02,"Center of Human Genetics, Hôpital Erasme",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.177C>G (p.Ser59Arg),2020-04-20,"Institute of Human Genetics, University of Leipzig Medical Center",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.4:c.(?_-1)_(*1_?)del,2020-07-23,Blueprint Genetics,N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.258+1G>A,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.137T>A (p.Ile46Asn),2021-03-05,Baylor Genetics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.965-2A>G,2020-11-24,"Centre for Mendelian Genomics, University Medical Centre Ljubljana",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.965-2A>G,2025-06-24,"Cambridge Genomics Laboratory, East Genomic Laboratory Hub, NHS Genomic Medicine Service",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,GRCh37/hg19 5q14.3(chr5:88119552-88119605)x1,2025-10-02,CeGaT Center for Human Genetics Tuebingen,N/A,"criteria provided, single submitter"
+MEF2C,"Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations",Pathogenic,NM_002397.5(MEF2C):c.988del (p.Leu330fs),2020-02-06,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.10:g.(?_88722584)_(88823808_?)del,2023-03-21,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.10:g.(?_88804588)_(88884466_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.194T>G (p.Val65Gly),2019-10-17,"Equipe Genetique des Anomalies du Developpement, Université de Bourgogne",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.728del (p.Pro243fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.3(MEF2C):c.811_814delTCTG,2019-10-15,GeneDx,splice acceptor variant,"criteria provided, single submitter"
+MEF2C,See Cases,Likely pathogenic,GRCh37/hg19 5q14.3-21.3(chr5:87792844-109221844)x3,2018-11-15,"Clinical Genomics Laboratory, Laboratory for Precision Diagnostics, University of Washington",N/A,"criteria provided, single submitter"
+MEF2C,not provided,Pathogenic,GRCh37/hg19 5q14.3(chr5:88054762-88271992)x1,2019-08-28,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+MEF2C,not provided,Pathogenic,GRCh37/hg19 5q13.2-15(chr5:72790061-97478870)x3,2019-08-28,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.65C>G (p.Thr22Arg),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",missense variant,no assertion criteria provided
+MEF2C,not specified,Likely pathogenic,NM_002397.5(MEF2C):c.1095G>C (p.Gln365His),2019-08-05,"ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories",missense variant,"criteria provided, single submitter"
+MEF2C,not provided,Pathogenic,GRCh37/hg19 5q14.3(chr5:83497559-88416354)x1,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.908dup (p.Leu303fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.192dup (p.Val65fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.14del (p.Lys5fs),2024-09-18,GeneDx,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.14del (p.Lys5fs),2025-10-02,CeGaT Center for Human Genetics Tuebingen,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.709C>T (p.Gln237Ter),2019-03-13,GeneDx,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.44G>A (p.Arg15His),2018-10-17,"Génétique des Maladies du Développement, Hospices Civils de Lyon",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.44G>A (p.Arg15His),2024-04-19,Ambry Genetics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.44G>A (p.Arg15His),2024-09-25,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,Seizure,Likely pathogenic,NM_002397.5(MEF2C):c.44G>A (p.Arg15His),2025-07-08,"Génétique des Maladies du Développement, Hospices Civils de Lyon",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.10:g.88846693_89051376delinsG,2018-11-27,"Undiagnosed Diseases Network, NIH",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.401_402+2del,2024-04-24,Ambry Genetics,splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.401_402+2del,2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.780dup (p.Pro261fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.1A>G (p.Met1Val),2022-05-21,Mendelics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.1A>G (p.Met1Val),2024-11-15,"Unidad de Genómica Garrahan, Hospital de Pediatría Garrahan",missense variant,"criteria provided, single submitter"
+MEF2C,not provided,Likely pathogenic,GRCh37/hg19 5q14.3-15(chr5:87399001-92675748)x3,2018-08-16,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+MEF2C,Autism spectrum disorder,Pathogenic,NM_002397.5(MEF2C):c.403-1G>T,2018-08-03,"Liping Wei Laboratory, Peking University",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.13_14del (p.Lys5fs),2025-10-02,CeGaT Center for Human Genetics Tuebingen,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.236G>C (p.Arg79Pro),2019-01-29,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.45dup (p.Asn16Ter),2019-01-29,GeneDx,nonsense,"criteria provided, single submitter"
+MEF2C,Neurodevelopmental disorder,Pathogenic,NM_002397.5(MEF2C):c.45dup (p.Asn16Ter),2021-04-20,"Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.45dup (p.Asn16Ter),2025-02-13,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.214del (p.Tyr72fs),2024-04-24,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.58A>T (p.Thr20Ser),2020-10-09,Ambry Genetics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.113T>C (p.Leu38Pro),2020-10-09,Ambry Genetics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.113T>C (p.Leu38Pro),2025-08-19,"Revvity Omics, Revvity",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.123_124del (p.Cys41_Glu42delinsTer),2024-04-18,Ambry Genetics,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.638-2A>C,2024-04-19,Ambry Genetics,splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.638-2A>C,2017-12-18,"Institute of Human Genetics Munich, TUM University Hospital",splice acceptor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_86400000)_(154000000_?)del,2022-05-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NC_000005.9:g.(?_86400000)_(154000000_?)del,2024-06-04,"Labcorp Genetics (formerly Invitae), Labcorp",N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.258+2T>G,2019-01-29,GeneDx,splice donor variant,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh37/hg19 5p15.1-q35.2(chr5:17628741-176575720)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Likely pathogenic,GRCh37/hg19 5q14.3(chr5:86621337-89204392)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh37/hg19 5q14.3(chr5:87999726-88137439)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh37/hg19 5p15.33-q35.3(chr5:113577-180719789),2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh37/hg19 5p15.33-q35.3(chr5:113577-180719789)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh37/hg19 5q14.3(chr5:87764485-90147447)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,not provided,Pathogenic,NM_002397.5(MEF2C):c.51_54del (p.Arg17_Gln18insTer),2022-01-25,"Genetic Services Laboratory, University of Chicago",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.51_54del (p.Arg17_Gln18insTer),2023-04-05,GeneDx,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.51_54del (p.Arg17_Gln18insTer),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.51_54del (p.Arg17_Gln18insTer),2025-10-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.258+1G>T,2025-10-02,CeGaT Center for Human Genetics Tuebingen,splice donor variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.1201C>T (p.Arg401Cys),2025-06-25,GeneDx,non-coding transcript variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.566_567dup (p.Pro190fs),2017-11-28,GeneDx,frameshift variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.860C>A (p.Ser287Ter),2021-09-25,GeneDx,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.637+2T>C,2021-09-24,GeneDx,splice donor variant,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh37/hg19 5q14.3(chr5:86530415-88893604)x1,2017-02-28,ISCA Site 6,N/A,no assertion criteria provided
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.811-9T>G,2019-01-29,GeneDx,intron variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.100G>T (p.Glu34Ter),2019-01-29,GeneDx,nonsense,"criteria provided, single submitter"
+MEF2C,See Cases,Pathogenic,GRCh37/hg19 5q14.3(chr5:88056500-88183698)x1,2016-07-13,GeneDx,N/A,"criteria provided, single submitter"
+MEF2C,See Cases,Pathogenic,GRCh37/hg19 5q14.3(chr5:88018116-88183698)x1,2016-07-13,GeneDx,N/A,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.71G>A (p.Arg24Lys),2016-03-03,"HudsonAlpha Institute for Biotechnology, HudsonAlpha Institute for Biotechnology",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.71G>A (p.Arg24Lys),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_001131005.2(MEF2C):c.-143+4180_-143+4193del,2015-08-13,"Center for Neuroscience and Cell Biology, University of Coimbra, Portugal",intron variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.9A>T (p.Arg3Ser),2015-12-14,"Centro Hospitalar S Joao, Faculty of Medicine of Porto",missense variant,no assertion criteria provided
+MEF2C,"Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations",Pathogenic,NM_002397.5(MEF2C):c.2T>C (p.Met1Thr),2015-09-15,"Genetic Services Laboratory, University of Chicago",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.2T>C (p.Met1Thr),2019-01-29,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.2T>C (p.Met1Thr),2023-06-29,"Illumina Laboratory Services, Illumina",missense variant,"criteria provided, single submitter"
+MEF2C,"Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations",Likely pathogenic,NM_002397.5(MEF2C):c.68A>G (p.Lys23Arg),2015-08-17,Baylor Genetics,missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.3G>C (p.Met1Ile),2018-03-27,"Geisinger Autism and Developmental Medicine Institute, Geisinger Health System",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.766C>T (p.Arg256Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+MEF2C,Autism spectrum disorder,Pathogenic,NM_002397.5(MEF2C):c.766C>T (p.Arg256Ter),2018-08-03,"Liping Wei Laboratory, Peking University",nonsense,"criteria provided, single submitter"
+MEF2C,Intellectual disability,Pathogenic,NM_002397.5(MEF2C):c.766C>T (p.Arg256Ter),2020-05-30,"Diagnostic Laboratory, Strasbourg University Hospital",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.766C>T (p.Arg256Ter),2022-01-18,DASA,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.43C>T (p.Arg15Cys),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.43C>T (p.Arg15Cys),2025-10-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",missense variant,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.43C>T (p.Arg15Cys),2020-11-16,"University of Washington Center for Mendelian Genomics, University of Washington",missense variant,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.43C>T (p.Arg15Cys),2022-05-18,GeneDx,missense variant,"criteria provided, single submitter"
+MEF2C,not provided,Pathogenic,NM_002397.5(MEF2C):c.926dup (p.Gly310fs),2014-05-06,Eurofins Ntd Llc (ga),frameshift variant,no assertion criteria provided
+MEF2C,"Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations",Pathogenic,NM_002397.5(MEF2C):c.833del (p.Leu277_Leu278insTer),2014-09-11,"Genetic Services Laboratory, University of Chicago",nonsense,"criteria provided, single submitter"
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.833del (p.Leu277_Leu278insTer),2022-02-16,OMIM,nonsense,no assertion criteria provided
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.833del (p.Leu277_Leu278insTer),2022-05-18,GeneDx,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.833del (p.Leu277_Leu278insTer),2024-07-05,Ambry Genetics,nonsense,"criteria provided, single submitter"
+MEF2C,"Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations",Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2014-09-11,"Genetic Services Laboratory, University of Chicago",nonsense,"criteria provided, single submitter"
+MEF2C,"Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations",Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2015-05-28,"Courtagen Diagnostics Laboratory, Courtagen Life Sciences",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Likely pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2022-07-29,"Women's Health and Genetics/Laboratory Corporation of America, LabCorp",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2021-09-30,GeneDx,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2024-04-24,Ambry Genetics,nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2025-08-19,"Revvity Omics, Revvity",nonsense,"criteria provided, single submitter"
+MEF2C,Not Provided,Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2023-11-16,"Division of Human Genetics, National Health Laboratory Service/University of the Witwatersrand",nonsense,"criteria provided, single submitter"
+MEF2C,MEF2C-related condition,Pathogenic,NM_002397.5(MEF2C):c.565C>T (p.Arg189Ter),2024-10-02,"PreventionGenetics, part of Exact Sciences",nonsense,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:86766959-92148845)x1,2014-06-21,GeneDx,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:88368289-92363231)x1,2014-06-21,GeneDx,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3-22.1(chr5:84603580-111435081)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:88744060-88749622)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:88766676-88808855)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3-15(chr5:88197732-93193163)x3,2014-06-21,ISCA site 8,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:88766680-89732281)x1,2014-06-21,ISCA site 4,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:87191898-89957449)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:88854849-89268660)x1,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:88720397-89487275)x1,2014-06-21,ISCA site 15,N/A,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:86743723-92337264)x1,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:86343721-88779835)x1,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3-15(chr5:87124838-93383020)x3,2014-06-21,ISCA site 14,N/A,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q13.3-22.1(chr5:74163186-110809453)x3,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3(chr5:85876480-88958682)x1,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+MEF2C,See cases,Pathogenic,GRCh38/hg38 5q14.3-21.1(chr5:87376883-101524443)x1,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.458del (p.Asn153fs),2021-09-17,OMIM,frameshift variant,no assertion criteria provided
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.80G>C (p.Gly27Ala),2021-09-17,OMIM,missense variant,no assertion criteria provided
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.99dup (p.Glu34Ter),2021-09-17,OMIM,nonsense,no assertion criteria provided
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.113T>A (p.Leu38Gln),2021-09-17,OMIM,missense variant,no assertion criteria provided
+MEF2C,"NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, STEREOTYPIC HAND MOVEMENTS, AND IMPAIRED LANGUAGE",Pathogenic,NM_002397.5(MEF2C):c.683C>G (p.Ser228Ter),2021-09-17,OMIM,nonsense,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3235C>T (p.Arg1079Ter),2025-11-12,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.5979_5983delinsAGCTCTTGGGCTCCAGTTT (p.Thr1994fs),2025-10-10,3billion,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4757_4763delinsC (p.Lys1586_Asn1588delinsThr),2025-09-30,"Neurogenetics Laboratory, American University of Beirut",inframe_indel,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1180C>T (p.Arg394Ter),2025-10-01,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1969del (p.Gln657fs),2025-09-13,"Medical Genetics Center, Maternal and Child Health Hospital of Hubei Province",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.3629A>T (p.Asp1210Val),2025-08-12,"Altamedica, Artemisia",missense variant,no assertion criteria provided
+TRIP12,Not Provided,Likely Pathogenic,GRCh37/hg19 2q36.3(chr2:230691057-230742340)x1,2025-08-18,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2596G>T (p.Gly866Ter),2025-06-24,"Cambridge Genomics Laboratory, East Genomic Laboratory Hub, NHS Genomic Medicine Service",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1213C>T (p.Gln405Ter),2025-06-11,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.5429dup (p.His1811fs),2025-04-07,3billion,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.5538_5566del (p.Glu1846fs),2025-09-28,"Juno Genomics, Hangzhou Juno Genomics, Inc",frameshift variant,"criteria provided, single submitter"
+TRIP12,TRIP12-related condition,Likely pathogenic,NM_001348323.3(TRIP12):c.121_128del (p.His41fs),2024-10-02,"PreventionGenetics, part of Exact Sciences",frameshift variant,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3307+2T>C,2024-10-02,GeneDx,splice donor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3247C>T (p.Arg1083Ter),2024-09-25,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3551del (p.Asn1184fs),2024-07-17,"Laboratory of Medical Genetics, National & Kapodistrian University of Athens",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2624del (p.Pro875fs),2024-07-18,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4936G>A (p.Glu1646Lys),2024-07-17,GeneDx,missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4996-12_4996-2del,2024-04-23,"Equipe Genetique des Anomalies du Developpement, Université de Bourgogne",splice acceptor variant,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh37/hg19 2q35-37.3(chr2:216815496-242782258)x3,2024-03-25,"Prenatal Diagnosis Center, Urumqi Maternal and Child Health Care Hospital",N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely Pathogenic,NM_001348323.3(TRIP12):c.3624+1G>A,2024-04-19,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",splice donor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.5114C>T (p.Pro1705Leu),2024-04-04,MVZ Medizinische Genetik Mainz,missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.638_639del (p.Arg213fs),2024-02-19,"Women's Health and Genetics/Laboratory Corporation of America, LabCorp",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,GRCh37/hg19 2q36.3(chr2:230591144-230654311)x1,2024-03-14,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,GRCh37/hg19 2q36.2-37.3(chr2:225995545-237594511)x3,2024-01-03,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,GRCh37/hg19 2q35-37.3(chr2:218376403-242783384)x3,2024-01-03,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,Single allele,2023-12-07,"Illumina Laboratory Services, Illumina",N/A,"criteria provided, single submitter"
+TRIP12,TRIP12-related condition,Likely pathogenic,NM_001348323.3(TRIP12):c.694_698dup (p.Thr234fs),2023-10-19,"PreventionGenetics, part of Exact Sciences",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.6129T>G (p.Tyr2043Ter),2023-11-06,"Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1787_1800del (p.Met596fs),2023-10-30,"Zotz-Klimas Genetics Lab, MVZ Zotz Klimas",frameshift variant,no assertion criteria provided
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.5030C>T (p.Ala1677Val),2023-10-25,"Institute of Human Genetics, FAU Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg",missense variant,"criteria provided, single submitter"
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.4317del (p.Gln1440fs),2023-09-19,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1012C>T (p.Gln338Ter),2023-09-12,"MVZ Martinsried, Medicover Genetics",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1012C>T (p.Gln338Ter),2025-10-02,CeGaT Center for Human Genetics Tuebingen,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3869del (p.Leu1290fs),2023-12-08,"Institute of Human Genetics, University of Leipzig Medical Center",frameshift variant,"criteria provided, single submitter"
+TRIP12,not provided,Likely pathogenic,NM_001348323.3(TRIP12):c.1819C>T (p.Gln607Ter),2023-08-31,"Molecular Genetics laboratory, Necker Hospital",nonsense,no assertion criteria provided
+TRIP12,not provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4290del (p.Pro1429_Tyr1430insTer),2023-08-18,"Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.2764_2767dup (p.Ser923Ter),2023-07-18,3billion,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.334C>T (p.Arg112Ter),2023-06-14,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.2679_2685del (p.Asp893fs),2023-05-30,"Clinical Laboratory Sciences Program (CLSP), King Saud bin Abdulaziz University for Health Sciences (KSAU-HS)",frameshift variant,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2065C>T (p.Gln689Ter),2023-04-01,"Medical Genetics Center, Maternal and Child Health Hospital of Hubei Province",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2065C>T (p.Gln689Ter),2025-07-18,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3787C>T (p.Arg1263Ter),2023-03-29,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3787C>T (p.Arg1263Ter),2025-07-09,"Clinical Genetics Laboratory, University Hospital Schleswig-Holstein",nonsense,no assertion criteria provided
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.2625_2629del (p.Asn876fs),2023-02-19,Baylor Genetics,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.5675del (p.Asn1892fs),2025-08-19,"Revvity Omics, Revvity",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4642CTT[1] (p.Leu1550del),2023-02-15,"Department of Genetics, Rouen University Hospital, Normandy Center for Genomic and Personalized Medicine",inframe_deletion,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.5905_5908delinsATATGGTATATTTACTT (p.Arg1969fs),2024-04-20,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.5452_5453delinsAAACAAATTGTAAATTGTACCA (p.Pro1818fs),2023-01-23,"MVZ Martinsried, Medicover Genetics",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.6096_6109dup (p.Tyr2037Ter),2022-10-06,MGZ Medical Genetics Center,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4216-2A>G,2022-10-06,MGZ Medical Genetics Center,splice acceptor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,GRCh37/hg19 2p25.3-q37.3(chr2:1-243199373),2022-08-31,"Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital",N/A,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3816+2T>A,2022-07-12,"Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center",splice donor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4302_4303del (p.Tyr1435fs),2022-08-09,"Centre de Biologie Pathologie Génétique, Centre Hospitalier Universitaire de Lille",frameshift variant,"criteria provided, single submitter"
+TRIP12,not provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4302_4303del (p.Tyr1435fs),2023-08-31,"Molecular Genetics laboratory, Necker Hospital",frameshift variant,no assertion criteria provided
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.6032T>G (p.Leu2011Trp),2025-10-02,CeGaT Center for Human Genetics Tuebingen,missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,GRCh37/hg19 2q36.3-37.1(chr2:229968217-231883182),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,GRCh37/hg19 2q36.3-37.1(chr2:228807574-235475892),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,GRCh37/hg19 2q36.1-37.1(chr2:223378640-232061074),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,GRCh37/hg19 2q35-37.3(chr2:219606537-239217703),2022-03-28,"ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories",N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4864C>T (p.Arg1622Trp),2022-12-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",missense variant,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,GRCh37/hg19 2q36.3(chr2:230689315-230810845)x1,2022-02-10,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.5259_5276delinsAAATGATATG (p.Leu1754fs),2022-02-10,"Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center",frameshift variant,"criteria provided, single submitter"
+TRIP12,not provided,Likely pathogenic,NM_001348323.3(TRIP12):c.2996A>T (p.Glu999Val),2022-02-10,"Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center",missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2776G>T (p.Gly926Ter),2021-11-29,"Génétique des Maladies du Développement, Hospices Civils de Lyon",nonsense,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4726del (p.Ser1576fs),2021-09-23,"Institute of Human Genetics, University of Leipzig Medical Center",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4995del (p.Lys1665fs),2021-08-10,GeneDx,frameshift variant,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,NM_001348323.3(TRIP12):c.3779del (p.Arg1260fs),2021-07-01,"Laboratoire Génétique Moléculaire, CHRU TOURS",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4695+1G>A,2025-10-02,CeGaT Center for Human Genetics Tuebingen,splice donor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2378_2379insT (p.Val794fs),2021-06-07,"Pediatric Genetics Clinic, Sheba Medical Center",frameshift variant,no assertion criteria provided
+TRIP12,See cases,Pathogenic,NM_001348323.3(TRIP12):c.5215del (p.Gln1739fs),2021-05-06,"Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli",frameshift variant,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,NM_001348323.3(TRIP12):c.4646_4668del (p.Leu1549fs),2021-05-06,"Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4904G>A (p.Arg1635Gln),2021-05-13,"Genetics and Prenatal Diagnosis Center, The First Affiliated Hospital of Zhengzhou University",missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4904G>A (p.Arg1635Gln),2024-07-17,GeneDx,missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3968+1G>T,2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",splice donor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1857del (p.Glu619fs),2025-02-07,"Labcorp Genetics (formerly Invitae), Labcorp",frameshift variant,"criteria provided, single submitter"
+TRIP12,Neurodevelopmental disorder,Pathogenic,NM_001348323.3(TRIP12):c.2118_2119insT (p.Thr707fs),2021-04-20,"Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.5459dup (p.Ala1821fs),2021-02-21,Baylor Genetics,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4838+2T>G,2021-03-03,Breda Genetics srl,splice donor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.399dup (p.Pro134fs),2021-02-27,"Institute for Genomic Statistics and Bioinformatics, University Hospital Bonn",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.399dup (p.Pro134fs),2025-05-02,"Center of Human Genetics, Hôpital Erasme",frameshift variant,"criteria provided, single submitter"
+TRIP12,not provided,Likely pathogenic,NM_001348323.3(TRIP12):c.1373dup (p.Leu459fs),2020-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",frameshift variant,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,NM_001348323.3(TRIP12):c.3500G>A (p.Trp1167Ter),2020-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",nonsense,"criteria provided, single submitter"
+TRIP12,not provided,Likely pathogenic,NM_001348323.3(TRIP12):c.6181C>T (p.Gln2061Ter),2020-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4415+5G>A,2024-04-20,Ambry Genetics,intron variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3490dup (p.Ile1164fs),2022-12-21,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3490dup (p.Ile1164fs),2024-04-20,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3490dup (p.Ile1164fs),2025-02-12,GeneDx,frameshift variant,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,NM_001348323.3(TRIP12):c.3490dup (p.Ile1164fs),2020-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",frameshift variant,"criteria provided, single submitter"
+TRIP12,see cases,Pathogenic,NM_001348323.3(TRIP12):c.3490dup (p.Ile1164fs),2023-02-21,"Institute of Human Genetics, University Hospital Muenster",frameshift variant,"criteria provided, single submitter"
+TRIP12,Clark-Baraitser syndrome,Pathogenic,NM_001348323.3(TRIP12):c.3490dup (p.Ile1164fs),2025-04-15,"Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.6122C>T (p.Pro2041Leu),2024-11-19,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.6122C>T (p.Pro2041Leu),2020-11-06,"Department of Genetics, Rouen University Hospital, Normandy Center for Genomic and Personalized Medicine",missense variant,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh37/hg19 2q31.2-37.3(chr2:178397959-243007457)x3,2020-10-20,"HudsonAlpha Institute for Biotechnology, HudsonAlpha Institute for Biotechnology",N/A,no assertion criteria provided
+TRIP12,Intellectual disability,Likely pathogenic,NM_001348323.3(TRIP12):c.3586C>T (p.Gln1196Ter),2020-09-11,"Diagnostic Laboratory, Strasbourg University Hospital",nonsense,"criteria provided, single submitter"
+TRIP12,Intellectual disability,Pathogenic,NM_001348323.3(TRIP12):c.1336G>T (p.Glu446Ter),2020-09-11,"Diagnostic Laboratory, Strasbourg University Hospital",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2683C>T (p.Arg895Ter),2025-04-02,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.2683C>T (p.Arg895Ter),2025-07-04,3billion,nonsense,"criteria provided, single submitter"
+TRIP12,Intellectual disability,Likely pathogenic,NM_001348323.3(TRIP12):c.4053_4054del (p.Ala1352fs),2020-09-11,"Diagnostic Laboratory, Strasbourg University Hospital",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4368dup (p.Asn1457fs),2020-11-24,"Centre for Mendelian Genomics, University Medical Centre Ljubljana",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.3808del (p.Ser1270fs),2020-02-25,"Institute of Human Genetics, University of Leipzig Medical Center",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3808del (p.Ser1270fs),2024-10-09,GeneDx,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4076del (p.Gly1359fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1782_1806del (p.Glu595fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.3208C>T (p.Arg1070Ter),2020-04-15,OMIM,nonsense,no assertion criteria provided
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.3208C>T (p.Arg1070Ter),2024-12-25,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3757del (p.Asp1253fs),2019-10-15,GeneDx,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3916C>T (p.Gln1306Ter),2021-09-27,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,GRCh37/hg19 2q36.3(chr2:230626876-230887430)x1,2019-08-28,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4903C>T (p.Arg1635Ter),2019-09-13,"NIHR Bioresource Rare Diseases, University of Cambridge",nonsense,no assertion criteria provided
+TRIP12,not provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4903C>T (p.Arg1635Ter),2020-10-23,"Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4903C>T (p.Arg1635Ter),2021-10-22,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1684C>T (p.Arg562Ter),2020-02-13,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4695+5G>A,2025-10-02,CeGaT Center for Human Genetics Tuebingen,intron variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3166C>T (p.Gln1056Ter),2019-10-22,Mendelics,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.4986T>A (p.Asp1662Glu),2019-10-22,Mendelics,missense variant,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,GRCh37/hg19 2q36.3(chr2:230769636-230792670)x1,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+TRIP12,not provided,Pathogenic,GRCh37/hg19 2q36.3(chr2:230622100-230870340)x1,2018-11-14,Bionano Laboratories,N/A,no assertion criteria provided
+TRIP12,See Cases,Pathogenic,GRCh37/hg19 2q34-37.3(chr2:210779657-239879183)x3,2019-05-08,"Clinical Genomics Laboratory, Laboratory for Precision Diagnostics, University of Washington",N/A,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.5801C>T (p.Pro1934Leu),2018-10-17,"Génétique des Maladies du Développement, Hospices Civils de Lyon",missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Likely pathogenic,NM_001348323.3(TRIP12):c.5801C>T (p.Pro1934Leu),2024-03-03,"Department of Rehabilitation Medicine, Incheon St. Mary’s Hospital, College of Medicine, The Catholic University of Korea",missense variant,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.5801C>T (p.Pro1934Leu),2024-07-18,"Victorian Clinical Genetics Services, Murdoch Childrens Research Institute",missense variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4318C>T (p.Gln1440Ter),2018-10-17,"Génétique des Maladies du Développement, Hospices Civils de Lyon",nonsense,"criteria provided, single submitter"
+TRIP12,not provided,Pathogenic,GRCh37/hg19 2q35-37.3(chr2:219225872-242016876)x3,2018-08-16,Quest Diagnostics Nichols Institute San Juan Capistrano,N/A,no assertion criteria provided
+TRIP12,TRIP12 associated autism with facial dysmorphology,Pathogenic,NM_001348323.3(TRIP12):c.1279del (p.Ser427fs),2018-03-27,"Undiagnosed Diseases Network, NIH",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3984_3985del (p.Gly1329fs),2020-10-09,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.486del (p.Gln162fs),2020-10-09,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.5191_5194del (p.Thr1731fs),2020-10-09,Ambry Genetics,frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1651C>T (p.Arg551Ter),2019-01-29,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1651C>T (p.Arg551Ter),2020-10-12,"Institute of Human Genetics, University of Leipzig Medical Center",nonsense,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.1599+2T>C,2019-01-29,GeneDx,splice donor variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4036C>T (p.Gln1346Ter),2019-01-29,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.3968+1G>A,2020-04-15,OMIM,splice donor variant,no assertion criteria provided
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.3204dup (p.Gly1069fs),2020-04-15,OMIM,frameshift variant,no assertion criteria provided
+TRIP12,Intellectual developmental disorder,Pathogenic,NM_001348323.3(TRIP12):c.3204dup (p.Gly1069fs),2024-11-10,"Al Jalila Children’s Genomics Center, Al Jalila Childrens Speciality Hospital",frameshift variant,"criteria provided, single submitter"
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.3671_3672del (p.Val1223_Ser1224insTer),2020-04-15,OMIM,nonsense,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.3671_3672del (p.Val1223_Ser1224insTer),2021-10-22,GeneDx,nonsense,"criteria provided, single submitter"
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.5009G>A (p.Arg1670Gln),2020-04-15,OMIM,missense variant,no assertion criteria provided
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.3482+1G>A,2020-04-15,OMIM,splice donor variant,no assertion criteria provided
+TRIP12,CLARK-BARAITSER SYNDROME,Pathogenic,NM_001348323.3(TRIP12):c.586_587del (p.Ser196fs),2020-04-15,OMIM,frameshift variant,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.586_587del (p.Ser196fs),2025-09-28,"Juno Genomics, Hangzhou Juno Genomics, Inc",frameshift variant,"criteria provided, single submitter"
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.586_587del (p.Ser196fs),2025-06-18,GeneDx,frameshift variant,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh37/hg19 2p25.3-q37.3(chr2:12771-242783384),2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh37/hg19 2p25.3-q37.3(chr2:12771-242783384)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh37/hg19 2q36.1-37.3(chr2:222077224-239394441)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh37/hg19 2q34-37.3(chr2:213518431-242783384)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Likely pathogenic,GRCh37/hg19 2q36.3-37.1(chr2:230491213-231404389)x1,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,Not Provided,Pathogenic,NM_001348323.3(TRIP12):c.4995+2T>C,2024-10-23,GeneDx,splice donor variant,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q35-37.3(chr2:218101759-242126245)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q32.2-37.3(chr2:189436149-241841232)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q36.3-37.2(chr2:228014149-234976424)x3,2014-06-21,ISCA site 2,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q34-37.3(chr2:210579676-242126245)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q36.3-37.3(chr2:228723579-241404867)x3,2017-09-26,ISCA site 1,N/A,no assertion criteria provided
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q36.3(chr2:229308268-229952405)x3,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q36.3-37.3(chr2:227803148-242086301)x3,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q32.2-37.3(chr2:190310736-241892770)x3,2014-06-21,GeneDx,N/A,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q32.2-37.3(chr2:188818195-242065208)x3,2014-06-21,ISCA site 17,N/A,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q36.3-37.2(chr2:227343278-235339168)x1,2014-06-21,ISCA site 15,N/A,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q36.3-37.3(chr2:226978129-236886599)x1,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"
+TRIP12,See cases,Pathogenic,GRCh38/hg38 2q32.3-37.3(chr2:194898783-236473913)x3,2014-06-21,ISCA site 4,N/A,"criteria provided, single submitter"

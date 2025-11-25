@@ -93,6 +93,15 @@ def filter_data():
     # Save files
     df_rejected.to_csv("rejected_variants.csv", index=False)
     df_keep.to_csv("clinvar_results_filtered.csv", index=False)
+    print(f"Filtered data saved to clinvar_results_filtered.csv ({len(df_keep)} records)")
+
+    # Convert 'Submission Date' to datetime for filtering
+    df_keep['Submission Date'] = pd.to_datetime(df_keep['Submission Date'])
+    
+    # Save final list for 2022-2025 to separate CSV
+    df_final = df_keep[df_keep['Submission Date'].dt.year.isin([2022, 2023, 2024, 2025])]
+    df_final.to_csv("clinvar_filtered_2022_2025_final.csv", index=False)
+    print(f"Final filtered data (2022-2025) saved to clinvar_filtered_2022_2025_final.csv ({len(df_final)} records)")
     
     print(f"Total records: {len(df)}")
     print(f"Kept records: {len(df_keep)}")
