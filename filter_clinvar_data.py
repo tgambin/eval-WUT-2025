@@ -76,9 +76,9 @@ def filter_data():
                     reason = f"Syndrome Phenotype: {kw}"
                     break
         
-        # 3. "See cases" check - often aggregates
-        if not reason and "see cases" in variant.lower():
-             reason = "Aggregated/Generic Variant Entry"
+        # 3. "See cases" check - REMOVED per user request
+        # if not reason and "see cases" in variant.lower():
+        #      reason = "Aggregated/Generic Variant Entry"
 
         if reason:
             row['Rejection Reason'] = reason

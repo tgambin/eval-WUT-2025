@@ -18,7 +18,7 @@ GENES = [
     "PRUNE1", # Alias for PRUNE
     "VARS1",  # Alias for VARS
     "DHX37", "SOHLH1",
-    "FOXF1", "TBX4", "FGF10", "PSMD12", "BPTF", "MEF2C", "TRIP12"
+    "FOXF1", "TBX4", "FGF10", "PSMD12", "TRIP12"
 ]
 
 def esearch(term):
