@@ -1,0 +1,420 @@
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+\geometry{margin=2.5cm}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\title{Raport Wpływu: Użyteczność Kliniczna Zidentyfikowanych Korelacji Genotypowo-Fenotypowych (2022-2025)}
+\date{2 grudnia 2025}
+\renewcommand{\contentsname}{Spis treści}
+\renewcommand{\figurename}{Rycina}
+\renewcommand{\tablename}{Tabela}
+
+\begin{document}
+
+\maketitle
+
+Niniejszy raport przedstawia kliniczny wpływ korelacji genotypowo-fenotypowych zidentyfikowanych przez Tomasza Gambina i współpracowników. W okresie ewaluacji 2022-2025 korelacje te były szeroko wykorzystywane w diagnostyce klinicznej na całym świecie, przyczyniając się bezpośrednio do diagnozy setek pacjentów.
+
+\tableofcontents
+\newpage
+
+\section{Metodologia}
+Dane do niniejszego raportu zostały pobrane z bazy \href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar} (National Center for Biotechnology Information). ClinVar to publicznie dostępne archiwum raportów dotyczących związków między zmiennością genetyczną a fenotypami. Baza ta gromadzi zgłoszenia od laboratoriów diagnostycznych, badaczy i innych podmiotów z całego świata.
+
+Proces filtracji wariantów przedstawiono na Ryc. \ref{fig:flowchart}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\node (start) [startstop] {Pobrane z ClinVar (2195)};
+\node (date) [process, below of=start] {Filtracja daty (2022-2025)};
+\node (size) [process, below of=date] {Filtracja wielkości (>500kb)};
+\node (syndrome) [process, below of=size] {Filtracja fenotypów (Syndromy)};
+\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy (603)};
+
+\node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {Odrzucone: 1353};
+\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: 238};
+\node (rej_syndrome) [process, right of=syndrome, xshift=4cm, fill=gray!30] {Odrzucone: 1};
+
+\draw [arrow] (start) -- (date);
+\draw [arrow] (date) -- (size);
+\draw [arrow] (size) -- (syndrome);
+\draw [arrow] (syndrome) -- (final);
+
+\draw [arrow] (date) -- (rej_date);
+\draw [arrow] (size) -- (rej_size);
+\draw [arrow] (syndrome) -- (rej_syndrome);
+
+\end{tikzpicture}
+\caption{Schemat procesu filtracji wariantów}
+\label{fig:flowchart}
+\end{figure}
+
+Należy podkreślić, że dane w ClinVar stanowią jedynie dolne oszacowanie rzeczywistej liczby diagnoz, ponieważ:
+\begin{itemize}
+    \item Nie wszystkie laboratoria diagnostyczne regularnie zgłaszają swoje wyniki do ClinVar.
+    \item Zgłaszane są głównie nowe, unikalne warianty; powtarzające się warianty mogą nie być ponownie raportowane przez ten sam ośrodek.
+\end{itemize}
+
+Proces automatycznego pobierania i filtrowania danych obejmował następujące kroki:
+
+\begin{enumerate}
+    \item \textbf{Pobieranie danych}: Przy użyciu narzędzi NCBI Entrez E-utilities, dla zdefiniowanej listy genów wyszukano zgłoszenia (submissions) spełniające kryteria:
+    \begin{itemize}
+        \item Status kliniczny: \textit{Pathogenic} lub \textit{Likely Pathogenic}.
+        \item Data zgłoszenia: 1 stycznia 2022 -- obecnie (2025).
+    \end{itemize}
+    \item \textbf{Filtrowanie}: Z surowych danych wykluczono:
+    \begin{itemize}
+        \item Duże zmiany strukturalne (CNV) o wielkości powyżej 500 kpz (500,000 par zasad). Celem tego filtru było wyeliminowanie dużych delecji/duplikacji chromosomalnych (np. zespoły mikrodelecji), które obejmują wiele genów i nie są specyficznym wynikiem dla analizowanego genu (np. delecje 22q11.21, które obejmują gen \textit{TANGO2}, ale są osobną jednostką chorobową).
+        \item Zgłoszenia, których opis fenotypu sugerował znane zespoły mikrodelecji (np. "22q11.2 deletion syndrome").
+    \end{itemize}
+    \item \textbf{Analiza}: Pozostałe zgłoszenia zostały zliczone i przypisane do odpowiednich genów oraz ośrodków zgłaszających. Tabela z ośrodkami została wygenerowana na podstawie pola \textit{Submitter}. Przypisanie kraju do ośrodka wykonano na podstawie mapowania nazw ośrodków.
+\end{enumerate}
+
+Kod źródłowy użyty do wygenerowania tego raportu (pobieranie danych, filtrowanie, generacja wykresów i tabel) jest dostępny w repozytorium: \href{https://github.com/tgambin/eval-WUT-2025}{https://github.com/tgambin/eval-WUT-2025}.
+
+\section{Dlaczego odkrycia były możliwe - wkład PW}
+Odkrycia opisane w niniejszym raporcie były możliwe dzięki zastosowaniu nowatorskich metod obliczeniowych i algorytmicznych, opracowanych lub współtworzonych przez Tomasza Gambina. Kluczowe elementy to:
+
+\begin{itemize}
+    \item \textbf{Potoki do analizy wariantów i integracja danych}: Wdrożenie zintegrowanych systemów analizy danych NGS (WES/WGS) pozwalających na efektywne łączenie informacji o wariantach SNV i CNV.
+    \begin{itemize}
+        \item Gambin T. et al. (2015). Secondary findings and carrier test frequencies in a large multiethnic sample. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-015-0171-1}{10.1186/s13073-015-0171-1}
+    \end{itemize}
+    \item \textbf{Reanalizy danych}: Systematyczne reanalizy "negatywnych" przypadków, które doprowadziły do nowych odkryć, np. w pracach:
+    \begin{itemize}
+        \item Gambin T. et al. (2017). Identification of novel candidate disease genes from de novo exonic copy number variants. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-017-0472-7}{10.1186/s13073-017-0472-7}
+        \item Yamamoto S. et al. (2014). A Drosophila Genetic Resource of Mutants to Study Mechanisms Underlying Human Genetic Diseases. \textit{Cell}. DOI: \href{https://doi.org/10.1016/j.cell.2014.09.002}{10.1016/j.cell.2014.09.002}
+    \end{itemize}
+    \item \textbf{Narzędzia do detekcji CNV (HMZDelFinder)}: Autorskie narzędzie pozwalające na detekcję homo/hemi-zygotycznych CNV w danych eksomowych, co było kluczowe np. dla genu \textit{TANGO2}.
+    \begin{itemize}
+        \item Gambin T. et al. (2016). Homozygous and hemizygous CNV detection from exome sequencing data in a Mendelian disease cohort. \textit{Nucleic Acids Research}. DOI: \href{https://doi.org/10.1093/nar/gkw1237}{10.1093/nar/gkw1237}
+    \end{itemize}
+    \item \textbf{Konstrukcje mikromacierzy}: Projektowanie dedykowanych mikromacierzy (w tym z pokryciem eksonowym, np. V8), które do 2017 roku zostały użyte w badaniu ponad 46,000 przypadków (kluczowe np. dla \textit{FOXF1}).
+    \begin{itemize}
+        \item Gambin T. et al. (2017). Identification of novel candidate disease genes from de novo exonic copy number variants. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-017-0472-7}{10.1186/s13073-017-0472-7}
+    \end{itemize}
+\end{itemize}
+
+\section{Szczegółowy opis genów i publikacji}
+
+\subsection{Nowe Geny Chorobowe}
+Poniższa tabela przedstawia listę nowych genów chorobowych zidentyfikowanych przy udziale Tomasza Gambina. Są to geny, dla których po raz pierwszy opisano związek z chorobą u ludzi.
+
+\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
+\hline
+\textbf{Gen} & \textbf{OMIM} & \textbf{Publikacje} \\
+\hline
+\endhead
+\textit{TANGO2} & \href{https://omim.org/entry/616878}{616878} & Lalani S. et al. (2016). Recurrent Muscle Weakness with Rhabdomyolysis, Metabolic Crises, and Cardiac Arrhythmia Due to Bi-allelic TANGO2 Mutations. \textit{The American Journal of Human Genetics}. DOI: \href{https://doi.org/10.1016/j.ajhg.2015.12.008}{10.1016/j.ajhg.2015.12.008} \newline \newline Gambin T. et al. (2017). Identification of novel candidate disease genes from de novo exonic copy number variants. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-017-0472-7}{10.1186/s13073-017-0472-7} \\
+\hline
+\textit{PSMD12} & \href{https://omim.org/entry/617516}{617516} & Küry S. et al. (2017). De Novo Disruption of the Proteasome Regulatory Subunit PSMD12 Causes a Syndromic Neurodevelopmental Disorder. \textit{The American Journal of Human Genetics}. DOI: \href{https://doi.org/10.1016/j.ajhg.2017.03.003}{10.1016/j.ajhg.2017.03.003} \newline \newline Gambin T. et al. (2017). Identification of novel candidate disease genes from de novo exonic copy number variants. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-017-0472-7}{10.1186/s13073-017-0472-7} \\
+\hline
+\textit{TRIP12} & \href{https://omim.org/entry/604506}{604506} & Zhang J. et al. (2017). Haploinsufficiency of the E3 ubiquitin-protein ligase gene TRIP12 causes intellectual disability with or without autism spectrum disorders, speech delay, and dysmorphic features. \textit{Human Genetics}. DOI: \href{https://doi.org/10.1007/s00439-017-1763-1}{10.1007/s00439-017-1763-1} \newline \newline Gambin T. et al. (2017). Identification of novel candidate disease genes from de novo exonic copy number variants. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-017-0472-7}{10.1186/s13073-017-0472-7} \\
+\hline
+\textit{ANKLE2} & \href{https://omim.org/entry/616062}{616062} & Yamamoto S. et al. (2014). A Drosophila Genetic Resource of Mutants to Study Mechanisms Underlying Human Genetic Diseases. \textit{Cell}. DOI: \href{https://doi.org/10.1016/j.cell.2014.09.002}{10.1016/j.cell.2014.09.002} \\
+\hline
+\textit{TUBGCP2} & \href{https://omim.org/entry/617817}{617817} & Mitani T. et al. (2019). Bi-allelic Pathogenic Variants in TUBGCP2 Cause Microcephaly and Lissencephaly Spectrum Disorders. \textit{The American Journal of Human Genetics}. DOI: \href{https://doi.org/10.1016/j.ajhg.2019.09.017}{10.1016/j.ajhg.2019.09.017} \\
+\hline
+\textit{COPA} & \href{https://omim.org/entry/616414}{616414} & Watkin L. et al. (2015). COPA mutations impair ER-Golgi transport and cause hereditary autoimmune-mediated lung disease and arthritis. \textit{Nature Genetics}. DOI: \href{https://doi.org/10.1038/ng.3279}{10.1038/ng.3279} \\
+\hline
+\textit{DVL1} & \href{https://omim.org/entry/616331}{616331} & White J. et al. (2015). DVL1 Frameshift Mutations Clustering in the Penultimate Exon Cause Autosomal-Dominant Robinow Syndrome. \textit{The American Journal of Human Genetics}. DOI: \href{https://doi.org/10.1016/j.ajhg.2015.02.015}{10.1016/j.ajhg.2015.02.015} \\
+\hline
+\textit{SOHLH1} & \href{https://omim.org/entry/610224}{610224} & Bayram Y. et al. (2015). Homozygous Loss-of-function Mutations in \textit{SOHLH1} in Patients With Nonsyndromic Hypergonadotropic Hypogonadism. \textit{The Journal of Clinical Endocrinology \&amp; Metabolism}. DOI: \href{https://doi.org/10.1210/jc.2015-1150}{10.1210/jc.2015-1150} \\
+\hline
+\textit{MIPEP} & \href{https://omim.org/entry/602241}{602241} & Eldomery M. et al. (2016). MIPEP recessive variants cause a syndrome of left ventricular non-compaction, hypotonia, and infantile death. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-016-0360-6}{10.1186/s13073-016-0360-6} \\
+\hline
+\textit{PRUNE1} & \href{https://omim.org/entry/617413}{617413} & Karaca E. et al. (2015). Genes that Affect Brain Structure and Function Identified by Rare Variant Analyses of Mendelian Neurologic Disease. \textit{Neuron}. DOI: \href{https://doi.org/10.1016/j.neuron.2015.09.048}{10.1016/j.neuron.2015.09.048} \\
+\hline
+\textit{VARS1} & \href{https://omim.org/entry/617802}{617802} & Karaca E. et al. (2015). Genes that Affect Brain Structure and Function Identified by Rare Variant Analyses of Mendelian Neurologic Disease. \textit{Neuron}. DOI: \href{https://doi.org/10.1016/j.neuron.2015.09.048}{10.1016/j.neuron.2015.09.048} \\
+\hline
+\textit{DHX37} & \href{https://omim.org/entry/617362}{617362} & Karaca E. et al. (2015). Genes that Affect Brain Structure and Function Identified by Rare Variant Analyses of Mendelian Neurologic Disease. \textit{Neuron}. DOI: \href{https://doi.org/10.1016/j.neuron.2015.09.048}{10.1016/j.neuron.2015.09.048} \\
+\hline
+\textit{RDH11} & \href{https://omim.org/entry/607849}{607849} & Xie Y. et al. (2014). New syndrome with retinitis pigmentosa is caused by nonsense mutations in retinol dehydrogenase RDH11. \textit{Human Molecular Genetics}. DOI: \href{https://doi.org/10.1093/hmg/ddu291}{10.1093/hmg/ddu291} \\
+\hline
+\end{longtable}
+
+\subsection{Poszerzenie Fenotypu}
+W tej sekcji przedstawiono geny, dla których badania Tomasza Gambina przyczyniły się do istotnego poszerzenia spektrum fenotypowego lub lepszego zrozumienia mechanizmu choroby.
+
+\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
+\hline
+\textbf{Gen} & \textbf{OMIM} & \textbf{Publikacje} \\
+\hline
+\endhead
+\textit{ACTG2} & \href{https://omim.org/entry/619431}{619431} & Wangler M. et al. (2014). Heterozygous De Novo and Inherited Mutations in the Smooth Muscle Actin (ACTG2) Gene Underlie Megacystis-Microcolon-Intestinal Hypoperistalsis Syndrome. \textit{PLoS Genetics}. DOI: \href{https://doi.org/10.1371/journal.pgen.1004258}{10.1371/journal.pgen.1004258} \\
+\hline
+\textit{PGM3} & \href{https://omim.org/entry/172100}{172100} & Stray-Pedersen A. et al. (2014). PGM3 Mutations Cause a Congenital Disorder of Glycosylation with Severe Immunodeficiency and Skeletal Dysplasia. \textit{The American Journal of Human Genetics}. DOI: \href{https://doi.org/10.1016/j.ajhg.2014.05.007}{10.1016/j.ajhg.2014.05.007} \\
+\hline
+\textit{CORO1A} & \href{https://omim.org/entry/605000}{605000} & Stray-Pedersen A. et al. (2014). Compound Heterozygous CORO1A Mutations in Siblings with a Mucocutaneous-Immunodeficiency Syndrome of Epidermodysplasia Verruciformis-HPV, Molluscum Contagiosum and Granulomatous Tuberculoid Leprosy. \textit{Journal of Clinical Immunology}. DOI: \href{https://doi.org/10.1007/s10875-014-0074-8}{10.1007/s10875-014-0074-8} \\
+\hline
+\end{longtable}
+
+\subsection{Rozwój płuc i sekwencje niekodujące}
+Poniższa tabela zawiera geny kluczowe dla rozwoju płuc, w przypadku których badania koncentrowały się na roli sekwencji regulatorowych i niekodujących (CNV, SNV w regionach niekodujących).
+
+\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
+\hline
+\textbf{Gen} & \textbf{OMIM} & \textbf{Publikacje} \\
+\hline
+\endhead
+\textit{FOXF1} & \href{https://omim.org/entry/601089}{601089} & Szafranski P. et al. (2021). Lung‐specific distant enhancer cis regulates expression of \textit{FOXF1} and lncRNA \textit{FENDRR}. \textit{Human Mutation}. DOI: \href{https://doi.org/10.1002/humu.24198}{10.1002/humu.24198} \\
+\hline
+\textit{TBX4} & \href{https://omim.org/entry/601719}{601719} & Karolak J. et al. (2019). Complex Compound Inheritance of Lethal Lung Developmental Disorders Due to Disruption of the TBX-FGF Pathway. \textit{The American Journal of Human Genetics}. DOI: \href{https://doi.org/10.1016/j.ajhg.2018.12.010}{10.1016/j.ajhg.2018.12.010} \\
+\hline
+\textit{FGF10} & \href{https://omim.org/entry/602115}{602115} & Karolak J. et al. (2019). Complex Compound Inheritance of Lethal Lung Developmental Disorders Due to Disruption of the TBX-FGF Pathway. \textit{The American Journal of Human Genetics}. DOI: \href{https://doi.org/10.1016/j.ajhg.2018.12.010}{10.1016/j.ajhg.2018.12.010} \\
+\hline
+\end{longtable}
+
+\section{Statystyki Zgłoszeń i Wpływu Klinicznego}
+Poniższa sekcja przedstawia szczegółowe statystyki dotyczące zgłoszeń wariantów w latach 2022-2025.
+
+\subsection{Zgłoszenia w czasie}
+Rycina \ref{fig:timeline} przedstawia liczbę zgłoszeń w czasie.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{cache/impact_timeline_pl.png}
+    \caption{Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w latach 2022-2025}
+    \label{fig:timeline}
+\end{figure}
+
+\subsection{Zgłoszenia wg genów}
+Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zgłoszeń na poszczególne geny.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{cache/impact_by_gene_pl.png}
+    \caption{Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic wg genu}
+    \label{fig:by_gene}
+\end{figure}
+
+\begin{longtable}{llr}
+\caption{Liczba wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w bazie ClinVar (2022-2025)} \label{tab:stats} \\
+\toprule
+\textbf{Lp.} & \textbf{Gen} & \textbf{Liczba zgłoszeń P/LP (2022-2025)} \\
+\midrule
+\endfirsthead
+\caption[]{Liczba wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w bazie ClinVar (2022-2025) (cd.)} \\
+\toprule
+\textbf{Lp.} & \textbf{Gen} & \textbf{Liczba zgłoszeń P/LP (2022-2025)} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{{Ciąg dalszy na następnej stronie}} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+1 & \textit{PGM3} & 89 \\
+2 & \textit{TANGO2} & 85 \\
+3 & \textit{TRIP12} & 78 \\
+4 & \textit{TBX4} & 61 \\
+5 & \textit{ACTG2} & 54 \\
+6 & \textit{FOXF1} & 36 \\
+7 & \textit{PRUNE1} & 29 \\
+8 & \textit{VARS1} & 25 \\
+9 & \textit{CORO1A} & 23 \\
+10 & \textit{MIPEP} & 20 \\
+11 & \textit{PSMD12} & 18 \\
+12 & \textit{DHX37} & 16 \\
+13 & \textit{FGF10} & 15 \\
+14 & \textit{COPA} & 13 \\
+15 & \textit{ANKLE2} & 12 \\
+16 & \textit{DVL1} & 9 \\
+17 & \textit{RDH11} & 8 \\
+18 & \textit{SOHLH1} & 7 \\
+19 & \textit{TUBGCP2} & 5 \\
+\midrule
+ & \textbf{SUMA} & \textbf{603} \\
+\end{longtable}
+
+\subsection{Ośrodki zgłaszające}
+Poniższa tabela przedstawia listę ośrodków, które zgłosiły warianty patogenne lub prawdopodobnie patogenne dla analizowanych genów w latach 2022-2025.
+
+Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
+\begin{longtable}{lp{10cm}p{3cm}r}
+\caption{Lista ośrodków zgłaszających warianty patogenne (2022-2025)} \label{tab:centers} \\
+\toprule
+\textbf{Lp.} & \textbf{Ośrodek (Submitter)} & \textbf{Kraj} & \textbf{Liczba} \\
+\midrule
+\endfirsthead
+\caption[]{Lista ośrodków zgłaszających warianty patogenne (2022-2025) (cd.)} \\
+\toprule
+\textbf{Lp.} & \textbf{Ośrodek (Submitter)} & \textbf{Kraj} & \textbf{Liczba} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{{Ciąg dalszy na następnej stronie}} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+1 & Labcorp Genetics (formerly Invitae), Labcorp & USA & 157 \\
+2 & GeneDx & USA & 64 \\
+3 & Victorian Clinical Genetics Services, Murdoch Childrens Research Institute & Australia & 26 \\
+4 & Women's Health and Genetics/Laboratory Corporation of America, LabCorp & USA & 24 \\
+5 & Wendy Chung Laboratory, Boston Children's Hospital & USA & 24 \\
+6 & 3billion & South Korea & 19 \\
+7 & CeGaT Center for Human Genetics Tuebingen & Germany & 19 \\
+8 & OMIM & USA & 16 \\
+9 & PreventionGenetics, part of Exact Sciences & USA & 15 \\
+10 & Fulgent Genetics, Fulgent Genetics & USA & 14 \\
+11 & Revvity Omics, Revvity & USA & 13 \\
+12 & Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre & Saudi Arabia & 10 \\
+13 & Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital & USA & 9 \\
+14 & Juno Genomics, Hangzhou Juno Genomics, Inc & China & 8 \\
+15 & Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego & USA & 8 \\
+16 & Laboratorio de Genetica e Diagnostico Molecular, Hospital Israelita Albert Einstein & Brazil & 8 \\
+17 & Broad Center for Mendelian Genomics, Broad Institute of MIT and Harvard & USA & 8 \\
+18 & Ambry Genetics & USA & 8 \\
+19 & MVZ Martinsried, Medicover Genetics & Germany & 7 \\
+20 & Neuberg Centre For Genomic Medicine, NCGM & India & 7 \\
+21 & Laboratory of Genetics, Children's Clinical University Hospital Latvia & Latvia & 6 \\
+22 & New York Genome Center & USA & 6 \\
+23 & Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen & Germany & 5 \\
+24 & MGZ Medical Genetics Center & Germany & 5 \\
+25 & ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories & USA & 5 \\
+26 & Baylor Genetics & USA & 4 \\
+27 & Laboratory of Medical Genetics, National \& Kapodistrian University of Athens & Greece & 4 \\
+28 & Al Jalila Children’s Genomics Center, Al Jalila Childrens Speciality Hospital & UAE & 4 \\
+29 & Laan Lab, Human Genetics Research Group, University of Tartu & Estonia & 4 \\
+30 & Institute of Human Genetics, Clinical Exome/Genome Diagnostics Group, University Hospital Bonn & Germany & 4 \\
+31 & Illumina Laboratory Services, Illumina & USA & 4 \\
+32 & Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center & USA & 4 \\
+33 & Clinical Genetics Laboratory, Skane University Hospital Lund & Sweden & 3 \\
+34 & Molecular Genetics laboratory, Necker Hospital & France & 3 \\
+35 & Institute of Human Genetics, University Hospital Muenster & Germany & 3 \\
+36 & NHS Central \& South Genomic Laboratory Hub & UK & 3 \\
+37 & Genetic Services Laboratory, University of Chicago & USA & 3 \\
+38 & Department of Pathology and Laboratory Medicine, Sinai Health System & Canada & 3 \\
+39 & Pediatrics, Sichuan Provincial Hospital For Women And Children & China & 2 \\
+40 & Medical Genetics Center, Maternal and Child Health Hospital of Hubei Province & China & 2 \\
+41 & Daryl Scott Lab, Baylor College of Medicine & USA & 2 \\
+42 & Institute of Human Genetics, University of Leipzig Medical Center & Germany & 2 \\
+43 & MVZ Medizinische Genetik Mainz & Germany & 2 \\
+44 & Foundation for Research in Genetics and Endocrinology, FRIGE's Institute of Human Genetics & India & 2 \\
+45 & Mendelics & Brazil & 2 \\
+46 & Equipe Genetique des Anomalies du Developpement, Université de Bourgogne & France & 2 \\
+47 & Cambridge Genomics Laboratory, East Genomic Laboratory Hub, NHS Genomic Medicine Service & UK & 2 \\
+48 & Undiagnosed Diseases Network, NIH & USA & 1 \\
+49 & Molecular Genetics Lab, CHRU Brest & France & 1 \\
+50 & Pediatric/Medical Genetics, Ministry of Health, Qatif Central Hospital & Saudi Arabia & 1 \\
+51 & Pittsburgh Clinical Genomics Laboratory, University of Pittsburgh Medical Center & USA & 1 \\
+52 & Suzhou Clinical Center for Rare Diseases in Children, Children's Hospital of Soochow University & China & 1 \\
+53 & Liquid Biopsy and Cancer Interception Group, Pfizer-University of Granada-Junta de Andalucía Centre for Genomics and Oncological Research & Spain & 1 \\
+54 & Service de Génétique Médicale, Centre Hospitalier Universitaire de Nice-Université Côte d'Azur & France & 1 \\
+55 & Provincial Medical Genetics Program of British Columbia, University of British Columbia & Canada & 1 \\
+56 & Quest Diagnostics Nichols Institute San Juan Capistrano & USA & 1 \\
+57 & Suma Genomics & India & 1 \\
+58 & Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes & France & 1 \\
+59 & Stankiewicz Research Laboratory, Baylor College of Medicine & USA & 1 \\
+60 & Neurogenetics Laboratory, American University of Beirut & Lebanon & 1 \\
+61 & Institute of Human Genetics, Univ. Regensburg, Univ. Regensburg & Germany & 1 \\
+62 & Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine & USA & 1 \\
+63 & Clinical Biomedical Laboratory, Shriners Hospital For Children - Canada & Canada & 1 \\
+64 & Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet & Denmark & 1 \\
+65 & DASA & Brazil & 1 \\
+66 & Clinical Neuroscience, Fondazione IRCCS Istituto Neurologico Carlo Besta & Italy & 1 \\
+67 & Clinical Laboratory Sciences Program (CLSP), King Saud bin Abdulaziz University for Health Sciences (KSAU-HS) & Saudi Arabia & 1 \\
+68 & Clinical Genomics Laboratory, Washington University in St. Louis & USA & 1 \\
+69 & Clinical Genetics Laboratory, University Hospital Schleswig-Holstein & Germany & 1 \\
+70 & Centre de Biologie Pathologie Génétique, Centre Hospitalier Universitaire de Lille & France & 1 \\
+71 & Laboratoire de Génétique Moléculaire, CHU Bordeaux & France & 1 \\
+72 & Center of Human Genetics, Hôpital Erasme & Belgium & 1 \\
+73 & Center for Personalized Medicine, Children's Hospital Los Angeles & USA & 1 \\
+74 & Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital & Denmark & 1 \\
+75 & Altamedica, Artemisia & Italy & 1 \\
+76 & AiLife Diagnostics, AiLife Diagnostics & USA & 1 \\
+77 & ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories & USA & 1 \\
+78 & Department of Genetics, Rouen University Hospital, Normandy Center for Genomic and Personalized Medicine & France & 1 \\
+79 & Department of Legal Medicine, University of Toyama & Japan & 1 \\
+80 & Department of Medical Genetics, Tarbiat Modares University & Iran & 1 \\
+81 & Department of Rehabilitation Medicine, Incheon St. Mary’s Hospital, College of Medicine, The Catholic University of Korea & South Korea & 1 \\
+82 & Genetic Lab, Reproductive Biomedicine Research Center, Royan Institute for Reproductive Biomedicine, Royan Institute & Iran & 1 \\
+83 & Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli & Spain & 1 \\
+84 & Genetics and Molecular Pathology, SA Pathology & Australia & 1 \\
+85 & Genomics Facility, Ludwig-Maximilians-Universität München & Germany & 1 \\
+86 & Gharavi Laboratory, Columbia University & USA & 1 \\
+87 & Grupo de Genetica Humana, Facultad de Medicina - Universidad de La Sabana & Colombia & 1 \\
+88 & Hadassah Hebrew University Medical Center & Israel & 1 \\
+89 & Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden & Germany & 1 \\
+90 & Institute of Human Genetics, FAU Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg & Germany & 1 \\
+91 & Institute of Human Genetics, University of Goettingen & Germany & 1 \\
+92 & Institute of Human Genetics, University of Ulm & Germany & 1 \\
+93 & Institute of Immunology and Genetics Kaiserslautern & Germany & 1 \\
+94 & Laboratoire Génétique Moléculaire, CHRU TOURS & France & 1 \\
+95 & Zotz-Klimas Genetics Lab, MVZ Zotz Klimas & Germany & 1 \\
+\midrule
+ & \textbf{SUMA} & & \textbf{603} \\
+\end{longtable}
+
+\subsection{Statystyki krajowe}
+Poniższa tabela przedstawia liczbę zgłoszeń pogrupowaną według kraju pochodzenia ośrodka diagnostycznego.
+
+Tabela \ref{tab:countries} przedstawia statystyki wg kraju.
+\begin{longtable}{llr}
+\caption{Liczba zgłoszeń wg kraju pochodzenia ośrodka} \label{tab:countries} \\
+\toprule
+\textbf{Lp.} & \textbf{Kraj} & \textbf{Liczba zgłoszeń} \\
+\midrule
+\endfirsthead
+\caption[]{Liczba zgłoszeń wg kraju pochodzenia ośrodka (cd.)} \\
+\toprule
+\textbf{Lp.} & \textbf{Kraj} & \textbf{Liczba zgłoszeń} \\
+\midrule
+\endhead
+1 & USA & 398 \\
+2 & Germany & 56 \\
+3 & Australia & 27 \\
+4 & South Korea & 20 \\
+5 & China & 13 \\
+6 & Saudi Arabia & 12 \\
+7 & France & 12 \\
+8 & Brazil & 11 \\
+9 & India & 10 \\
+10 & Latvia & 6 \\
+11 & Canada & 5 \\
+12 & UK & 5 \\
+13 & UAE & 4 \\
+14 & Estonia & 4 \\
+15 & Greece & 4 \\
+16 & Sweden & 3 \\
+17 & Spain & 2 \\
+18 & Italy & 2 \\
+19 & Denmark & 2 \\
+20 & Iran & 2 \\
+21 & Lebanon & 1 \\
+22 & Japan & 1 \\
+23 & Israel & 1 \\
+24 & Belgium & 1 \\
+25 & Colombia & 1 \\
+\bottomrule
+\end{longtable}
+
+\end{document}

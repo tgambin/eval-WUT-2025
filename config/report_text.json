@@ -1,0 +1,29 @@
+{
+    "title": "Raport Wpływu: Użyteczność Kliniczna Zidentyfikowanych Korelacji Genotypowo-Fenotypowych (2022-2025)",
+    "abstract": "Niniejszy raport przedstawia kliniczny wpływ korelacji genotypowo-fenotypowych zidentyfikowanych przez Tomasza Gambina i współpracowników. W okresie ewaluacji 2022-2025 korelacje te były szeroko wykorzystywane w diagnostyce klinicznej na całym świecie, przyczyniając się bezpośrednio do diagnozy setek pacjentów.",
+    "methodology_section": "Metodologia",
+    "methodology_text_1": "Dane do niniejszego raportu zostały pobrane z bazy \\href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar} (National Center for Biotechnology Information). ClinVar to publicznie dostępne archiwum raportów dotyczących związków między zmiennością genetyczną a fenotypami. Baza ta gromadzi zgłoszenia od laboratoriów diagnostycznych, badaczy i innych podmiotów z całego świata.",
+    "methodology_text_2": "Należy podkreślić, że dane w ClinVar stanowią jedynie dolne oszacowanie rzeczywistej liczby diagnoz, ponieważ:",
+    "methodology_bullets": [
+        "Nie wszystkie laboratoria diagnostyczne regularnie zgłaszają swoje wyniki do ClinVar.",
+        "Zgłaszane są głównie nowe, unikalne warianty; powtarzające się warianty mogą nie być ponownie raportowane przez ten sam ośrodek."
+    ],
+    "methodology_process_intro": "Proces automatycznego pobierania i filtrowania danych obejmował następujące kroki:",
+    "contribution_section": "Dlaczego odkrycia były możliwe - wkład PW",
+    "contribution_intro": "Odkrycia opisane w niniejszym raporcie były możliwe dzięki zastosowaniu nowatorskich metod obliczeniowych i algorytmicznych, opracowanych lub współtworzonych przez Tomasza Gambina. Kluczowe elementy to:",
+    "genes_section": "Szczegółowy opis genów i publikacji",
+    "new_genes_subsection": "Nowe Geny Chorobowe",
+    "new_genes_desc": "Poniższa tabela przedstawia listę nowych genów chorobowych zidentyfikowanych przy udziale Tomasza Gambina. Są to geny, dla których po raz pierwszy opisano związek z chorobą u ludzi.",
+    "phenotype_subsection": "Poszerzenie Fenotypu",
+    "phenotype_desc": "W tej sekcji przedstawiono geny, dla których badania Tomasza Gambina przyczyniły się do istotnego poszerzenia spektrum fenotypowego lub lepszego zrozumienia mechanizmu choroby.",
+    "lung_subsection": "Rozwój płuc i sekwencje niekodujące",
+    "lung_desc": "Poniższa tabela zawiera geny kluczowe dla rozwoju płuc, w przypadku których badania koncentrowały się na roli sekwencji regulatorowych i niekodujących (CNV, SNV w regionach niekodujących).",
+    "visual_section": "Dowody Wizualne",
+    "visual_desc": "Poniższe wykresy ilustrują skalę i zasięg oddziaływania klinicznego w latach 2022-2025.",
+    "stats_section": "Statystyki (2022-2025)",
+    "stats_desc": "Tabela przedstawia liczbę wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w bazie ClinVar w okresie 2022-2025.",
+    "centers_section": "Ośrodki Diagnostyczne",
+    "centers_desc": "Poniższa tabela przedstawia listę ośrodków, które zgłosiły warianty patogenne lub prawdopodobnie patogenne dla analizowanych genów w latach 2022-2025.",
+    "country_stats_section": "Statystyki wg Kraju",
+    "country_stats_desc": "Poniższa tabela przedstawia liczbę zgłoszeń pogrupowaną według kraju pochodzenia ośrodka diagnostycznego."
+}

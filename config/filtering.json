@@ -1,0 +1,13 @@
+{
+    "size_limit": 500000,
+    "exclude_keywords": [
+        "22q11.2 deletion syndrome",
+        "DiGeorge syndrome",
+        "Velocardiofacial syndrome",
+        "22q11 deletion",
+        "16p11.2 deletion",
+        "16p11.2 duplication",
+        "microdeletion syndrome",
+        "microduplication syndrome"
+    ]
+}
