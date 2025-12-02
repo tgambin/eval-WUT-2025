@@ -16,9 +16,7 @@ Ten projekt generuje raport PDF podsumowujący wpływ kliniczny odkryć genetycz
     - `config_dois.json`: Lista DOI publikacji.
     - `config_centers.json`: Mapowanie ośrodków na kraje.
     - `gene_omim.json`: Mapowanie genów na ID OMIM.
-- `cache/`: Pliki tymczasowe i pobrane dane (CSV, JSON).
-- `output/`: Wygenerowane raporty (.tex, .pdf).
-- `images/`: Wygenerowane wykresy.
+- `cache/`: Pliki tymczasowe, pobrane dane (CSV, JSON) oraz wygenerowane wykresy.
 
 ## Wymagania
 
@@ -26,31 +24,25 @@ Ten projekt generuje raport PDF podsumowujący wpływ kliniczny odkryć genetycz
 - Biblioteki Python: `pandas`, `matplotlib`, `requests`
 - LaTeX (pdflatex) z pakietami: `tikz`, `longtable`, `hyperref`, `booktabs`, `geometry`, `xcolor`, `float`, `array`, `graphicx`.
 
-## Instrukcja Generowania Raportu
+## Szybki Start
 
-1.  **Pobranie i filtrowanie danych**:
-    ```bash
-    python3 src/fetch_clinvar_data.py
-    python3 src/filter_clinvar_data.py
-    ```
+### Opcja 1: Skrypt (Linux/macOS)
+Wymaga zainstalowanego Pythona 3 oraz LaTeX (pdflatex). Zalecane użycie `uv` do zarządzania zależnościami.
 
-2.  **Generowanie wykresów**:
-    ```bash
-    python3 src/generate_impact_report.py
-    ```
+```bash
+chmod +x run_pipeline.sh
+./run_pipeline.sh
+```
 
-3.  **Generowanie raportu LaTeX**:
-    ```bash
-    python3 src/generate_latex_report.py
-    ```
+### Opcja 2: Docker (Zalecane)
+Gwarantuje poprawne środowisko (w tym pakiety LaTeX dla języka polskiego).
 
-4.  **Kompilacja PDF**:
-    ```bash
-    cd output
-    pdflatex Raport_Wplywu_2022-2025.tex
-    pdflatex Raport_Wplywu_2022-2025.tex  # Uruchom dwukrotnie dla poprawnych referencji
-    ```
+```bash
+docker build -t raport-wplywu .
+docker run -v $(pwd)/output:/app/output raport-wplywu
+```
 
-## Autorzy
+## Autor
 
-Tomasz Gambin i współpracownicy.
+Tomasz Gambin
+

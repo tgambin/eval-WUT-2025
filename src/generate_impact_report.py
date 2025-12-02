@@ -4,12 +4,12 @@ import os
 from datetime import datetime
 
 # Ensure output directory exists
-output_dir = "../cache/"
+output_dir = "cache/"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Load Data
-df = pd.read_csv("../cache/clinvar_filtered_2022_2025_final.csv")
+df = pd.read_csv("cache/clinvar_filtered_2022_2025_final.csv")
 
 # Filter for 2022-2025
 def parse_date(date_str):
@@ -32,7 +32,7 @@ plt.title('Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Lik
 plt.xlabel('Rok')
 plt.ylabel('Liczba zgłoszeń')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-plt.savefig('../cache/impact_timeline_pl.png')
+plt.savefig('cache/impact_timeline_pl.png')
 plt.close()
 
 # 2. Diagnoses by Gene - Polish
@@ -45,7 +45,7 @@ plt.ylabel('Liczba zgłoszeń')
 plt.xticks(rotation=45)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('../cache/impact_by_gene_pl.png')
+plt.savefig('cache/impact_by_gene_pl.png')
 plt.close()
 
-print("Polish visualizations generated in ../cache/")
+print("Polish visualizations generated in cache/")

@@ -190,7 +190,7 @@ def parse_vcv_xml(xml_content, target_gene):
                 }
 
 def main():
-    output_file = "clinvar_results.csv"
+    output_file = "cache/clinvar_results.csv"
     fieldnames = ["Gene", "Phenotype", "Classification", "Variant (HGVS)", "Submission Date", "Submitter", "Consequence", "Review Status"]
     
     print(f"Starting ClinVar extraction for genes: {', '.join(GENES)}")
