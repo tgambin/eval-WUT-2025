@@ -3,6 +3,8 @@ import xml.etree.ElementTree as ET
 import csv
 import time
 import sys
+import os
+import shutil
 from datetime import datetime
 
 # Constants
@@ -87,6 +89,10 @@ def parse_vcv_xml(xml_content, target_gene):
     # Root is ClinVarResult-Set, children are VariationArchive
     for archive in root.findall("VariationArchive"):
         
+        # New Columns
+        variation_id = archive.get("VariationID", "N/A")
+        vcv_accession = archive.get("Accession", "N/A")
+
         # Basic Variant Info from ClassifiedRecord/SimpleAllele
         classified_record = archive.find("ClassifiedRecord")
         if classified_record is None:
@@ -145,9 +151,11 @@ def parse_vcv_xml(xml_content, target_gene):
             
             # Submitter
             submitter = "N/A"
+            submission_accession = "N/A"
             accession_node = assertion.find("ClinVarAccession")
             if accession_node is not None:
                 submitter = accession_node.get("SubmitterName", "N/A")
+                submission_accession = accession_node.get("Accession", "N/A")
             
             # Submission Date
             submission_date = assertion.get("SubmissionDate", "N/A")
@@ -186,12 +194,77 @@ def parse_vcv_xml(xml_content, target_gene):
                     "Submission Date": submission_date,
                     "Submitter": submitter,
                     "Consequence": molecular_consequence,
-                    "Review Status": review_status
+                    "Review Status": review_status,
+                    "Variation ID": variation_id,
+                    "VCV Accession": vcv_accession,
+                    "Submission Accession": submission_accession
                 }
+
+def compare_results(old_file, new_file):
+    """Compare old and new CSV files and print differences."""
+    if not os.path.exists(old_file):
+        print("No previous results to compare with.")
+        return
+
+    print("\n--- Comparison with Previous Run ---")
+    
+    try:
+        # Load data
+        # We use a set of tuples to identify unique rows: (Gene, Variant (HGVS), VCV Accession, Submission Accession)
+        # This combination should be unique enough for a 'submission'
+        
+        def load_keys(filepath):
+            keys = set()
+            with open(filepath, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    # Use VCV Accession as primary key for "Variant" level diff
+                    # Use (VCV Accession, Submission Accession) for "Submission" level diff
+                    # Let's track Variants (VCV)
+                    vcv = row.get("VCV Accession")
+                    gene = row.get("Gene")
+                    if vcv and gene:
+                        keys.add((gene, vcv))
+            return keys
+
+        old_keys = load_keys(old_file)
+        new_keys = load_keys(new_file)
+        
+        added = new_keys - old_keys
+        removed = old_keys - new_keys
+        
+        if not added and not removed:
+            print("No changes in variants (VCV level).")
+        else:
+            if added:
+                print(f"Added Variants ({len(added)}):")
+                for gene, vcv in added:
+                    print(f"  + {gene}: {vcv}")
+            
+            if removed:
+                print(f"Removed Variants ({len(removed)}):")
+                for gene, vcv in removed:
+                    print(f"  - {gene}: {vcv}")
+                    
+    except Exception as e:
+        print(f"Error during comparison: {e}")
+    
+    print("------------------------------------\n")
 
 def main():
     output_file = "cache/clinvar_results.csv"
-    fieldnames = ["Gene", "Phenotype", "Classification", "Variant (HGVS)", "Submission Date", "Submitter", "Consequence", "Review Status"]
+    backup_file = "cache/clinvar_results_backup.csv"
+    
+    # Backup existing file if it exists
+    if os.path.exists(output_file):
+        print(f"Backing up {output_file} to {backup_file}...")
+        shutil.copy2(output_file, backup_file)
+    
+    fieldnames = [
+        "Gene", "Phenotype", "Classification", "Variant (HGVS)", 
+        "Submission Date", "Submitter", "Consequence", "Review Status",
+        "Variation ID", "VCV Accession", "Submission Accession"
+    ]
     
     print(f"Starting ClinVar extraction for genes: {', '.join(GENES)}")
     
@@ -242,6 +315,10 @@ def main():
                 time.sleep(SLEEP_TIME)
                 
     print(f"Done. Results saved to {output_file}")
+    
+    # Compare with backup
+    if os.path.exists(backup_file):
+        compare_results(backup_file, output_file)
 
 if __name__ == "__main__":
     main()

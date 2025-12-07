@@ -87,15 +87,21 @@ def filter_data():
     rejected_rows = []
     
     for _, row in df.iterrows():
-        name = str(row['Variant (HGVS)'])
-        phenotype = str(row['Phenotype'])
-        sub_date = row['Submission Date']
+        # Convert row to dict to make it mutable and preserve all columns
+        row_dict = row.to_dict()
+        
+        name = str(row_dict.get('Variant (HGVS)', ''))
+        phenotype = str(row_dict.get('Phenotype', ''))
+        sub_date = row_dict.get('Submission Date')
         
         reason = None
         size = parse_variant_size(name)
         
+        # Add Estimated Size to the row
+        row_dict['Estimated Size'] = size
+        
         # 0. Filter by Date (2022-2025)
-        if sub_date.year not in [2022, 2023, 2024, 2025]:
+        if hasattr(sub_date, 'year') and sub_date.year not in [2022, 2023, 2024, 2025]:
             reason = f"Date out of range: {sub_date.year}"
         
         # 1. Filter by Size (CNVs > Limit)
@@ -110,14 +116,16 @@ def filter_data():
                     break
             
         if reason:
-            row['Rejection Reason'] = reason
-            row['Estimated Size'] = size
-            rejected_rows.append(row)
+            row_dict['Rejection Reason'] = reason
+            rejected_rows.append(row_dict)
         else:
-            filtered_rows.append(row)
+            filtered_rows.append(row_dict)
         
     df_filtered = pd.DataFrame(filtered_rows)
     df_rejected = pd.DataFrame(rejected_rows)
+    
+    # Ensure columns are in a nice order if possible, but keeping all is key
+    # We just write what we have.
     
     df_filtered.to_csv(output_csv, index=False)
     df_rejected.to_csv(rejected_csv, index=False)
