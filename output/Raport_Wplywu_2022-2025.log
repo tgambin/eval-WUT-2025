@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.7)  7 DEC 2025 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.7)  8 DEC 2025 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -717,181 +717,184 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-[2
+[2]
+Overfull \hbox (2.9489pt too wide) in paragraph at lines 124--125
+\T1/cmr/m/n/10.95 umo»li-wiªy anal-iz¦ du»ych zbiorów danych genomowych, iden-t
+y-fikacj¦ nowych genów chorobowych
+ []
+
+
+
+[3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.101     \end{itemize}
-                       ]
-Overfull \hbox (9.8853pt too wide) in paragraph at lines 128--129
+l.128     \begin{itemize}
+                         ]
+Overfull \hbox (9.8853pt too wide) in paragraph at lines 131--132
 []\T1/cmr/bx/n/10.95 Reanalizy danych\T1/cmr/m/n/10.95 : Sys-tem-aty-czne re-an
 al-izy "negaty-wnych" przy-pad-ków, które do-prowadz-
  []
 
 
-Overfull \hbox (7.85635pt too wide) in paragraph at lines 131--132
+Overfull \hbox (7.85635pt too wide) in paragraph at lines 134--135
 \T1/cmr/m/n/10.95 Mech-a-nisms Un-der-ly-ing Hu-man Ge-netic Dis-eases. \T1/cmr
 /m/it/10.95 Cell\T1/cmr/m/n/10.95 . DOI: [][]10.1016/j.cell.2014.09.002[][] 
  []
 
 
-
-[3]
-Overfull \hbox (9.14717pt too wide) in alignment at lines 148--152
+Overfull \hbox (9.14717pt too wide) in alignment at lines 151--155
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Overfull \hbox (9.14717pt too wide) in alignment at lines 152--179
+Overfull \hbox (9.14717pt too wide) in alignment at lines 155--182
  [] [] [] 
  []
 
 [4]
-Overfull \hbox (9.14717pt too wide) in alignment at lines 184--188
+
+[5]
+Overfull \hbox (9.14717pt too wide) in alignment at lines 187--191
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 193--194
+Underfull \hbox (badness 2662) in paragraph at lines 196--197
 []|\T1/cmr/m/n/10.95 Stray-Pedersen A. et al. (2014). Com-pound Het-erozy-
  []
 
 
-Overfull \hbox (9.14717pt too wide) in alignment at lines 188--195
+Overfull \hbox (9.14717pt too wide) in alignment at lines 191--198
  [] [] [] 
  []
 
 
-Overfull \hbox (9.14717pt too wide) in alignment at lines 200--204
+Overfull \hbox (9.14717pt too wide) in alignment at lines 203--207
  [] [] [] 
  []
 
 
-Overfull \hbox (9.14717pt too wide) in alignment at lines 204--211
+Overfull \hbox (9.14717pt too wide) in alignment at lines 207--214
  [] [] [] 
  []
 
-
-
-[5]
-<cache/impact_timeline_pl.png, id=153, 722.7pt x 433.62pt>
+<cache/impact_timeline_pl.png, id=150, 722.7pt x 433.62pt>
 File: cache/impact_timeline_pl.png Graphic file (type png)
 <use cache/impact_timeline_pl.png>
-Package pdftex.def Info: cache/impact_timeline_pl.png  used on input line 221.
+Package pdftex.def Info: cache/impact_timeline_pl.png  used on input line 224.
 (pdftex.def)             Requested size: 409.71692pt x 245.82944pt.
-<cache/impact_by_gene_pl.png, id=157, 867.24pt x 433.62pt>
+
+
+[6]
+<cache/impact_by_gene_pl.png, id=162, 867.24pt x 433.62pt>
 File: cache/impact_by_gene_pl.png Graphic file (type png)
 <use cache/impact_by_gene_pl.png>
-Package pdftex.def Info: cache/impact_by_gene_pl.png  used on input line 231.
+Package pdftex.def Info: cache/impact_by_gene_pl.png  used on input line 234.
 (pdftex.def)             Requested size: 409.71692pt x 204.86006pt.
 
 
-[6
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.235 
-       <./cache/impact_timeline_pl.png>]
-Overfull \hbox (15.72295pt too wide) in alignment at lines 280--285
- [] [] [] [] 
- []
-
-
-Overfull \hbox (15.72295pt too wide) in alignment at lines 285--290
- [] [] [] [] 
- []
-
-
-Overfull \hbox (15.72295pt too wide) in alignment at lines 290--294
- [] [] [] [] 
- []
-
-
-Overfull \hbox (15.72295pt too wide) in alignment at lines 294--296
- [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 6412) in paragraph at lines 345--345
-[]|\T1/cmr/m/n/10.95 Stankiewicz Re-search Lab-o-ra-tory, Bay-lor Col-lege of
- []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 350--350
-[]|\T1/cmr/m/n/10.95 Liquid Biopsy and Can-cer In-ter-cep-tion Group, Pfizer-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
-[]|\T1/cmr/m/n/10.95 Genomics Fa-cil-ity, Ludwig-Maximilians-Universität
- []
-
-
-Overfull \hbox (15.72295pt too wide) in alignment at lines 296--394
- [] [] [] [] 
- []
-
-
-
-[7
+l.277 \end{longtable}
+                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.394 \end{longtable}
-                      <./cache/impact_by_gene_pl.png>] [8] [9] [10] [11]
+l.277 \end{longtable}
+                      <./cache/impact_timeline_pl.png> <./cache/impact_by_gene_
+pl.png>]
+Overfull \hbox (15.72295pt too wide) in alignment at lines 283--288
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (15.72295pt too wide) in alignment at lines 288--293
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (15.72295pt too wide) in alignment at lines 293--297
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (15.72295pt too wide) in alignment at lines 297--299
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 348--348
+[]|\T1/cmr/m/n/10.95 Stankiewicz Re-search Lab-o-ra-tory, Bay-lor Col-lege of
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 353--353
+[]|\T1/cmr/m/n/10.95 Liquid Biopsy and Can-cer In-ter-cep-tion Group, Pfizer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--384
+[]|\T1/cmr/m/n/10.95 Genomics Fa-cil-ity, Ludwig-Maximilians-Universität
+ []
+
+
+Overfull \hbox (15.72295pt too wide) in alignment at lines 299--397
+ [] [] [] [] 
+ []
+
+[8] [9] [10] [11]
 
 [12] (output/Raport_Wplywu_2022-2025.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Raport_Wplywu_2022-2025.out' has not changed
 .
-(rerunfilecheck)             Checksum: 04739C1FD6A9A7B1D99C2AFAF4B602D0;2088.
+(rerunfilecheck)             Checksum: 16708CAA861BFDF4DB334D44A57182B6;2094.
  ) 
 Here is how much of TeX's memory you used:
- 21169 strings out of 474662
- 405548 string characters out of 5751109
- 840255 words of memory out of 5000000
- 43841 multiletter control sequences out of 15000+600000
+ 21165 strings out of 474662
+ 405444 string characters out of 5751109
+ 840308 words of memory out of 5000000
+ 43837 multiletter control sequences out of 15000+600000
  568922 words of font info for 57 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 84i,8n,87p,699b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,87p,1427b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/tgambin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen
 /ec/ecbx1200.600pk> </Users/tgambin/Library/texlive/2025basic/texmf-var/fonts/p
-k/ljfour/jknappen/ec/ecti1095.600pk> </Users/tgambin/Library/texlive/2025basic/
-texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </Users/tgambin/Library/t
+k/ljfour/jknappen/ec/tcrm1095.600pk> </Users/tgambin/Library/texlive/2025basic/
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </Users/tgambin/Library/t
 exlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </Users/
 tgambin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx144
 0.600pk> </Users/tgambin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jk
 nappen/ec/ecrm1095.600pk> </Users/tgambin/Library/texlive/2025basic/texmf-var/f
 onts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </Users/tgambin/Library/texlive/2025
 basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on output/Raport_Wplywu_2022-2025.pdf (12 pages, 199663 bytes).
+Output written on output/Raport_Wplywu_2022-2025.pdf (12 pages, 202342 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
+ 566 PDF objects out of 1000 (max. 8388607)
  216 compressed objects within 3 object streams
  39 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
