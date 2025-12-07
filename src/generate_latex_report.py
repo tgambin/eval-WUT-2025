@@ -179,11 +179,15 @@ Proces filtracji wariantów przedstawiono na Ryc. \ref{fig:flowchart}.
 
 \begin{enumerate}
     \item \textbf{Pobieranie danych z ClinVar}: 
-    Dane zostały pobrane przy użyciu interfejsu programistycznego NCBI Entrez E-utilities. Dla każdego z analizowanych genów (lista w sekcji 3) wyszukano wszystkie zgłoszenia (submissions) spełniające następujące kryteria wstępne:
+    Dane zostały pobrane przy użyciu interfejsu programistycznego NCBI Entrez E-utilities. Dla każdego z analizowanych genów wyszukano wszystkie zgłoszenia (submissions) spełniające następujące kryteria wstępne:
     \begin{itemize}
         \item Powiązanie z konkretnym genem (GeneID).
         \item Status kliniczny wariantu: \textit{Pathogenic} lub \textit{Likely Pathogenic}.
     \end{itemize}
+    
+    Analizą objęto następujące geny: \textit{TANGO2, PSMD12, TRIP12, ANKLE2, TUBGCP2, COPA, DVL1, SOHLH1, MIPEP, PRUNE1, VARS1, DHX37, RDH11, ACTG2, PGM3, CORO1A, FOXF1, TBX4, FGF10}.
+    
+    \textbf{Uzasadnienie wyboru genów}: Wybrano geny, w przypadku których Tomasz Gambin odegrał kluczową rolę w identyfikacji ich związku z chorobą (nowe geny chorobowe), poszerzeniu spektrum fenotypowego lub zrozumieniu mechanizmów patogennych (np. rola sekwencji niekodujących). Szczegółowy opis roli autora dla każdej grupy genów znajduje się w sekcji 3.
     
     \item \textbf{Filtracja daty (2022-2025)}: 
     Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do """ + current_date_pl + r""". Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.
