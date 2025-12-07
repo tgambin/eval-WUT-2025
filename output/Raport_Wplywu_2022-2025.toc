@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Metodologia}{2}{section.1}%
 \contentsline {section}{\numberline {2}Dlaczego odkrycia były możliwe - wkład PW}{3}{section.2}%
-\contentsline {section}{\numberline {3}Szczegółowy opis genów i publikacji}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Nowe Geny Chorobowe}{3}{subsection.3.1}%
+\contentsline {section}{\numberline {3}Szczegółowy opis genów i publikacji}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Nowe Geny Chorobowe}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Poszerzenie Fenotypu}{5}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Rozwój płuc i sekwencje niekodujące}{5}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Statystyki Zgłoszeń i Wpływu Klinicznego}{6}{section.4}%

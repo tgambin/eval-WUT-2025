@@ -2,6 +2,8 @@ import pandas as pd
 import json
 import os
 import sys
+from datetime import datetime
+import locale
 
 # Add current directory to path to allow importing from sibling modules if needed
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -9,6 +11,14 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from fetch_bibliography import get_bibliography, escape_latex
 
 def generate_latex():
+    # Polish date formatting
+    MONTHS_PL = {
+        1: "stycznia", 2: "lutego", 3: "marca", 4: "kwietnia", 5: "maja", 6: "czerwca",
+        7: "lipca", 8: "sierpnia", 9: "września", 10: "października", 11: "listopada", 12: "grudnia"
+    }
+    now = datetime.now()
+    current_date_pl = f"{now.day} {MONTHS_PL[now.month]} {now.year}"
+
     # Paths
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     config_dir = os.path.join(base_dir, "config")
@@ -107,7 +117,7 @@ def generate_latex():
 }
 
 \title{""" + TEXTS['title'] + r"""}
-\date{2 grudnia 2025}
+\date{""" + current_date_pl + r"""}
 \renewcommand{\contentsname}{Spis treści}
 \renewcommand{\figurename}{Rycina}
 \renewcommand{\tablename}{Tabela}
@@ -168,17 +178,36 @@ Proces filtracji wariantów przedstawiono na Ryc. \ref{fig:flowchart}.
 """ + TEXTS['methodology_process_intro'] + r"""
 
 \begin{enumerate}
-    \item \textbf{Pobieranie danych}: Przy użyciu narzędzi NCBI Entrez E-utilities, dla zdefiniowanej listy genów wyszukano zgłoszenia (submissions) spełniające kryteria:
+    \item \textbf{Pobieranie danych z ClinVar}: 
+    Dane zostały pobrane przy użyciu interfejsu programistycznego NCBI Entrez E-utilities. Dla każdego z analizowanych genów (lista w sekcji 3) wyszukano wszystkie zgłoszenia (submissions) spełniające następujące kryteria wstępne:
     \begin{itemize}
-        \item Status kliniczny: \textit{Pathogenic} lub \textit{Likely Pathogenic}.
-        \item Data zgłoszenia: 1 stycznia 2022 -- obecnie (2025).
+        \item Powiązanie z konkretnym genem (GeneID).
+        \item Status kliniczny wariantu: \textit{Pathogenic} lub \textit{Likely Pathogenic}.
     \end{itemize}
-    \item \textbf{Filtrowanie}: Z surowych danych wykluczono:
+    
+    \item \textbf{Filtracja daty (2022-2025)}: 
+    Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do """ + current_date_pl + r""". Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.
+    
+    \item \textbf{Filtracja wielkości (>500kb)}: 
+    Wyeliminowano warianty typu CNV (Copy Number Variation) o wielkości przekraczającej 500 kpz (500,000 par zasad). 
     \begin{itemize}
-        \item Duże zmiany strukturalne (CNV) o wielkości powyżej 500 kpz (500,000 par zasad). Celem tego filtru było wyeliminowanie dużych delecji/duplikacji chromosomalnych (np. zespoły mikrodelecji), które obejmują wiele genów i nie są specyficznym wynikiem dla analizowanego genu (np. delecje 22q11.21, które obejmują gen \textit{TANGO2}, ale są osobną jednostką chorobową).
-        \item Zgłoszenia, których opis fenotypu sugerował znane zespoły mikrodelecji (np. "22q11.2 deletion syndrome").
+        \item \textbf{Cel}: Usunięcie dużych aberracji chromosomowych (np. dużych delecji obejmujących wiele genów), które nie są specyficzne dla pojedynczego badanego genu.
+        \item \textbf{Przykład}: Delecje w regionie 22q11.21 obejmują gen \textit{TANGO2}, ale stanowią odrębną jednostkę chorobową (zespół DiGeorge'a/VCFS) i nie powinny być przypisywane wyłącznie do defektu genu \textit{TANGO2}.
     \end{itemize}
-    \item \textbf{Analiza}: Pozostałe zgłoszenia zostały zliczone i przypisane do odpowiednich genów oraz ośrodków zgłaszających. Tabela z ośrodkami została wygenerowana na podstawie pola \textit{Submitter}. Przypisanie kraju do ośrodka wykonano na podstawie mapowania nazw ośrodków.
+
+    \item \textbf{Filtracja fenotypów (Syndromy)}: 
+    Dodatkowo przeanalizowano opisy fenotypów (pole \textit{Condition}) w celu usunięcia zgłoszeń, które wprost wskazują na znane zespoły mikrodelecji/mikroduplikacji, a nie na specyficzną chorobę monogenową związaną z danym genem.
+    \begin{itemize}
+        \item Usunięto zgłoszenia zawierające frazy takie jak "deletion syndrome", "duplication syndrome" w kontekście regionów chromosomowych.
+    \end{itemize}
+
+    \item \textbf{Analiza końcowa}: 
+    Zgłoszenia, które przeszły pomyślnie wszystkie etapy filtracji, zostały uznane za "Włączone do analizy". Dla tych zgłoszeń przeprowadzono:
+    \begin{itemize}
+        \item Zliczenie unikalnych wariantów dla każdego genu.
+        \item Identyfikację ośrodków zgłaszających (na podstawie pola \textit{Submitter}).
+        \item Przypisanie kraju pochodzenia ośrodka.
+    \end{itemize}
 \end{enumerate}
 
 Kod źródłowy użyty do wygenerowania tego raportu (pobieranie danych, filtrowanie, generacja wykresów i tabel) jest dostępny w repozytorium: \href{https://github.com/tgambin/eval-WUT-2025}{https://github.com/tgambin/eval-WUT-2025}.

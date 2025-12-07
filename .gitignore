@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+.venv/
+.DS_Store
+cache/clinvar_results_backup.csv
