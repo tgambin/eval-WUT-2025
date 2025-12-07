@@ -1,29 +1,140 @@
 {
-    "title": "Raport Wpływu: Użyteczność Kliniczna Zidentyfikowanych Korelacji Genotypowo-Fenotypowych (2022-2025)",
-    "abstract": "Niniejszy raport przedstawia kliniczny wpływ korelacji genotypowo-fenotypowych zidentyfikowanych przez Tomasza Gambina i współpracowników. W okresie ewaluacji 2022-2025 korelacje te były szeroko wykorzystywane w diagnostyce klinicznej na całym świecie, przyczyniając się bezpośrednio do diagnozy setek pacjentów.",
+    "title": "Raport Wpływu Społecznego Zidentyfikowanych Korelacji Genotypowo-Fenotypowych w Diagnostyce Klinicznej (2022–2025)",
+    "abstract": "Niniejszy raport przedstawia wpływ społeczny korelacji genotypowo-fenotypowych zidentyfikowanych przez Tomasza Gambina z Politechniki Warszawskiej i współpracowników, których identyfikacja była możliwa dzięki rozwijanym przez niego metodom i narzędziom informatycznym do analizy danych genomowych. Przez wpływ społeczny rozumiemy w niniejszym opracowaniu zastosowanie wyników badań w praktyce diagnostyki medycznej oraz wynikające z tego konsekwencje dla pacjentów, ich rodzin i systemu ochrony zdrowia (m.in. skrócenie tzw. diagnostycznej odysei, ukierunkowanie dalszej opieki, dostęp do poradnictwa genetycznego i świadomego planowania rodziny). W okresie ewaluacji 2022–2025 opisane korelacje były szeroko wykorzystywane przez ośrodki diagnostyczne na całym świecie, co potwierdzają zgłoszenia wariantów patogennych i prawdopodobnie patogennych do bazy ClinVar. Ponieważ znaczna część zgłoszeń pochodzi z laboratoriów wykonujących testy kliniczne, liczby zgłoszeń można traktować jako wskaźnik skali wykorzystania opisanych interpretacji w praktyce klinicznej (tj. liczby sytuacji, w których dany wariant był przedmiotem interpretacji diagnostycznej). W wielu przypadkach przekłada się to bezpośrednio na postawienie rozpoznania molekularnego i dalsze decyzje dotyczące opieki nad pacjentem oraz poradnictwa genetycznego.",
     "methodology_section": "Metodologia",
-    "methodology_text_1": "Dane do niniejszego raportu zostały pobrane z bazy \\href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar} (National Center for Biotechnology Information). ClinVar to publicznie dostępne archiwum raportów dotyczących związków między zmiennością genetyczną a fenotypami. Baza ta gromadzi zgłoszenia od laboratoriów diagnostycznych, badaczy i innych podmiotów z całego świata.",
-    "methodology_text_2": "Należy podkreślić, że dane w ClinVar stanowią jedynie dolne oszacowanie rzeczywistej liczby diagnoz, ponieważ:",
+    "methodology_text_1": "Dane do niniejszego raportu zostały pobrane z bazy \\href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar} (National Center for Biotechnology Information). ClinVar to publicznie dostępne archiwum raportów dotyczących związków między zmiennością genetyczną a fenotypami. Baza gromadzi zgłoszenia z laboratoriów diagnostycznych i ośrodków badawczych z całego świata. Kluczowe dla niniejszego raportu jest to, że zgłoszenia wariantów o statusie \\textit{Pathogenic} lub \\textit{Likely Pathogenic} pochodzą w przeważającej mierze z laboratoriów wykonujących testy kliniczne i odzwierciedlają ich interpretację klinicznej istotności danego wariantu w kontekście określonej jednostki chorobowej. Tego typu interpretacje są rutynowo wykorzystywane w praktyce diagnostycznej i poradnictwie genetycznym, a więc pośrednio informują o liczbie sytuacji klinicznych, w których dany wariant był podstawą decyzji diagnostycznych i/lub zaleceń dla pacjentów i ich rodzin.",
+    "methodology_text_2": "Prezentowane w niniejszym raporcie statystyki zgłoszeń w ClinVar traktujemy jako wskaźnik skali wpływu społecznego opisanych badań, rozumianego jako liczba pacjentów i rodzin, u których wyniki badań zostały wykorzystane w praktyce klinicznej. Jednocześnie należy podkreślić, że są to wartości zachowawcze, stanowiące jedynie dolne oszacowanie rzeczywistej liczby diagnoz, ponieważ:",
     "methodology_bullets": [
-        "Nie wszystkie laboratoria diagnostyczne regularnie zgłaszają swoje wyniki do ClinVar.",
-        "Zgłaszane są głównie nowe, unikalne warianty; powtarzające się warianty mogą nie być ponownie raportowane przez ten sam ośrodek."
+        "nie wszystkie laboratoria diagnostyczne regularnie przekazują swoje interpretacje wariantów do bazy ClinVar;",
+        "część laboratoriów zgłasza jedynie pierwsze, unikalne warianty, a kolejne rozpoznania tego samego wariantu u innych pacjentów nie są już raportowane;",
+        "reprezentacja poszczególnych regionów świata w bazie jest nierównomierna."
     ],
-    "methodology_process_intro": "Proces automatycznego pobierania i filtrowania danych obejmował następujące kroki:",
-    "contribution_section": "Dlaczego odkrycia były możliwe - wkład PW",
-    "contribution_intro": "Odkrycia opisane w niniejszym raporcie były możliwe dzięki zastosowaniu nowatorskich metod obliczeniowych i algorytmicznych, opracowanych lub współtworzonych przez Tomasza Gambina. Kluczowe elementy to:",
+    "methodology_process_intro": "Proces automatycznego pobierania i filtrowania danych obejmował następujące kroki (zilustrowane na Ryc. \\ref{fig:flowchart}):",
+    "flowchart_intro": "",
+    "flowchart_caption": "Schemat procesu filtracji wariantów",
+    "flowchart_start": "Pobrane z ClinVar:",
+    "flowchart_date_filter": "Filtracja daty (lata 2022-2025)",
+    "flowchart_size_filter": "Filtracja wielkości (pozostawiono <500kpz)",
+    "flowchart_syndrome_filter": "Filtracja fenotypów (pominięcie syndromów)",
+    "flowchart_final": "Włączone do analizy:",
+    "flowchart_rejected": "Odrzucone:",
+    "methodology_step1_title": "Pobieranie danych z ClinVar",
+    "methodology_step1_desc": "Dane zostały pobrane przy użyciu interfejsu programistycznego NCBI Entrez E-utilities. Dla każdego z analizowanych genów wyszukano wszystkie zgłoszenia (submissions) spełniające następujące kryteria wstępne:",
+    "methodology_step1_criteria": [
+        "Powiązanie z konkretnym genem.",
+        "Status kliniczny wariantu: \\textit{Pathogenic} lub \\textit{Likely Pathogenic}."
+    ],
+    "methodology_step1_genes_intro": "Analizą objęto następujące geny:",
+    "methodology_step1_genes_rationale": "\\textbf{Uzasadnienie wyboru genów}: Wybrano geny, w przypadku których Tomasz Gambin odegrał kluczową rolę w identyfikacji ich związku z chorobą (nowe geny chorobowe), poszerzeniu spektrum fenotypowego lub zrozumieniu mechanizmów patogennych (np. rola sekwencji niekodujących). Szczegółowy opis roli autora dla każdej grupy genów znajduje się w sekcji 3.",
+    "methodology_step2_title": "Filtracja daty (2022-2025)",
+    "methodology_step2_desc": "Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do {current_date}. Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.",
+    "methodology_step3_title": "Filtracja wielkości (>500kb)",
+    "methodology_step3_desc": "Wyeliminowano warianty typu CNV (Copy Number Variation) o wielkości przekraczającej 500 kpz (500,000 par zasad).",
+    "methodology_step3_items": [
+        "\\textbf{Cel}: Usunięcie dużych aberracji chromosomowych (np. dużych delecji obejmujących wiele genów), które nie są specyficzne dla pojedynczego badanego genu.",
+        "\\textbf{Przykład}: Delecje w regionie 22q11.21 obejmują gen \\textit{TANGO2}, ale stanowią odrębną jednostkę chorobową (zespół DiGeorge'a/VCFS) i nie powinny być przypisywane wyłącznie do defektu genu \\textit{TANGO2}."
+    ],
+    "methodology_step4_title": "Filtracja fenotypów (Syndromy)",
+    "methodology_step4_desc": "Dodatkowo przeanalizowano opisy fenotypów (pole \\textit{Condition}) w celu usunięcia zgłoszeń, które wprost wskazują na znane zespoły mikrodelecji/mikroduplikacji, a nie na specyficzną chorobę monogenową związaną z danym genem.",
+    "methodology_step4_items": [
+        "Usunięto zgłoszenia zawierające frazy takie jak \"deletion syndrome\", \"duplication syndrome\" w kontekście regionów chromosomowych."
+    ],
+    "methodology_step5_title": "Analiza końcowa",
+    "methodology_step5_desc": "Zgłoszenia, które przeszły pomyślnie wszystkie etapy filtracji, zostały uznane za \"Włączone do analizy\". Dla tych zgłoszeń przeprowadzono:",
+    "methodology_step5_items": [
+        "Zliczenie unikalnych wariantów dla każdego genu.",
+        "Identyfikację ośrodków zgłaszających (na podstawie pola \\textit{Submitter}).",
+        "Przypisanie kraju pochodzenia ośrodka."
+    ],
+    "methodology_repo_link": "Kod źródłowy użyty do wygenerowania tego raportu (pobieranie danych, filtrowanie, generacja wykresów i tabel) jest dostępny w repozytorium: \\href{https://github.com/tgambin/eval-WUT-2025}{https://github.com/tgambin/eval-WUT-2025}.",
+    "contribution_section": "Dlaczego odkrycia były możliwe – wkład PW",
+    "contribution_intro": "Odkrycia opisane w niniejszym raporcie były możliwe dzięki zastosowaniu nowatorskich metod obliczeniowych i algorytmicznych, opracowanych lub współtworzonych przez Tomasza Gambina w ramach wieloletniej współpracy z wiodącymi ośrodkami klinicznymi. Zastosowane narzędzia umożliwiły analizę dużych zbiorów danych genomowych, identyfikację nowych genów chorobowych oraz doprecyzowanie fenotypów znanych jednostek chorobowych. Dzięki temu rezultaty prac badawczych zostały włączone do rutynowych ścieżek diagnostycznych stosowanych w laboratoriach partnerskich i przełożyły się na realny wpływ społeczny.",
+    "contribution_items": [
+        {
+            "title": "Potoki do analizy wariantów i integracja danych",
+            "desc": "Implementacja oraz wdrożenie systemów analizy danych NGS pozwalających na efektywne analizowanie dużych zbiorów danych genomowych.",
+            "pub_key": "GAMBIN_2015"
+        },
+        {
+            "title": "Reanalizy danych",
+            "desc": "Systematyczne reanalizy \"negatywnych\" przypadków, które doprowadziły do nowych odkryć, np. w pracach:",
+            "pub_keys": [
+                "GAMBIN_2017_NOVEL",
+                "ANKLE2"
+            ]
+        },
+        {
+            "title": "Narzędzia do detekcji CNV (HMZDelFinder)",
+            "desc": "Autorskie narzędzie pozwalające na detekcję homo/hemi-zygotycznych CNV w danych eksomowych, co było kluczowe np. dla genu \\textit{TANGO2}.",
+            "pub_key": "GAMBIN_2017_CNV"
+        },
+        {
+            "title": "Konstrukcje mikromacierzy",
+            "desc": "Projektowanie dedykowanych mikromacierzy (w tym z pokryciem eksonowym, np. V8), które do 2017 roku zostały użyte w badaniu ponad 46,000 przypadków (kluczowe np. dla \\textit{FOXF1}).",
+            "pub_key": "GAMBIN_2017_NOVEL"
+        }
+    ],
     "genes_section": "Szczegółowy opis genów i publikacji",
-    "new_genes_subsection": "Nowe Geny Chorobowe",
-    "new_genes_desc": "Poniższa tabela przedstawia listę nowych genów chorobowych zidentyfikowanych przy udziale Tomasza Gambina. Są to geny, dla których po raz pierwszy opisano związek z chorobą u ludzi. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.",
-    "phenotype_subsection": "Poszerzenie Fenotypu",
-    "phenotype_desc": "W tej sekcji przedstawiono geny, dla których badania Tomasza Gambina przyczyniły się do istotnego poszerzenia spektrum fenotypowego lub lepszego zrozumienia mechanizmu choroby. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.",
+    "new_genes_subsection": "Nowe geny chorobowe",
+    "new_genes_desc": "Poniższa tabela przedstawia listę nowych genów chorobowych zidentyfikowanych przy udziale Tomasza Gambina. Są to geny, dla których po raz pierwszy opisano związek z chorobą u ludzi, co stworzyło podstawę do włączenia tych genów do paneli diagnostycznych oraz do interpretacji wariantów wykrywanych u pacjentów. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.",
+    "new_genes_list": [
+        "TANGO2",
+        "PSMD12",
+        "TRIP12",
+        "ANKLE2",
+        "TUBGCP2",
+        "COPA",
+        "DVL1",
+        "SOHLH1",
+        "MIPEP",
+        "PRUNE1",
+        "VARS1",
+        "DHX37",
+        "RDH11"
+    ],
+    "phenotype_subsection": "Poszerzenie fenotypu",
+    "phenotype_desc": "W tej sekcji przedstawiono geny, dla których badania Tomasza Gambina przyczyniły się do istotnego poszerzenia spektrum fenotypowego lub lepszego zrozumienia mechanizmu choroby. Doprecyzowanie obrazu klinicznego ułatwia rozpoznawanie tych jednostek chorobowych w praktyce, poprawia trafność interpretacji wariantów oraz ogranicza ryzyko błędnego rozpoznania. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.",
+    "phenotype_genes_list": [
+        "ACTG2",
+        "PGM3",
+        "CORO1A"
+    ],
     "lung_subsection": "Rozwój płuc i sekwencje niekodujące",
-    "lung_desc": "Poniższa tabela zawiera geny kluczowe dla rozwoju płuc, w przypadku których badania koncentrowały się na roli sekwencji regulatorowych i niekodujących (CNV, SNV w regionach niekodujących). Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.",
-    "visual_section": "Dowody Wizualne",
-    "visual_desc": "Poniższe wykresy ilustrują skalę i zasięg oddziaływania klinicznego w latach 2022-2025.",
-    "stats_section": "Statystyki (2022-2025)",
-    "stats_desc": "Tabela przedstawia liczbę wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w bazie ClinVar w okresie 2022-2025.",
-    "centers_section": "Ośrodki Diagnostyczne",
-    "centers_desc": "Poniższa tabela przedstawia listę ośrodków, które zgłosiły warianty patogenne lub prawdopodobnie patogenne dla analizowanych genów w latach 2022-2025.",
-    "country_stats_section": "Statystyki wg Kraju",
-    "country_stats_desc": "Poniższa tabela przedstawia liczbę zgłoszeń pogrupowaną według kraju pochodzenia ośrodka diagnostycznego."
+    "lung_desc": "Poniższa tabela zawiera geny kluczowe dla rozwoju płuc, w przypadku których badania koncentrowały się na roli sekwencji regulatorowych i niekodujących (CNV, SNV w regionach niekodujących). Uzyskane wyniki umożliwiły dokładniejsze powiązanie zmian w tych regionach z obrazem klinicznym u pacjentów z ciężkimi zaburzeniami rozwoju płuc, co ma bezpośrednie znaczenie dla diagnostyki prenatalnej i postnatalnej. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.",
+    "lung_genes_list": [
+        "FOXF1",
+        "TBX4",
+        "FGF10"
+    ],
+    "stats_section": "Statystyki zgłoszeń i wpływu społecznego",
+    "stats_intro": "Poniższa sekcja przedstawia szczegółowe statystyki zgłoszeń klinicznych wariantów w latach 2022–2025, które w niniejszym raporcie traktujemy jako wskaźnik skali wpływu społecznego opisanych badań.",
+    "stats_timeline_subsection": "Zgłoszenia w czasie",
+    "stats_timeline_intro": "Rycina \\ref{fig:timeline} przedstawia liczbę zgłoszeń w czasie.",
+    "stats_timeline_caption": "Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w latach 2022-2025",
+    "stats_by_gene_subsection": "Zgłoszenia wg genów",
+    "stats_by_gene_intro": "Rycina \\ref{fig:by_gene} oraz Tabela \\ref{tab:stats} przedstawiają rozkład zgłoszeń na poszczególne geny.",
+    "stats_by_gene_caption": "Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic wg genu",
+    "stats_table_caption": "Liczba wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w bazie ClinVar (2022-2025)",
+    "table_header_lp": "Lp.",
+    "table_header_gene": "Gen",
+    "table_header_count": "Liczba zgłoszeń P/LP (2022-2025)",
+    "table_header_submitter": "Ośrodek (Submitter)",
+    "table_header_country": "Kraj",
+    "table_header_count_short": "Liczba",
+    "table_header_count_submissions": "Liczba zgłoszeń",
+    "table_continued": "Ciąg dalszy na następnej stronie",
+    "table_sum": "SUMA",
+    "table_no_data": "Brak danych",
+    "table_unknown": "Nieznany",
+    "table_no_publications": "Brak publikacji",
+    "table_header_publications": "Publikacje",
+    "table_header_omim": "OMIM",
+    "centers_section": "Ośrodki zgłaszające",
+    "centers_desc": "Poniższa tabela przedstawia listę ośrodków, które zgłosiły warianty patogenne lub prawdopodobnie patogenne dla analizowanych genów w latach 2022–2025. Są to w przeważającej mierze wyspecjalizowane laboratoria diagnostyki medycznej, w których wyniki badań współtworzonych przez Tomasza Gambina zostały włączone do rutynowej praktyki interpretacji wyników badań genomowych.",
+    "centers_table_intro": "Tabela \\ref{tab:centers} prezentuje listę ośrodków diagnostycznych.",
+    "centers_table_caption": "Lista ośrodków zgłaszających warianty patogenne (2022-2025)",
+    "country_stats_section": "Statystyki krajowe",
+    "country_stats_desc": "Poniższa tabela przedstawia liczbę zgłoszeń pogrupowaną według kraju pochodzenia ośrodka diagnostycznego. Zróżnicowanie geograficzne potwierdza, że opisywane korelacje genotypowo-fenotypowe są wykorzystywane w praktyce klinicznej przez ośrodki z wielu regionów świata, co przekłada się na szeroki, międzynarodowy wpływ społeczny.",
+    "country_stats_table_intro": "Tabela \\ref{tab:countries} przedstawia statystyki wg kraju.",
+    "country_stats_table_caption": "Liczba zgłoszeń wg kraju pochodzenia ośrodka"
 }

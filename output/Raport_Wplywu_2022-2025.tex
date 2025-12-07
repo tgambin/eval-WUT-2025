@@ -22,8 +22,8 @@
     urlcolor=blue,
 }
 
-\title{Raport Wpływu: Użyteczność Kliniczna Zidentyfikowanych Korelacji Genotypowo-Fenotypowych (2022-2025)}
-\date{7 grudnia 2025}
+\title{Raport Wpływu Społecznego Zidentyfikowanych Korelacji Genotypowo-Fenotypowych w Diagnostyce Klinicznej (2022–2025)}
+\date{8 grudnia 2025}
 \renewcommand{\contentsname}{Spis treści}
 \renewcommand{\figurename}{Rycina}
 \renewcommand{\tablename}{Tabela}
@@ -32,73 +32,40 @@
 
 \maketitle
 
-Niniejszy raport przedstawia kliniczny wpływ korelacji genotypowo-fenotypowych zidentyfikowanych przez Tomasza Gambina i współpracowników. W okresie ewaluacji 2022-2025 korelacje te były szeroko wykorzystywane w diagnostyce klinicznej na całym świecie, przyczyniając się bezpośrednio do diagnozy setek pacjentów.
+Niniejszy raport przedstawia wpływ społeczny korelacji genotypowo-fenotypowych zidentyfikowanych przez Tomasza Gambina z Politechniki Warszawskiej i współpracowników, których identyfikacja była możliwa dzięki rozwijanym przez niego metodom i narzędziom informatycznym do analizy danych genomowych. Przez wpływ społeczny rozumiemy w niniejszym opracowaniu zastosowanie wyników badań w praktyce diagnostyki medycznej oraz wynikające z tego konsekwencje dla pacjentów, ich rodzin i systemu ochrony zdrowia (m.in. skrócenie tzw. diagnostycznej odysei, ukierunkowanie dalszej opieki, dostęp do poradnictwa genetycznego i świadomego planowania rodziny). W okresie ewaluacji 2022–2025 opisane korelacje były szeroko wykorzystywane przez ośrodki diagnostyczne na całym świecie, co potwierdzają zgłoszenia wariantów patogennych i prawdopodobnie patogennych do bazy ClinVar. Ponieważ znaczna część zgłoszeń pochodzi z laboratoriów wykonujących testy kliniczne, liczby zgłoszeń można traktować jako wskaźnik skali wykorzystania opisanych interpretacji w praktyce klinicznej (tj. liczby sytuacji, w których dany wariant był przedmiotem interpretacji diagnostycznej). W wielu przypadkach przekłada się to bezpośrednio na postawienie rozpoznania molekularnego i dalsze decyzje dotyczące opieki nad pacjentem oraz poradnictwa genetycznego.
 
 \tableofcontents
 \newpage
 
 \section{Metodologia}
-Dane do niniejszego raportu zostały pobrane z bazy \href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar} (National Center for Biotechnology Information). ClinVar to publicznie dostępne archiwum raportów dotyczących związków między zmiennością genetyczną a fenotypami. Baza ta gromadzi zgłoszenia od laboratoriów diagnostycznych, badaczy i innych podmiotów z całego świata.
+Dane do niniejszego raportu zostały pobrane z bazy \href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar} (National Center for Biotechnology Information). ClinVar to publicznie dostępne archiwum raportów dotyczących związków między zmiennością genetyczną a fenotypami. Baza gromadzi zgłoszenia z laboratoriów diagnostycznych i ośrodków badawczych z całego świata. Kluczowe dla niniejszego raportu jest to, że zgłoszenia wariantów o statusie \textit{Pathogenic} lub \textit{Likely Pathogenic} pochodzą w przeważającej mierze z laboratoriów wykonujących testy kliniczne i odzwierciedlają ich interpretację klinicznej istotności danego wariantu w kontekście określonej jednostki chorobowej. Tego typu interpretacje są rutynowo wykorzystywane w praktyce diagnostycznej i poradnictwie genetycznym, a więc pośrednio informują o liczbie sytuacji klinicznych, w których dany wariant był podstawą decyzji diagnostycznych i/lub zaleceń dla pacjentów i ich rodzin.
 
-Proces filtracji wariantów przedstawiono na Ryc. \ref{fig:flowchart}.
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[node distance=2cm]
-\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
-\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
-\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
-\tikzstyle{arrow} = [thick,->,>=stealth]
-
-\node (start) [startstop] {Pobrane z ClinVar (2201)};
-\node (date) [process, below of=start] {Filtracja daty (2022-2025)};
-\node (size) [process, below of=date] {Filtracja wielkości (>500kb)};
-\node (syndrome) [process, below of=size] {Filtracja fenotypów (Syndromy)};
-\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy (609)};
-
-\node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {Odrzucone: 1353};
-\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: 238};
-\node (rej_syndrome) [process, right of=syndrome, xshift=4cm, fill=gray!30] {Odrzucone: 1};
-
-\draw [arrow] (start) -- (date);
-\draw [arrow] (date) -- (size);
-\draw [arrow] (size) -- (syndrome);
-\draw [arrow] (syndrome) -- (final);
-
-\draw [arrow] (date) -- (rej_date);
-\draw [arrow] (size) -- (rej_size);
-\draw [arrow] (syndrome) -- (rej_syndrome);
-
-\end{tikzpicture}
-\caption{Schemat procesu filtracji wariantów}
-\label{fig:flowchart}
-\end{figure}
-
-Należy podkreślić, że dane w ClinVar stanowią jedynie dolne oszacowanie rzeczywistej liczby diagnoz, ponieważ:
+Prezentowane w niniejszym raporcie statystyki zgłoszeń w ClinVar traktujemy jako wskaźnik skali wpływu społecznego opisanych badań, rozumianego jako liczba pacjentów i rodzin, u których wyniki badań zostały wykorzystane w praktyce klinicznej. Jednocześnie należy podkreślić, że są to wartości zachowawcze, stanowiące jedynie dolne oszacowanie rzeczywistej liczby diagnoz, ponieważ:
 \begin{itemize}
-    \item Nie wszystkie laboratoria diagnostyczne regularnie zgłaszają swoje wyniki do ClinVar.
-    \item Zgłaszane są głównie nowe, unikalne warianty; powtarzające się warianty mogą nie być ponownie raportowane przez ten sam ośrodek.
+    \item nie wszystkie laboratoria diagnostyczne regularnie przekazują swoje interpretacje wariantów do bazy ClinVar;
+    \item część laboratoriów zgłasza jedynie pierwsze, unikalne warianty, a kolejne rozpoznania tego samego wariantu u innych pacjentów nie są już raportowane;
+    \item reprezentacja poszczególnych regionów świata w bazie jest nierównomierna.
 \end{itemize}
 
-Proces automatycznego pobierania i filtrowania danych obejmował następujące kroki:
+Proces automatycznego pobierania i filtrowania danych obejmował następujące kroki (zilustrowane na Ryc. \ref{fig:flowchart}):
 
 \begin{enumerate}
     \item \textbf{Pobieranie danych z ClinVar}: 
     Dane zostały pobrane przy użyciu interfejsu programistycznego NCBI Entrez E-utilities. Dla każdego z analizowanych genów wyszukano wszystkie zgłoszenia (submissions) spełniające następujące kryteria wstępne:
     \begin{itemize}
-        \item Powiązanie z konkretnym genem (GeneID).
+        \item Powiązanie z konkretnym genem.
         \item Status kliniczny wariantu: \textit{Pathogenic} lub \textit{Likely Pathogenic}.
     \end{itemize}
     
-    Analizą objęto następujące geny: \textit{TANGO2, PSMD12, TRIP12, ANKLE2, TUBGCP2, COPA, DVL1, SOHLH1, MIPEP, PRUNE1, VARS1, DHX37, RDH11, ACTG2, PGM3, CORO1A, FOXF1, TBX4, FGF10}.
+    Analizą objęto następujące geny: \textit{TANGO2}, \textit{PSMD12}, \textit{TRIP12}, \textit{ANKLE2}, \textit{TUBGCP2}, \textit{COPA}, \textit{DVL1}, \textit{SOHLH1}, \textit{MIPEP}, \textit{PRUNE1}, \textit{VARS1}, \textit{DHX37}, \textit{RDH11}, \textit{ACTG2}, \textit{PGM3}, \textit{CORO1A}, \textit{FOXF1}, \textit{TBX4}, \textit{FGF10}.
     
     \textbf{Uzasadnienie wyboru genów}: Wybrano geny, w przypadku których Tomasz Gambin odegrał kluczową rolę w identyfikacji ich związku z chorobą (nowe geny chorobowe), poszerzeniu spektrum fenotypowego lub zrozumieniu mechanizmów patogennych (np. rola sekwencji niekodujących). Szczegółowy opis roli autora dla każdej grupy genów znajduje się w sekcji 3.
     
     \item \textbf{Filtracja daty (2022-2025)}: 
-    Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do 7 grudnia 2025. Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.
+    Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do 8 grudnia 2025. Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.
     
     \item \textbf{Filtracja wielkości (>500kb)}: 
-    Wyeliminowano warianty typu CNV (Copy Number Variation) o wielkości przekraczającej 500 kpz (500,000 par zasad). 
+    Wyeliminowano warianty typu CNV (Copy Number Variation) o wielkości przekraczającej 500 kpz (500,000 par zasad).
     \begin{itemize}
         \item \textbf{Cel}: Usunięcie dużych aberracji chromosomowych (np. dużych delecji obejmujących wiele genów), które nie są specyficzne dla pojedynczego badanego genu.
         \item \textbf{Przykład}: Delecje w regionie 22q11.21 obejmują gen \textit{TANGO2}, ale stanowią odrębną jednostkę chorobową (zespół DiGeorge'a/VCFS) i nie powinny być przypisywane wyłącznie do defektu genu \textit{TANGO2}.
@@ -119,13 +86,45 @@ Proces automatycznego pobierania i filtrowania danych obejmował następujące k
     \end{itemize}
 \end{enumerate}
 
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\node (start) [startstop] {Pobrane z ClinVar: 2201};
+\node (date) [process, below of=start] {Filtracja daty (lata 2022-2025)};
+\node (size) [process, below of=date] {Filtracja wielkości (pozostawiono <500kpz)};
+\node (syndrome) [process, below of=size] {Filtracja fenotypów (pominięcie syndromów)};
+\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy: 609};
+
+\node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {Odrzucone: 1353};
+\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: 238};
+\node (rej_syndrome) [process, right of=syndrome, xshift=4cm, fill=gray!30] {Odrzucone: 1};
+
+\draw [arrow] (start) -- (date);
+\draw [arrow] (date) -- (size);
+\draw [arrow] (size) -- (syndrome);
+\draw [arrow] (syndrome) -- (final);
+
+\draw [arrow] (date) -- (rej_date);
+\draw [arrow] (size) -- (rej_size);
+\draw [arrow] (syndrome) -- (rej_syndrome);
+
+\end{tikzpicture}
+\caption{Schemat procesu filtracji wariantów}
+\label{fig:flowchart}
+\end{figure}
+
 Kod źródłowy użyty do wygenerowania tego raportu (pobieranie danych, filtrowanie, generacja wykresów i tabel) jest dostępny w repozytorium: \href{https://github.com/tgambin/eval-WUT-2025}{https://github.com/tgambin/eval-WUT-2025}.
 
-\section{Dlaczego odkrycia były możliwe - wkład PW}
-Odkrycia opisane w niniejszym raporcie były możliwe dzięki zastosowaniu nowatorskich metod obliczeniowych i algorytmicznych, opracowanych lub współtworzonych przez Tomasza Gambina. Kluczowe elementy to:
+\section{Dlaczego odkrycia były możliwe – wkład PW}
+Odkrycia opisane w niniejszym raporcie były możliwe dzięki zastosowaniu nowatorskich metod obliczeniowych i algorytmicznych, opracowanych lub współtworzonych przez Tomasza Gambina w ramach wieloletniej współpracy z wiodącymi ośrodkami klinicznymi. Zastosowane narzędzia umożliwiły analizę dużych zbiorów danych genomowych, identyfikację nowych genów chorobowych oraz doprecyzowanie fenotypów znanych jednostek chorobowych. Dzięki temu rezultaty prac badawczych zostały włączone do rutynowych ścieżek diagnostycznych stosowanych w laboratoriach partnerskich i przełożyły się na realny wpływ społeczny.
 
 \begin{itemize}
-    \item \textbf{Potoki do analizy wariantów i integracja danych}: Wdrożenie zintegrowanych systemów analizy danych NGS (WES/WGS) pozwalających na efektywne łączenie informacji o wariantach SNV i CNV.
+    \item \textbf{Potoki do analizy wariantów i integracja danych}: Implementacja oraz wdrożenie systemów analizy danych NGS pozwalających na efektywne analizowanie dużych zbiorów danych genomowych.
     \begin{itemize}
         \item Gambin T. et al. (2015). Secondary findings and carrier test frequencies in a large multiethnic sample. \textit{Genome Medicine}. DOI: \href{https://doi.org/10.1186/s13073-015-0171-1}{10.1186/s13073-015-0171-1}
     \end{itemize}
@@ -146,8 +145,8 @@ Odkrycia opisane w niniejszym raporcie były możliwe dzięki zastosowaniu nowat
 
 \section{Szczegółowy opis genów i publikacji}
 
-\subsection{Nowe Geny Chorobowe}
-Poniższa tabela przedstawia listę nowych genów chorobowych zidentyfikowanych przy udziale Tomasza Gambina. Są to geny, dla których po raz pierwszy opisano związek z chorobą u ludzi. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.
+\subsection{Nowe geny chorobowe}
+Poniższa tabela przedstawia listę nowych genów chorobowych zidentyfikowanych przy udziale Tomasza Gambina. Są to geny, dla których po raz pierwszy opisano związek z chorobą u ludzi, co stworzyło podstawę do włączenia tych genów do paneli diagnostycznych oraz do interpretacji wariantów wykrywanych u pacjentów. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.
 
 \begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
 \hline
@@ -182,8 +181,8 @@ Poniższa tabela przedstawia listę nowych genów chorobowych zidentyfikowanych 
 \hline
 \end{longtable}
 
-\subsection{Poszerzenie Fenotypu}
-W tej sekcji przedstawiono geny, dla których badania Tomasza Gambina przyczyniły się do istotnego poszerzenia spektrum fenotypowego lub lepszego zrozumienia mechanizmu choroby. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.
+\subsection{Poszerzenie fenotypu}
+W tej sekcji przedstawiono geny, dla których badania Tomasza Gambina przyczyniły się do istotnego poszerzenia spektrum fenotypowego lub lepszego zrozumienia mechanizmu choroby. Doprecyzowanie obrazu klinicznego ułatwia rozpoznawanie tych jednostek chorobowych w praktyce, poprawia trafność interpretacji wariantów oraz ogranicza ryzyko błędnego rozpoznania. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.
 
 \begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
 \hline
@@ -199,7 +198,7 @@ W tej sekcji przedstawiono geny, dla których badania Tomasza Gambina przyczyni�
 \end{longtable}
 
 \subsection{Rozwój płuc i sekwencje niekodujące}
-Poniższa tabela zawiera geny kluczowe dla rozwoju płuc, w przypadku których badania koncentrowały się na roli sekwencji regulatorowych i niekodujących (CNV, SNV w regionach niekodujących). Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.
+Poniższa tabela zawiera geny kluczowe dla rozwoju płuc, w przypadku których badania koncentrowały się na roli sekwencji regulatorowych i niekodujących (CNV, SNV w regionach niekodujących). Uzyskane wyniki umożliwiły dokładniejsze powiązanie zmian w tych regionach z obrazem klinicznym u pacjentów z ciężkimi zaburzeniami rozwoju płuc, co ma bezpośrednie znaczenie dla diagnostyki prenatalnej i postnatalnej. Tomasz Gambin jest współautorem wszystkich cytowanych poniżej publikacji.
 
 \begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
 \hline
@@ -214,8 +213,8 @@ Poniższa tabela zawiera geny kluczowe dla rozwoju płuc, w przypadku których b
 \hline
 \end{longtable}
 
-\section{Statystyki Zgłoszeń i Wpływu Klinicznego}
-Poniższa sekcja przedstawia szczegółowe statystyki dotyczące zgłoszeń wariantów w latach 2022-2025.
+\section{Statystyki zgłoszeń i wpływu społecznego}
+Poniższa sekcja przedstawia szczegółowe statystyki zgłoszeń klinicznych wariantów w latach 2022–2025, które w niniejszym raporcie traktujemy jako wskaźnik skali wpływu społecznego opisanych badań.
 
 \subsection{Zgłoszenia w czasie}
 Rycina \ref{fig:timeline} przedstawia liczbę zgłoszeń w czasie.
@@ -278,7 +277,7 @@ Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zg�
 \end{longtable}
 
 \subsection{Ośrodki zgłaszające}
-Poniższa tabela przedstawia listę ośrodków, które zgłosiły warianty patogenne lub prawdopodobnie patogenne dla analizowanych genów w latach 2022-2025.
+Poniższa tabela przedstawia listę ośrodków, które zgłosiły warianty patogenne lub prawdopodobnie patogenne dla analizowanych genów w latach 2022–2025. Są to w przeważającej mierze wyspecjalizowane laboratoria diagnostyki medycznej, w których wyniki badań współtworzonych przez Tomasza Gambina zostały włączone do rutynowej praktyki interpretacji wyników badań genomowych.
 
 Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
 \begin{longtable}{lp{10cm}p{3cm}r}
@@ -398,7 +397,7 @@ Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
 \end{longtable}
 
 \subsection{Statystyki krajowe}
-Poniższa tabela przedstawia liczbę zgłoszeń pogrupowaną według kraju pochodzenia ośrodka diagnostycznego.
+Poniższa tabela przedstawia liczbę zgłoszeń pogrupowaną według kraju pochodzenia ośrodka diagnostycznego. Zróżnicowanie geograficzne potwierdza, że opisywane korelacje genotypowo-fenotypowe są wykorzystywane w praktyce klinicznej przez ośrodki z wielu regionów świata, co przekłada się na szeroki, międzynarodowy wpływ społeczny.
 
 Tabela \ref{tab:countries} przedstawia statystyki wg kraju.
 \begin{longtable}{llr}

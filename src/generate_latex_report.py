@@ -3,7 +3,6 @@ import json
 import os
 import sys
 from datetime import datetime
-import locale
 
 # Add current directory to path to allow importing from sibling modules if needed
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -37,41 +36,10 @@ def generate_latex():
         
     # Fetch Bibliography
     print("Fetching bibliography...")
-    # Pass paths to get_bibliography
     BIBLIOGRAPHY = get_bibliography(
         os.path.join(config_dir, "config_dois.json"), 
         os.path.join(cache_dir, "bibliography_cache.json")
     )
-
-    # Load Data
-    df = pd.read_csv(os.path.join(cache_dir, "clinvar_filtered_2022_2025_final.csv"))
-    
-    # Helper to create table
-    def create_gene_table(genes):
-        # Fixed column widths to prevent header misalignment
-        table = "\\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}\n"
-        table += "\\hline\n"
-        table += "\\textbf{Gen} & \\textbf{OMIM} & \\textbf{Publikacje} \\\\\n"
-        table += "\\hline\n"
-        table += "\\endhead\n"
-        
-        for gene in genes:
-            if gene not in GENE_OMIM: continue
-            omim_id = GENE_OMIM[gene]
-            
-            omim_link = f"\\href{{https://omim.org/entry/{omim_id}}}{{{omim_id}}}"
-            
-            pubs = BIBLIOGRAPHY.get(gene, [])
-            pubs_str = " \\newline \\newline ".join(pubs)
-            
-            # Italicize gene name
-            gene_italic = f"\\textit{{{gene}}}"
-            
-            table += f"{gene_italic} & {omim_link} & {pubs_str} \\\\\n"
-            table += "\\hline\n"
-            
-        table += "\\end{longtable}\n"
-        return table
 
     # Load Data
     df = pd.read_csv(os.path.join(cache_dir, "clinvar_filtered_2022_2025_final.csv"))
@@ -87,11 +55,28 @@ def generate_latex():
     size_rejected = df_rejected[df_rejected['Rejection Reason'].str.contains("Large Genomic Event", na=False)].shape[0]
     syndrome_rejected = df_rejected[df_rejected['Rejection Reason'].str.contains("Syndrome Phenotype", na=False)].shape[0]
     
-    # Verify consistency
-    # Note: If there are other reasons, they might be missed here. 
-    # But our filter script only assigns these 3 reasons.
+    # Helper function to generate gene table
+    def create_gene_table(gene_list):
+        table = "\\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}\n"
+        table += "\\hline\n"
+        table += f"\\textbf{{{TEXTS['table_header_gene']}}} & \\textbf{{{TEXTS['table_header_omim']}}} & \\textbf{{{TEXTS['table_header_publications']}}} \\\\\n"
+        table += "\\hline\n"
+        table += "\\endhead\n"
+        
+        for gene in gene_list:
+            if gene not in GENE_OMIM:
+                continue
+            omim_id = GENE_OMIM[gene]
+            omim_link = f"\\href{{https://omim.org/entry/{omim_id}}}{{{omim_id}}}"
+            pubs = BIBLIOGRAPHY.get(gene, [TEXTS['table_no_publications']])
+            pub_text = " \\newline \\newline ".join(pubs)
+            table += f"\\textit{{{gene}}} & {omim_link} & {pub_text} \\\\\n"
+            table += "\\hline\n"
+            
+        table += "\\end{longtable}\n"
+        return table
     
-    # Generate LaTeX
+    # Generate LaTeX document
     latex_content = r"""
 \documentclass[a4paper,11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -134,7 +119,59 @@ def generate_latex():
 \section{""" + TEXTS['methodology_section'] + r"""}
 """ + TEXTS['methodology_text_1'] + r"""
 
-Proces filtracji wariantów przedstawiono na Ryc. \ref{fig:flowchart}.
+""" + TEXTS['methodology_text_2'] + r"""
+\begin{itemize}
+"""
+    for bullet in TEXTS['methodology_bullets']:
+        latex_content += f"    \\item {bullet}\n"
+    latex_content += r"""\end{itemize}
+
+""" + TEXTS['methodology_process_intro'] + r"""
+
+\begin{enumerate}
+    \item \textbf{""" + TEXTS['methodology_step1_title'] + r"""}: 
+    """ + TEXTS['methodology_step1_desc'] + r"""
+    \begin{itemize}
+"""
+    for criterion in TEXTS['methodology_step1_criteria']:
+        latex_content += f"        \\item {criterion}\n"
+    
+    # Build gene list string
+    gene_list_str = ", ".join([f"\\textit{{{g}}}" for g in TEXTS['new_genes_list'] + TEXTS['phenotype_genes_list'] + TEXTS['lung_genes_list']])
+    
+    latex_content += r"""    \end{itemize}
+    
+    """ + TEXTS['methodology_step1_genes_intro'] + " " + gene_list_str + r""".
+    
+    """ + TEXTS['methodology_step1_genes_rationale'] + r"""
+    
+    \item \textbf{""" + TEXTS['methodology_step2_title'] + r"""}: 
+    """ + TEXTS['methodology_step2_desc'].replace("{current_date}", current_date_pl) + r"""
+    
+    \item \textbf{""" + TEXTS['methodology_step3_title'] + r"""}: 
+    """ + TEXTS['methodology_step3_desc'] + r"""
+    \begin{itemize}
+"""
+    for item in TEXTS['methodology_step3_items']:
+        latex_content += f"        \\item {item}\n"
+    latex_content += r"""    \end{itemize}
+
+    \item \textbf{""" + TEXTS['methodology_step4_title'] + r"""}: 
+    """ + TEXTS['methodology_step4_desc'] + r"""
+    \begin{itemize}
+"""
+    for item in TEXTS['methodology_step4_items']:
+        latex_content += f"        \\item {item}\n"
+    latex_content += r"""    \end{itemize}
+
+    \item \textbf{""" + TEXTS['methodology_step5_title'] + r"""}: 
+    """ + TEXTS['methodology_step5_desc'] + r"""
+    \begin{itemize}
+"""
+    for item in TEXTS['methodology_step5_items']:
+        latex_content += f"        \\item {item}\n"
+    latex_content += r"""    \end{itemize}
+\end{enumerate}
 
 \begin{figure}[H]
 \centering
@@ -144,15 +181,15 @@ Proces filtracji wariantów przedstawiono na Ryc. \ref{fig:flowchart}.
 \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
-\node (start) [startstop] {Pobrane z ClinVar (""" + str(total_count) + r""")};
-\node (date) [process, below of=start] {Filtracja daty (2022-2025)};
-\node (size) [process, below of=date] {Filtracja wielkości (>500kb)};
-\node (syndrome) [process, below of=size] {Filtracja fenotypów (Syndromy)};
-\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy (""" + str(final_count) + r""")};
+\node (start) [startstop] {""" + TEXTS['flowchart_start'] + " " + str(total_count) + r"""};
+\node (date) [process, below of=start] {""" + TEXTS['flowchart_date_filter'] + r"""};
+\node (size) [process, below of=date] {""" + TEXTS['flowchart_size_filter'] + r"""};
+\node (syndrome) [process, below of=size] {""" + TEXTS['flowchart_syndrome_filter'] + r"""};
+\node (final) [startstop, below of=syndrome, fill=green!30] {""" + TEXTS['flowchart_final'] + " " + str(final_count) + r"""};
 
-\node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {Odrzucone: """ + str(date_rejected) + r"""};
-\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: """ + str(size_rejected) + r"""};
-\node (rej_syndrome) [process, right of=syndrome, xshift=4cm, fill=gray!30] {Odrzucone: """ + str(syndrome_rejected) + r"""};
+\node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {""" + TEXTS['flowchart_rejected'] + " " + str(date_rejected) + r"""};
+\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {""" + TEXTS['flowchart_rejected'] + " " + str(size_rejected) + r"""};
+\node (rej_syndrome) [process, right of=syndrome, xshift=4cm, fill=gray!30] {""" + TEXTS['flowchart_rejected'] + " " + str(syndrome_rejected) + r"""};
 
 \draw [arrow] (start) -- (date);
 \draw [arrow] (date) -- (size);
@@ -164,192 +201,91 @@ Proces filtracji wariantów przedstawiono na Ryc. \ref{fig:flowchart}.
 \draw [arrow] (syndrome) -- (rej_syndrome);
 
 \end{tikzpicture}
-\caption{Schemat procesu filtracji wariantów}
+\caption{""" + TEXTS['flowchart_caption'] + r"""}
 \label{fig:flowchart}
 \end{figure}
 
-""" + TEXTS['methodology_text_2'] + r"""
-\begin{itemize}
-"""
-    for bullet in TEXTS['methodology_bullets']:
-        latex_content += f"    \\item {bullet}\n"
-    latex_content += r"""\end{itemize}
+""" + TEXTS['methodology_repo_link'] + r"""
 
-""" + TEXTS['methodology_process_intro'] + r"""
-
-\begin{enumerate}
-    \item \textbf{Pobieranie danych z ClinVar}: 
-    Dane zostały pobrane przy użyciu interfejsu programistycznego NCBI Entrez E-utilities. Dla każdego z analizowanych genów wyszukano wszystkie zgłoszenia (submissions) spełniające następujące kryteria wstępne:
-    \begin{itemize}
-        \item Powiązanie z konkretnym genem (GeneID).
-        \item Status kliniczny wariantu: \textit{Pathogenic} lub \textit{Likely Pathogenic}.
-    \end{itemize}
-    
-    Analizą objęto następujące geny: \textit{TANGO2, PSMD12, TRIP12, ANKLE2, TUBGCP2, COPA, DVL1, SOHLH1, MIPEP, PRUNE1, VARS1, DHX37, RDH11, ACTG2, PGM3, CORO1A, FOXF1, TBX4, FGF10}.
-    
-    \textbf{Uzasadnienie wyboru genów}: Wybrano geny, w przypadku których Tomasz Gambin odegrał kluczową rolę w identyfikacji ich związku z chorobą (nowe geny chorobowe), poszerzeniu spektrum fenotypowego lub zrozumieniu mechanizmów patogennych (np. rola sekwencji niekodujących). Szczegółowy opis roli autora dla każdej grupy genów znajduje się w sekcji 3.
-    
-    \item \textbf{Filtracja daty (2022-2025)}: 
-    Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do """ + current_date_pl + r""". Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.
-    
-    \item \textbf{Filtracja wielkości (>500kb)}: 
-    Wyeliminowano warianty typu CNV (Copy Number Variation) o wielkości przekraczającej 500 kpz (500,000 par zasad). 
-    \begin{itemize}
-        \item \textbf{Cel}: Usunięcie dużych aberracji chromosomowych (np. dużych delecji obejmujących wiele genów), które nie są specyficzne dla pojedynczego badanego genu.
-        \item \textbf{Przykład}: Delecje w regionie 22q11.21 obejmują gen \textit{TANGO2}, ale stanowią odrębną jednostkę chorobową (zespół DiGeorge'a/VCFS) i nie powinny być przypisywane wyłącznie do defektu genu \textit{TANGO2}.
-    \end{itemize}
-
-    \item \textbf{Filtracja fenotypów (Syndromy)}: 
-    Dodatkowo przeanalizowano opisy fenotypów (pole \textit{Condition}) w celu usunięcia zgłoszeń, które wprost wskazują na znane zespoły mikrodelecji/mikroduplikacji, a nie na specyficzną chorobę monogenową związaną z danym genem.
-    \begin{itemize}
-        \item Usunięto zgłoszenia zawierające frazy takie jak "deletion syndrome", "duplication syndrome" w kontekście regionów chromosomowych.
-    \end{itemize}
-
-    \item \textbf{Analiza końcowa}: 
-    Zgłoszenia, które przeszły pomyślnie wszystkie etapy filtracji, zostały uznane za "Włączone do analizy". Dla tych zgłoszeń przeprowadzono:
-    \begin{itemize}
-        \item Zliczenie unikalnych wariantów dla każdego genu.
-        \item Identyfikację ośrodków zgłaszających (na podstawie pola \textit{Submitter}).
-        \item Przypisanie kraju pochodzenia ośrodka.
-    \end{itemize}
-\end{enumerate}
-
-Kod źródłowy użyty do wygenerowania tego raportu (pobieranie danych, filtrowanie, generacja wykresów i tabel) jest dostępny w repozytorium: \href{https://github.com/tgambin/eval-WUT-2025}{https://github.com/tgambin/eval-WUT-2025}.
-"""
-
-    # Get citations for Section 2
-    gambin_2015 = BIBLIOGRAPHY.get('GAMBIN_2015', ["Gambin et al. (2015)"])[0]
-    gambin_2017_novel = BIBLIOGRAPHY.get('GAMBIN_2017_NOVEL', ["Gambin et al. (2017)"])[0]
-    ankle2_pub = BIBLIOGRAPHY.get('ANKLE2', ["Yamamoto et al. (2014)"])[0]
-    gambin_2017_cnv = BIBLIOGRAPHY.get('GAMBIN_2017_CNV', ["Gambin et al. (2017)"])[0]
-    # User requested Gambin 2017 Novel for V8 array point instead of Wiszniewska
-    v8_pub = gambin_2017_novel
-
-    latex_content += r"""
 \section{""" + TEXTS['contribution_section'] + r"""}
 """ + TEXTS['contribution_intro'] + r"""
 
 \begin{itemize}
-    \item \textbf{Potoki do analizy wariantów i integracja danych}: Wdrożenie zintegrowanych systemów analizy danych NGS (WES/WGS) pozwalających na efektywne łączenie informacji o wariantach SNV i CNV.
-    \begin{itemize}
-        \item """ + gambin_2015 + r"""
-    \end{itemize}
-    \item \textbf{Reanalizy danych}: Systematyczne reanalizy "negatywnych" przypadków, które doprowadziły do nowych odkryć, np. w pracach:
-    \begin{itemize}
-        \item """ + gambin_2017_novel + r"""
-        \item """ + ankle2_pub + r"""
-    \end{itemize}
-    \item \textbf{Narzędzia do detekcji CNV (HMZDelFinder)}: Autorskie narzędzie pozwalające na detekcję homo/hemi-zygotycznych CNV w danych eksomowych, co było kluczowe np. dla genu \textit{TANGO2}.
-    \begin{itemize}
-        \item """ + gambin_2017_cnv + r"""
-    \end{itemize}
-    \item \textbf{Konstrukcje mikromacierzy}: Projektowanie dedykowanych mikromacierzy (w tym z pokryciem eksonowym, np. V8), które do 2017 roku zostały użyte w badaniu ponad 46,000 przypadków (kluczowe np. dla \textit{FOXF1}).
-    \begin{itemize}
-        \item """ + v8_pub + r"""
-    \end{itemize}
-\end{itemize}
+"""
+    # Generate contribution items from config
+    for item in TEXTS['contribution_items']:
+        latex_content += f"    \\item \\textbf{{{item['title']}}}: {item['desc']}\n"
+        latex_content += "    \\begin{itemize}\n"
+        if 'pub_key' in item:
+            pub = BIBLIOGRAPHY.get(item['pub_key'], [f"{item['pub_key']}"])[0]
+            latex_content += f"        \\item {pub}\n"
+        elif 'pub_keys' in item:
+            for pk in item['pub_keys']:
+                pub = BIBLIOGRAPHY.get(pk, [f"{pk}"])[0]
+                latex_content += f"        \\item {pub}\n"
+        latex_content += "    \\end{itemize}\n"
+    
+    latex_content += r"""\end{itemize}
 
 \section{""" + TEXTS['genes_section'] + r"""}
 
 \subsection{""" + TEXTS['new_genes_subsection'] + r"""}
 """ + TEXTS['new_genes_desc'] + r"""
 
-\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
-\hline
-\textbf{Gen} & \textbf{OMIM} & \textbf{Publikacje} \\
-\hline
-\endhead
 """
-    # New Genes Table
-    new_genes = ["TANGO2", "PSMD12", "TRIP12", "ANKLE2", "TUBGCP2", "COPA", "DVL1", "SOHLH1", "MIPEP", "PRUNE1", "VARS1", "DHX37", "RDH11"]
-    for gene, omim_id in GENE_OMIM.items():
-        if gene in new_genes:
-            omim_link = f"\\href{{https://omim.org/entry/{omim_id}}}{{{omim_id}}}"
-            pubs = BIBLIOGRAPHY.get(gene, ["Brak publikacji"])
-            pub_text = " \\newline \\newline ".join(pubs)
-            latex_content += f"\\textit{{{gene}}} & {omim_link} & {pub_text} \\\\\n"
-            latex_content += "\\hline\n"
-            
-    latex_content += r"""\end{longtable}
-
+    latex_content += create_gene_table(TEXTS['new_genes_list'])
+    
+    latex_content += r"""
 \subsection{""" + TEXTS['phenotype_subsection'] + r"""}
 """ + TEXTS['phenotype_desc'] + r"""
 
-\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
-\hline
-\textbf{Gen} & \textbf{OMIM} & \textbf{Publikacje} \\
-\hline
-\endhead
 """
-    # Phenotype Genes Table
-    pheno_genes = ["ACTG2", "PGM3", "CORO1A"]
-    for gene, omim_id in GENE_OMIM.items():
-        if gene in pheno_genes:
-            omim_link = f"\\href{{https://omim.org/entry/{omim_id}}}{{{omim_id}}}"
-            pubs = BIBLIOGRAPHY.get(gene, ["Brak publikacji"])
-            pub_text = " \\newline \\newline ".join(pubs)
-            latex_content += f"\\textit{{{gene}}} & {omim_link} & {pub_text} \\\\\n"
-            latex_content += "\\hline\n"
+    latex_content += create_gene_table(TEXTS['phenotype_genes_list'])
 
-    latex_content += r"""\end{longtable}
-
+    latex_content += r"""
 \subsection{""" + TEXTS['lung_subsection'] + r"""}
 """ + TEXTS['lung_desc'] + r"""
 
-\begin{longtable}{|p{2cm}|p{2cm}|p{11cm}|}
-\hline
-\textbf{Gen} & \textbf{OMIM} & \textbf{Publikacje} \\
-\hline
-\endhead
 """
-    # Lung Genes Table
-    lung_genes = ["FOXF1", "TBX4", "FGF10"]
-    for gene, omim_id in GENE_OMIM.items():
-        if gene in lung_genes:
-            omim_link = f"\\href{{https://omim.org/entry/{omim_id}}}{{{omim_id}}}"
-            pubs = BIBLIOGRAPHY.get(gene, ["Brak publikacji"])
-            pub_text = " \\newline \\newline ".join(pubs)
-            latex_content += f"\\textit{{{gene}}} & {omim_link} & {pub_text} \\\\\n"
-            latex_content += "\\hline\n"
+    latex_content += create_gene_table(TEXTS['lung_genes_list'])
 
-    latex_content += r"""\end{longtable}
+    latex_content += r"""
+\section{""" + TEXTS['stats_section'] + r"""}
+""" + TEXTS['stats_intro'] + r"""
 
-\section{Statystyki Zgłoszeń i Wpływu Klinicznego}
-Poniższa sekcja przedstawia szczegółowe statystyki dotyczące zgłoszeń wariantów w latach 2022-2025.
-
-\subsection{Zgłoszenia w czasie}
-Rycina \ref{fig:timeline} przedstawia liczbę zgłoszeń w czasie.
+\subsection{""" + TEXTS['stats_timeline_subsection'] + r"""}
+""" + TEXTS['stats_timeline_intro'] + r"""
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{cache/impact_timeline_pl.png}
-    \caption{Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w latach 2022-2025}
+    \caption{""" + TEXTS['stats_timeline_caption'] + r"""}
     \label{fig:timeline}
 \end{figure}
 
-\subsection{Zgłoszenia wg genów}
-Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zgłoszeń na poszczególne geny.
+\subsection{""" + TEXTS['stats_by_gene_subsection'] + r"""}
+""" + TEXTS['stats_by_gene_intro'] + r"""
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{cache/impact_by_gene_pl.png}
-    \caption{Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic wg genu}
+    \caption{""" + TEXTS['stats_by_gene_caption'] + r"""}
     \label{fig:by_gene}
 \end{figure}
 
 \begin{longtable}{llr}
-\caption{Liczba wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w bazie ClinVar (2022-2025)} \label{tab:stats} \\
+\caption{""" + TEXTS['stats_table_caption'] + r"""} \label{tab:stats} \\
 \toprule
-\textbf{Lp.} & \textbf{Gen} & \textbf{Liczba zgłoszeń P/LP (2022-2025)} \\
+\textbf{""" + TEXTS['table_header_lp'] + r"""} & \textbf{""" + TEXTS['table_header_gene'] + r"""} & \textbf{""" + TEXTS['table_header_count'] + r"""} \\
 \midrule
 \endfirsthead
-\caption[]{Liczba wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w bazie ClinVar (2022-2025) (cd.)} \\
+\caption[]{""" + TEXTS['stats_table_caption'] + r""" (cd.)} \\
 \toprule
-\textbf{Lp.} & \textbf{Gen} & \textbf{Liczba zgłoszeń P/LP (2022-2025)} \\
+\textbf{""" + TEXTS['table_header_lp'] + r"""} & \textbf{""" + TEXTS['table_header_gene'] + r"""} & \textbf{""" + TEXTS['table_header_count'] + r"""} \\
 \midrule
 \endhead
 \midrule
-\multicolumn{3}{r}{{Ciąg dalszy na następnej stronie}} \\
+\multicolumn{3}{r}{{""" + TEXTS['table_continued'] + r"""}} \\
 \midrule
 \endfoot
 \bottomrule
@@ -359,7 +295,6 @@ Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zg�
     # Stats Table - Sorted by Count Descending
     gene_counts = df['Gene'].value_counts().reset_index()
     gene_counts.columns = ['Gene', 'Count']
-    # Filter to only include genes in our list (though df should already be filtered, good to be safe)
     gene_counts = gene_counts[gene_counts['Gene'].isin(GENE_OMIM.keys())]
     
     total_variants = 0
@@ -372,39 +307,39 @@ Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zg�
         idx += 1
         
     latex_content += "\\midrule\n"
-    latex_content += f" & \\textbf{{SUMA}} & \\textbf{{{total_variants}}} \\\\\n"
+    latex_content += f" & \\textbf{{{TEXTS['table_sum']}}} & \\textbf{{{total_variants}}} \\\\\n"
     latex_content += "\\end{longtable}\n"
 
     latex_content += r"""
-\subsection{Ośrodki zgłaszające}
+\subsection{""" + TEXTS['centers_section'] + r"""}
 """ + TEXTS['centers_desc'] + r"""
 
-Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
+""" + TEXTS['centers_table_intro'] + r"""
 """
     
     # Fill missing submitters
-    df['Submitter'] = df['Submitter'].fillna("Brak danych")
-    df.loc[df['Submitter'] == 'N/A', 'Submitter'] = "Brak danych"
+    df['Submitter'] = df['Submitter'].fillna(TEXTS['table_no_data'])
+    df.loc[df['Submitter'] == 'N/A', 'Submitter'] = TEXTS['table_no_data']
     
     # Map Countries
-    df['Country'] = df['Submitter'].map(CENTER_MAP).fillna("Nieznany")
+    df['Country'] = df['Submitter'].map(CENTER_MAP).fillna(TEXTS['table_unknown'])
     
     center_counts = df.groupby(['Submitter', 'Country']).size().reset_index(name='Count')
     center_counts = center_counts.sort_values('Count', ascending=False)
     
     latex_content += "\\begin{longtable}{lp{10cm}p{3cm}r}\n"
-    latex_content += "\\caption{Lista ośrodków zgłaszających warianty patogenne (2022-2025)} \\label{tab:centers} \\\\\n"
+    latex_content += f"\\caption{{{TEXTS['centers_table_caption']}}} \\label{{tab:centers}} \\\\\n"
     latex_content += "\\toprule\n"
-    latex_content += "\\textbf{Lp.} & \\textbf{Ośrodek (Submitter)} & \\textbf{Kraj} & \\textbf{Liczba} \\\\\n"
+    latex_content += f"\\textbf{{{TEXTS['table_header_lp']}}} & \\textbf{{{TEXTS['table_header_submitter']}}} & \\textbf{{{TEXTS['table_header_country']}}} & \\textbf{{{TEXTS['table_header_count_short']}}} \\\\\n"
     latex_content += "\\midrule\n"
     latex_content += "\\endfirsthead\n"
-    latex_content += "\\caption[]{Lista ośrodków zgłaszających warianty patogenne (2022-2025) (cd.)} \\\\\n"
+    latex_content += f"\\caption[]{{{TEXTS['centers_table_caption']} (cd.)}} \\\\\n"
     latex_content += "\\toprule\n"
-    latex_content += "\\textbf{Lp.} & \\textbf{Ośrodek (Submitter)} & \\textbf{Kraj} & \\textbf{Liczba} \\\\\n"
+    latex_content += f"\\textbf{{{TEXTS['table_header_lp']}}} & \\textbf{{{TEXTS['table_header_submitter']}}} & \\textbf{{{TEXTS['table_header_country']}}} & \\textbf{{{TEXTS['table_header_count_short']}}} \\\\\n"
     latex_content += "\\midrule\n"
     latex_content += "\\endhead\n"
     latex_content += "\\midrule\n"
-    latex_content += "\\multicolumn{4}{r}{{Ciąg dalszy na następnej stronie}} \\\\\n"
+    latex_content += f"\\multicolumn{{4}}{{r}}{{{{{TEXTS['table_continued']}}}}} \\\\\n"
     latex_content += "\\midrule\n"
     latex_content += "\\endfoot\n"
     latex_content += "\\bottomrule\n"
@@ -421,27 +356,27 @@ Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
         idx += 1
         
     latex_content += "\\midrule\n"
-    latex_content += f" & \\textbf{{SUMA}} & & \\textbf{{{center_total}}} \\\\\n"
+    latex_content += f" & \\textbf{{{TEXTS['table_sum']}}} & & \\textbf{{{center_total}}} \\\\\n"
     latex_content += "\\end{longtable}\n"
 
     latex_content += r"""
-\subsection{Statystyki krajowe}
+\subsection{""" + TEXTS['country_stats_section'] + r"""}
 """ + TEXTS['country_stats_desc'] + r"""
 
-Tabela \ref{tab:countries} przedstawia statystyki wg kraju.
+""" + TEXTS['country_stats_table_intro'] + r"""
 """
     country_counts = df.groupby('Country').size().reset_index(name='Count')
     country_counts = country_counts.sort_values('Count', ascending=False)
     
     latex_content += "\\begin{longtable}{llr}\n"
-    latex_content += "\\caption{Liczba zgłoszeń wg kraju pochodzenia ośrodka} \\label{tab:countries} \\\\\n"
+    latex_content += f"\\caption{{{TEXTS['country_stats_table_caption']}}} \\label{{tab:countries}} \\\\\n"
     latex_content += "\\toprule\n"
-    latex_content += "\\textbf{Lp.} & \\textbf{Kraj} & \\textbf{Liczba zgłoszeń} \\\\\n"
+    latex_content += f"\\textbf{{{TEXTS['table_header_lp']}}} & \\textbf{{{TEXTS['table_header_country']}}} & \\textbf{{{TEXTS['table_header_count_submissions']}}} \\\\\n"
     latex_content += "\\midrule\n"
     latex_content += "\\endfirsthead\n"
-    latex_content += "\\caption[]{Liczba zgłoszeń wg kraju pochodzenia ośrodka (cd.)} \\\\\n"
+    latex_content += f"\\caption[]{{{TEXTS['country_stats_table_caption']} (cd.)}} \\\\\n"
     latex_content += "\\toprule\n"
-    latex_content += "\\textbf{Lp.} & \\textbf{Kraj} & \\textbf{Liczba zgłoszeń} \\\\\n"
+    latex_content += f"\\textbf{{{TEXTS['table_header_lp']}}} & \\textbf{{{TEXTS['table_header_country']}}} & \\textbf{{{TEXTS['table_header_count_submissions']}}} \\\\\n"
     latex_content += "\\midrule\n"
     latex_content += "\\endhead\n"
     
