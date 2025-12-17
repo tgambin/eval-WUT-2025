@@ -26,15 +26,15 @@
     ],
     "methodology_step1_genes_intro": "Analizą objęto następujące geny:",
     "methodology_step1_genes_rationale": "\\textbf{Uzasadnienie wyboru genów}: Wybrano geny, w przypadku których Tomasz Gambin odegrał kluczową rolę w identyfikacji ich związku z chorobą (nowe geny chorobowe), poszerzeniu spektrum fenotypowego lub zrozumieniu mechanizmów patogennych (np. rola sekwencji niekodujących). Szczegółowy opis roli autora dla każdej grupy genów znajduje się w sekcji 3.",
-    "methodology_step2_title": "Filtracja daty (2022-2025)",
+    "methodology_step2_title": "Filtracja daty",
     "methodology_step2_desc": "Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do {current_date}. Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.",
-    "methodology_step3_title": "Filtracja wielkości (>500kb)",
+    "methodology_step3_title": "Filtracja wielkości",
     "methodology_step3_desc": "Wyeliminowano warianty typu CNV (Copy Number Variation) o wielkości przekraczającej 500 kpz (500,000 par zasad).",
     "methodology_step3_items": [
         "\\textbf{Cel}: Usunięcie dużych aberracji chromosomowych (np. dużych delecji obejmujących wiele genów), które nie są specyficzne dla pojedynczego badanego genu.",
         "\\textbf{Przykład}: Delecje w regionie 22q11.21 obejmują gen \\textit{TANGO2}, ale stanowią odrębną jednostkę chorobową (zespół DiGeorge'a/VCFS) i nie powinny być przypisywane wyłącznie do defektu genu \\textit{TANGO2}."
     ],
-    "methodology_step4_title": "Filtracja fenotypów (Syndromy)",
+    "methodology_step4_title": "Filtracja fenotypów",
     "methodology_step4_desc": "Dodatkowo przeanalizowano opisy fenotypów (pole \\textit{Condition}) w celu usunięcia zgłoszeń, które wprost wskazują na znane zespoły mikrodelecji/mikroduplikacji, a nie na specyficzną chorobę monogenową związaną z danym genem.",
     "methodology_step4_items": [
         "Usunięto zgłoszenia zawierające frazy takie jak \"deletion syndrome\", \"duplication syndrome\" w kontekście regionów chromosomowych."
