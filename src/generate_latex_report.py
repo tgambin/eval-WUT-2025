@@ -359,7 +359,7 @@ def generate_latex():
     latex_content += f" & \\textbf{{{TEXTS['table_sum']}}} & & \\textbf{{{center_total}}} \\\\\n"
     latex_content += "\\end{longtable}\n"
 
-    latex_content += r"""
+    latex_content += r"""\newpage 
 \subsection{""" + TEXTS['country_stats_section'] + r"""}
 """ + TEXTS['country_stats_desc'] + r"""
 
@@ -390,6 +390,10 @@ def generate_latex():
     latex_content += "\\bottomrule\n"
     latex_content += "\\end{longtable}\n"
 
+    latex_content += r"""
+\vspace{2.5cm}
+\noindent Opracował: Tomasz Gambin
+"""
     latex_content += r"""
 \end{document}
 """

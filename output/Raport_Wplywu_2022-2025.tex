@@ -94,14 +94,14 @@ Proces automatycznego pobierania i filtrowania danych obejmował następujące k
 \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
-\node (start) [startstop] {Pobrane z ClinVar: 2201};
+\node (start) [startstop] {Pobrane z ClinVar: 2208};
 \node (date) [process, below of=start] {Filtracja daty (lata 2022-2025)};
 \node (size) [process, below of=date] {Filtracja wielkości (pozostawiono <500kpz)};
 \node (syndrome) [process, below of=size] {Filtracja fenotypów (pominięcie syndromów)};
-\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy: 609};
+\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy: 612};
 
 \node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {Odrzucone: 1353};
-\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: 238};
+\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: 242};
 \node (rej_syndrome) [process, right of=syndrome, xshift=4cm, fill=gray!30] {Odrzucone: 1};
 
 \draw [arrow] (start) -- (date);
@@ -253,9 +253,9 @@ Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zg�
 \endfoot
 \bottomrule
 \endlastfoot
-1 & \textit{PGM3} & 89 \\
-2 & \textit{TANGO2} & 85 \\
-3 & \textit{TRIP12} & 79 \\
+1 & \textit{PGM3} & 90 \\
+2 & \textit{TANGO2} & 86 \\
+3 & \textit{TRIP12} & 80 \\
 4 & \textit{TBX4} & 62 \\
 5 & \textit{ACTG2} & 54 \\
 6 & \textit{FOXF1} & 37 \\
@@ -273,7 +273,7 @@ Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zg�
 18 & \textit{SOHLH1} & 7 \\
 19 & \textit{TUBGCP2} & 5 \\
 \midrule
- & \textbf{SUMA} & \textbf{609} \\
+ & \textbf{SUMA} & \textbf{612} \\
 \end{longtable}
 
 \subsection{Ośrodki zgłaszające}
@@ -300,10 +300,10 @@ Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
 1 & Labcorp Genetics (formerly Invitae), Labcorp & USA & 157 \\
 2 & GeneDx & USA & 66 \\
 3 & Victorian Clinical Genetics Services, Murdoch Childrens Research Institute & Australia & 29 \\
-4 & Women's Health and Genetics/Laboratory Corporation of America, LabCorp & USA & 24 \\
+4 & Women's Health and Genetics/Laboratory Corporation of America, LabCorp & USA & 26 \\
 5 & Wendy Chung Laboratory, Boston Children's Hospital & USA & 24 \\
-6 & 3billion & South Korea & 19 \\
-7 & CeGaT Center for Human Genetics Tuebingen & Germany & 19 \\
+6 & CeGaT Center for Human Genetics Tuebingen & Germany & 20 \\
+7 & 3billion & South Korea & 19 \\
 8 & OMIM & USA & 16 \\
 9 & PreventionGenetics, part of Exact Sciences & USA & 15 \\
 10 & Fulgent Genetics, Fulgent Genetics & USA & 14 \\
@@ -393,9 +393,9 @@ Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
 94 & Laboratoire Génétique Moléculaire, CHRU TOURS & France & 1 \\
 95 & Zotz-Klimas Genetics Lab, MVZ Zotz Klimas & Germany & 1 \\
 \midrule
- & \textbf{SUMA} & & \textbf{609} \\
+ & \textbf{SUMA} & & \textbf{612} \\
 \end{longtable}
-
+\newpage 
 \subsection{Statystyki krajowe}
 Poniższa tabela przedstawia liczbę zgłoszeń pogrupowaną według kraju pochodzenia ośrodka diagnostycznego. Zróżnicowanie geograficzne potwierdza, że opisywane korelacje genotypowo-fenotypowe są wykorzystywane w praktyce klinicznej przez ośrodki z wielu regionów świata, co przekłada się na szeroki, międzynarodowy wpływ społeczny.
 
@@ -411,8 +411,8 @@ Tabela \ref{tab:countries} przedstawia statystyki wg kraju.
 \textbf{Lp.} & \textbf{Kraj} & \textbf{Liczba zgłoszeń} \\
 \midrule
 \endhead
-1 & USA & 400 \\
-2 & Germany & 56 \\
+1 & USA & 402 \\
+2 & Germany & 57 \\
 3 & Australia & 30 \\
 4 & South Korea & 20 \\
 5 & China & 14 \\
@@ -438,5 +438,8 @@ Tabela \ref{tab:countries} przedstawia statystyki wg kraju.
 25 & Colombia & 1 \\
 \bottomrule
 \end{longtable}
+
+\vspace{2.5cm}
+\noindent Opracował: Tomasz Gambin
 
 \end{document}
