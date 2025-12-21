@@ -81,7 +81,7 @@ def filter_data():
     df = pd.read_csv(input_csv)
     
     # Convert Submission Date to datetime
-    df['Submission Date'] = pd.to_datetime(df['Submission Date'])
+    df['Date Created'] = pd.to_datetime(df['Date Created'])
     
     filtered_rows = []
     rejected_rows = []
@@ -92,7 +92,7 @@ def filter_data():
         
         name = str(row_dict.get('Variant (HGVS)', ''))
         phenotype = str(row_dict.get('Phenotype', ''))
-        sub_date = row_dict.get('Submission Date')
+        sub_date = row_dict.get('Date Created')
         
         reason = None
         size = parse_variant_size(name)

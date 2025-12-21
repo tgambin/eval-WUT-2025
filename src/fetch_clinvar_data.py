@@ -152,13 +152,16 @@ def parse_vcv_xml(xml_content, target_gene):
             # Submitter
             submitter = "N/A"
             submission_accession = "N/A"
+            date_created = "N/A"
             accession_node = assertion.find("ClinVarAccession")
             if accession_node is not None:
                 submitter = accession_node.get("SubmitterName", "N/A")
                 submission_accession = accession_node.get("Accession", "N/A")
+                date_created = accession_node.get("DateCreated", "N/A")
             
-            # Submission Date
-            submission_date = assertion.get("SubmissionDate", "N/A")
+            final_date = date_created #if date_created else submission_date
+            if not final_date:
+                 final_date = "N/A"
             
             # Review Status
             review_status = "N/A"
@@ -191,7 +194,7 @@ def parse_vcv_xml(xml_content, target_gene):
                     "Phenotype": phenotype,
                     "Classification": classification_text,
                     "Variant (HGVS)": variant_name,
-                    "Submission Date": submission_date,
+                    "Date Created": final_date,
                     "Submitter": submitter,
                     "Consequence": molecular_consequence,
                     "Review Status": review_status,
@@ -262,7 +265,7 @@ def main():
     
     fieldnames = [
         "Gene", "Phenotype", "Classification", "Variant (HGVS)", 
-        "Submission Date", "Submitter", "Consequence", "Review Status",
+        "Date Created", "Submitter", "Consequence", "Review Status",
         "Variation ID", "VCV Accession", "Submission Accession"
     ]
     

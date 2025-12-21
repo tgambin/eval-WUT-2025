@@ -23,7 +23,7 @@
 }
 
 \title{Raport wpływu społecznego badań prowadzonych przez Tomasza Gambina z Politechniki Warszawskiej na diagnostykę kliniczną chorób genetycznych (2022–2025)}
-\date{18 grudnia 2025}
+\date{21 grudnia 2025}
 \renewcommand{\contentsname}{Spis treści}
 \renewcommand{\figurename}{Rycina}
 \renewcommand{\tablename}{Tabela}
@@ -62,7 +62,7 @@ Proces automatycznego pobierania i filtrowania danych obejmował następujące k
     \textbf{Uzasadnienie wyboru genów}: Wybrano geny, w przypadku których Tomasz Gambin odegrał kluczową rolę w identyfikacji ich związku z chorobą (nowe geny chorobowe), poszerzeniu spektrum fenotypowego lub zrozumieniu mechanizmów patogennych (np. rola sekwencji niekodujących). Szczegółowy opis roli autora dla każdej grupy genów znajduje się w sekcji 3.
     
     \item \textbf{Filtracja daty}: 
-    Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone lub zaktualizowane w okresie od 1 stycznia 2022 do 18 grudnia 2025. Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.
+    Z pobranego zbioru wybrano tylko te zgłoszenia, które zostały utworzone w okresie od 1 stycznia 2022 do 21 grudnia 2025. Pozwala to na ocenę wpływu publikacji w okresie objętym ewaluacją.
     
     \item \textbf{Filtracja wielkości}: 
     Wyeliminowano warianty typu CNV (Copy Number Variation) o wielkości przekraczającej 500 kpz (500,000 par zasad).
@@ -94,14 +94,14 @@ Proces automatycznego pobierania i filtrowania danych obejmował następujące k
 \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
-\node (start) [startstop] {Pobrane z ClinVar: 2208};
+\node (start) [startstop] {Pobrane z ClinVar: 2209};
 \node (date) [process, below of=start] {Filtracja daty (lata 2022-2025)};
 \node (size) [process, below of=date] {Filtracja wielkości (pozostawiono <500kpz)};
 \node (syndrome) [process, below of=size] {Filtracja fenotypów (pominięcie syndromów)};
-\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy: 612};
+\node (final) [startstop, below of=syndrome, fill=green!30] {Włączone do analizy: 549};
 
-\node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {Odrzucone: 1353};
-\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: 242};
+\node (rej_date) [process, right of=date, xshift=4cm, fill=gray!30] {Odrzucone: 1426};
+\node (rej_size) [process, right of=size, xshift=4cm, fill=gray!30] {Odrzucone: 233};
 \node (rej_syndrome) [process, right of=syndrome, xshift=4cm, fill=gray!30] {Odrzucone: 1};
 
 \draw [arrow] (start) -- (date);
@@ -253,27 +253,27 @@ Rycina \ref{fig:by_gene} oraz Tabela \ref{tab:stats} przedstawiają rozkład zg�
 \endfoot
 \bottomrule
 \endlastfoot
-1 & \textit{PGM3} & 90 \\
-2 & \textit{TANGO2} & 86 \\
-3 & \textit{TRIP12} & 80 \\
+1 & \textit{TANGO2} & 80 \\
+2 & \textit{PGM3} & 77 \\
+3 & \textit{TRIP12} & 72 \\
 4 & \textit{TBX4} & 62 \\
-5 & \textit{ACTG2} & 54 \\
-6 & \textit{FOXF1} & 37 \\
-7 & \textit{PRUNE1} & 29 \\
-8 & \textit{VARS1} & 26 \\
-9 & \textit{CORO1A} & 23 \\
-10 & \textit{PSMD12} & 20 \\
-11 & \textit{MIPEP} & 20 \\
+5 & \textit{ACTG2} & 45 \\
+6 & \textit{FOXF1} & 35 \\
+7 & \textit{PRUNE1} & 26 \\
+8 & \textit{VARS1} & 24 \\
+9 & \textit{PSMD12} & 20 \\
+10 & \textit{CORO1A} & 18 \\
+11 & \textit{MIPEP} & 18 \\
 12 & \textit{DHX37} & 16 \\
-13 & \textit{FGF10} & 15 \\
-14 & \textit{COPA} & 13 \\
-15 & \textit{ANKLE2} & 12 \\
-16 & \textit{DVL1} & 9 \\
-17 & \textit{RDH11} & 8 \\
-18 & \textit{SOHLH1} & 7 \\
-19 & \textit{TUBGCP2} & 5 \\
+13 & \textit{FGF10} & 13 \\
+14 & \textit{ANKLE2} & 10 \\
+15 & \textit{DVL1} & 9 \\
+16 & \textit{COPA} & 9 \\
+17 & \textit{SOHLH1} & 6 \\
+18 & \textit{TUBGCP2} & 5 \\
+19 & \textit{RDH11} & 4 \\
 \midrule
- & \textbf{SUMA} & \textbf{612} \\
+ & \textbf{SUMA} & \textbf{549} \\
 \end{longtable}
 
 \subsection{Ośrodki zgłaszające}
@@ -297,103 +297,105 @@ Tabela \ref{tab:centers} prezentuje listę ośrodków diagnostycznych.
 \endfoot
 \bottomrule
 \endlastfoot
-1 & Labcorp Genetics (formerly Invitae), Labcorp & USA & 157 \\
-2 & GeneDx & USA & 66 \\
-3 & Victorian Clinical Genetics Services, Murdoch Childrens Research Institute & Australia & 29 \\
+1 & Labcorp Genetics (formerly Invitae), Labcorp & USA & 129 \\
+2 & GeneDx & USA & 51 \\
+3 & Victorian Clinical Genetics Services, Murdoch Childrens Research Institute & Australia & 28 \\
 4 & Women's Health and Genetics/Laboratory Corporation of America, LabCorp & USA & 26 \\
 5 & Wendy Chung Laboratory, Boston Children's Hospital & USA & 24 \\
-6 & CeGaT Center for Human Genetics Tuebingen & Germany & 20 \\
-7 & 3billion & South Korea & 19 \\
-8 & OMIM & USA & 16 \\
-9 & PreventionGenetics, part of Exact Sciences & USA & 15 \\
-10 & Fulgent Genetics, Fulgent Genetics & USA & 14 \\
-11 & Revvity Omics, Revvity & USA & 13 \\
-12 & Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre & Saudi Arabia & 10 \\
+6 & 3billion & South Korea & 19 \\
+7 & OMIM & USA & 16 \\
+8 & PreventionGenetics, part of Exact Sciences & USA & 15 \\
+9 & Fulgent Genetics, Fulgent Genetics & USA & 14 \\
+10 & Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre & Saudi Arabia & 10 \\
+11 & CeGaT Center for Human Genetics Tuebingen & Germany & 10 \\
+12 & Juno Genomics, Hangzhou Juno Genomics, Inc & China & 9 \\
 13 & Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital & USA & 9 \\
-14 & Juno Genomics, Hangzhou Juno Genomics, Inc & China & 9 \\
-15 & Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego & USA & 8 \\
-16 & Laboratorio de Genetica e Diagnostico Molecular, Hospital Israelita Albert Einstein & Brazil & 8 \\
-17 & Broad Center for Mendelian Genomics, Broad Institute of MIT and Harvard & USA & 8 \\
-18 & Ambry Genetics & USA & 8 \\
-19 & MVZ Martinsried, Medicover Genetics & Germany & 7 \\
-20 & Neuberg Centre For Genomic Medicine, NCGM & India & 7 \\
+14 & Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego & USA & 8 \\
+15 & Laboratorio de Genetica e Diagnostico Molecular, Hospital Israelita Albert Einstein & Brazil & 8 \\
+16 & Broad Center for Mendelian Genomics, Broad Institute of MIT and Harvard & USA & 7 \\
+17 & MVZ Martinsried, Medicover Genetics & Germany & 7 \\
+18 & Neuberg Centre For Genomic Medicine, NCGM & India & 7 \\
+19 & Revvity Omics, Revvity & USA & 6 \\
+20 & Laboratory of Genetics, Children's Clinical University Hospital Latvia & Latvia & 6 \\
 21 & New York Genome Center & USA & 6 \\
-22 & Laboratory of Genetics, Children's Clinical University Hospital Latvia & Latvia & 6 \\
+22 & MGZ Medical Genetics Center & Germany & 5 \\
 23 & Institute of Medical Genetics and Applied Genomics, University Hospital Tübingen & Germany & 5 \\
-24 & MGZ Medical Genetics Center & Germany & 5 \\
-25 & ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories & USA & 5 \\
-26 & Laboratory of Medical Genetics, National \& Kapodistrian University of Athens & Greece & 4 \\
+24 & ARUP Laboratories, Cytogenetics and Genomic Microarray, ARUP Laboratories & USA & 5 \\
+25 & Dubai Health Genomic Medicine Center, Dubai Health & Nieznany & 4 \\
+26 & Illumina Laboratory Services, Illumina & USA & 4 \\
 27 & Laan Lab, Human Genetics Research Group, University of Tartu & Estonia & 4 \\
-28 & Baylor Genetics & USA & 4 \\
+28 & Laboratory of Medical Genetics, National \& Kapodistrian University of Athens & Greece & 4 \\
 29 & Institute of Human Genetics, Clinical Exome/Genome Diagnostics Group, University Hospital Bonn & Germany & 4 \\
-30 & Dubai Health Genomic Medicine Center, Dubai Health & Nieznany & 4 \\
-31 & Illumina Laboratory Services, Illumina & USA & 4 \\
-32 & Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center & USA & 4 \\
-33 & Clinical Genetics Laboratory, Skane University Hospital Lund & Sweden & 3 \\
-34 & Molecular Genetics laboratory, Necker Hospital & France & 3 \\
-35 & Institute of Human Genetics, University Hospital Muenster & Germany & 3 \\
-36 & NHS Central \& South Genomic Laboratory Hub & UK & 3 \\
-37 & Department of Pathology and Laboratory Medicine, Sinai Health System & Canada & 3 \\
-38 & Genetic Services Laboratory, University of Chicago & USA & 3 \\
-39 & Foundation for Research in Genetics and Endocrinology, FRIGE's Institute of Human Genetics & India & 2 \\
-40 & Cambridge Genomics Laboratory, East Genomic Laboratory Hub, NHS Genomic Medicine Service & UK & 2 \\
-41 & Mendelics & Brazil & 2 \\
-42 & Equipe Genetique des Anomalies du Developpement, Université de Bourgogne & France & 2 \\
-43 & Medical Genetics Center, Maternal and Child Health Hospital of Hubei Province & China & 2 \\
-44 & MVZ Medizinische Genetik Mainz & Germany & 2 \\
-45 & Pediatrics, Sichuan Provincial Hospital For Women And Children & China & 2 \\
-46 & Institute of Human Genetics, University of Leipzig Medical Center & Germany & 2 \\
-47 & Daryl Scott Lab, Baylor College of Medicine & USA & 2 \\
-48 & Suma Genomics & India & 1 \\
-49 & Stankiewicz Research Laboratory, Baylor College of Medicine & USA & 1 \\
-50 & Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes & France & 1 \\
-51 & Quest Diagnostics Nichols Institute San Juan Capistrano & USA & 1 \\
-52 & Provincial Medical Genetics Program of British Columbia, University of British Columbia & Canada & 1 \\
-53 & Neurogenetics Laboratory, American University of Beirut & Lebanon & 1 \\
-54 & Liquid Biopsy and Cancer Interception Group, Pfizer-University of Granada-Junta de Andalucía Centre for Genomics and Oncological Research & Spain & 1 \\
-55 & Pittsburgh Clinical Genomics Laboratory, University of Pittsburgh Medical Center & USA & 1 \\
-56 & Suzhou Clinical Center for Rare Diseases in Children, Children's Hospital of Soochow University & China & 1 \\
-57 & Molecular Genetics Lab, CHRU Brest & France & 1 \\
-58 & Undiagnosed Diseases Network, NIH & USA & 1 \\
-59 & Service de Génétique Médicale, Centre Hospitalier Universitaire de Nice-Université Côte d'Azur & France & 1 \\
-60 & Pediatric/Medical Genetics, Ministry of Health, Qatif Central Hospital & Saudi Arabia & 1 \\
-61 & Institute of Human Genetics, Univ. Regensburg, Univ. Regensburg & Germany & 1 \\
-62 & Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine & USA & 1 \\
-63 & Clinical Biomedical Laboratory, Shriners Hospital For Children - Canada & Canada & 1 \\
-64 & Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet & Denmark & 1 \\
-65 & DASA & Brazil & 1 \\
-66 & Clinical Neuroscience, Fondazione IRCCS Istituto Neurologico Carlo Besta & Italy & 1 \\
-67 & Clinical Laboratory Sciences Program (CLSP), King Saud bin Abdulaziz University for Health Sciences (KSAU-HS) & Saudi Arabia & 1 \\
-68 & Clinical Genomics Laboratory, Washington University in St. Louis & USA & 1 \\
-69 & Clinical Genetics Laboratory, University Hospital Schleswig-Holstein & Germany & 1 \\
-70 & Centre de Biologie Pathologie Génétique, Centre Hospitalier Universitaire de Lille & France & 1 \\
-71 & Laboratoire de Génétique Moléculaire, CHU Bordeaux & France & 1 \\
-72 & Center of Human Genetics, Hôpital Erasme & Belgium & 1 \\
-73 & Center for Personalized Medicine, Children's Hospital Los Angeles & USA & 1 \\
-74 & Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital & Denmark & 1 \\
-75 & Altamedica, Artemisia & Italy & 1 \\
-76 & AiLife Diagnostics, AiLife Diagnostics & USA & 1 \\
-77 & ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories & USA & 1 \\
-78 & Department of Genetics, Rouen University Hospital, Normandy Center for Genomic and Personalized Medicine & France & 1 \\
-79 & Department of Legal Medicine, University of Toyama & Japan & 1 \\
-80 & Department of Medical Genetics, Tarbiat Modares University & Iran & 1 \\
-81 & Department of Rehabilitation Medicine, Incheon St. Mary’s Hospital, College of Medicine, The Catholic University of Korea & South Korea & 1 \\
-82 & Genetic Lab, Reproductive Biomedicine Research Center, Royan Institute for Reproductive Biomedicine, Royan Institute & Iran & 1 \\
-83 & Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli & Spain & 1 \\
-84 & Genetics and Molecular Pathology, SA Pathology & Australia & 1 \\
-85 & Genomics Facility, Ludwig-Maximilians-Universität München & Germany & 1 \\
-86 & Gharavi Laboratory, Columbia University & USA & 1 \\
-87 & Grupo de Genetica Humana, Facultad de Medicina - Universidad de La Sabana & Colombia & 1 \\
-88 & Hadassah Hebrew University Medical Center & Israel & 1 \\
-89 & Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden & Germany & 1 \\
-90 & Institute of Human Genetics, FAU Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg & Germany & 1 \\
-91 & Institute of Human Genetics, University of Goettingen & Germany & 1 \\
-92 & Institute of Human Genetics, University of Ulm & Germany & 1 \\
-93 & Institute of Immunology and Genetics Kaiserslautern & Germany & 1 \\
-94 & Laboratoire Génétique Moléculaire, CHRU TOURS & France & 1 \\
-95 & Zotz-Klimas Genetics Lab, MVZ Zotz Klimas & Germany & 1 \\
+30 & Greenwood Genetic Center Diagnostic Laboratories, Greenwood Genetic Center & USA & 4 \\
+31 & Ambry Genetics & USA & 4 \\
+32 & Clinical Genetics Laboratory, Skane University Hospital Lund & Sweden & 3 \\
+33 & Baylor Genetics & USA & 3 \\
+34 & Institute of Human Genetics, University Hospital Muenster & Germany & 3 \\
+35 & Genetic Services Laboratory, University of Chicago & USA & 3 \\
+36 & Molecular Genetics laboratory, Necker Hospital & France & 3 \\
+37 & NHS Central \& South Genomic Laboratory Hub & UK & 3 \\
+38 & Department of Pathology and Laboratory Medicine, Sinai Health System & Canada & 3 \\
+39 & Equipe Genetique des Anomalies du Developpement, Université de Bourgogne & France & 2 \\
+40 & Daryl Scott Lab, Baylor College of Medicine & USA & 2 \\
+41 & Foundation for Research in Genetics and Endocrinology, FRIGE's Institute of Human Genetics & India & 2 \\
+42 & Pediatrics, Sichuan Provincial Hospital For Women And Children & China & 2 \\
+43 & Mendelics & Brazil & 2 \\
+44 & Stankiewicz Research Laboratory, Baylor College of Medicine & USA & 2 \\
+45 & Cambridge Genomics Laboratory, East Genomic Laboratory Hub, NHS Genomic Medicine Service & UK & 2 \\
+46 & Medical Genetics Center, Maternal and Child Health Hospital of Hubei Province & China & 2 \\
+47 & MVZ Medizinische Genetik Mainz & Germany & 2 \\
+48 & Kariminejad - Najmabadi Pathology \& Genetics Center & Nieznany & 2 \\
+49 & Institute of Human Genetics, University of Leipzig Medical Center & Germany & 2 \\
+50 & Altamedica, Artemisia & Italy & 1 \\
+51 & CENTOGENE GmbH and LLC - Guiding Precision Medicine & Nieznany & 1 \\
+52 & ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories & USA & 1 \\
+53 & Clinical Genomics Laboratory, Washington University in St. Louis & USA & 1 \\
+54 & Clinical Neuroscience, Fondazione IRCCS Istituto Neurologico Carlo Besta & Italy & 1 \\
+55 & DASA & Brazil & 1 \\
+56 & Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet & Denmark & 1 \\
+57 & Department of Genetics, Rouen University Hospital, Normandy Center for Genomic and Personalized Medicine & France & 1 \\
+58 & Clinical Genetics Laboratory, University Hospital Schleswig-Holstein & Germany & 1 \\
+59 & Clinical Laboratory Sciences Program (CLSP), King Saud bin Abdulaziz University for Health Sciences (KSAU-HS) & Saudi Arabia & 1 \\
+60 & AiLife Diagnostics, AiLife Diagnostics & USA & 1 \\
+61 & Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital & Denmark & 1 \\
+62 & Center for Personalized Medicine, Children's Hospital Los Angeles & USA & 1 \\
+63 & Center of Human Genetics, Hôpital Erasme & Belgium & 1 \\
+64 & Centre de Biologie Pathologie Génétique, Centre Hospitalier Universitaire de Lille & France & 1 \\
+65 & Clinical Biomedical Laboratory, Shriners Hospital For Children - Canada & Canada & 1 \\
+66 & Department of Medical Genetics, Tarbiat Modares University & Iran & 1 \\
+67 & Department of Legal Medicine, University of Toyama & Japan & 1 \\
+68 & Department of Rehabilitation Medicine, Incheon St. Mary’s Hospital, College of Medicine, The Catholic University of Korea & South Korea & 1 \\
+69 & Institute of Immunology and Genetics Kaiserslautern & Germany & 1 \\
+70 & Institute of Human Genetics, University of Ulm & Germany & 1 \\
+71 & Institute of Human Genetics, University of Goettingen & Germany & 1 \\
+72 & Genetics Laboratory, UDIAT-Centre Diagnòstic, Hospital Universitari Parc Tauli & Spain & 1 \\
+73 & Genetic Lab, Reproductive Biomedicine Research Center, Royan Institute for Reproductive Biomedicine, Royan Institute & Iran & 1 \\
+74 & Gharavi Laboratory, Columbia University & USA & 1 \\
+75 & Genomics Facility, Ludwig-Maximilians-Universität München & Germany & 1 \\
+76 & Genetics and Molecular Pathology, SA Pathology & Australia & 1 \\
+77 & Grupo de Genetica Humana, Facultad de Medicina - Universidad de La Sabana & Colombia & 1 \\
+78 & Hadassah Hebrew University Medical Center & Israel & 1 \\
+79 & Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden & Germany & 1 \\
+80 & Institute of Human Genetics, FAU Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg & Germany & 1 \\
+81 & Institute of Human Genetics, Univ. Regensburg, Univ. Regensburg & Germany & 1 \\
+82 & Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine & USA & 1 \\
+83 & Laboratoire de Génétique Moléculaire, CHU Bordeaux & France & 1 \\
+84 & Laboratoire Génétique Moléculaire, CHRU TOURS & France & 1 \\
+85 & Pediatric/Medical Genetics, Ministry of Health, Qatif Central Hospital & Saudi Arabia & 1 \\
+86 & Liquid Biopsy and Cancer Interception Group, Pfizer-University of Granada-Junta de Andalucía Centre for Genomics and Oncological Research & Spain & 1 \\
+87 & Neurogenetics Laboratory, American University of Beirut & Lebanon & 1 \\
+88 & Laboratory of Molecular Genetics (Pr. Bezieau's lab), CHU de Nantes & France & 1 \\
+89 & Molecular Genetics Lab, CHRU Brest & France & 1 \\
+90 & Service de Génétique Médicale, Centre Hospitalier Universitaire de Nice-Université Côte d'Azur & France & 1 \\
+91 & Pittsburgh Clinical Genomics Laboratory, University of Pittsburgh Medical Center & USA & 1 \\
+92 & Provincial Medical Genetics Program of British Columbia, University of British Columbia & Canada & 1 \\
+93 & Quest Diagnostics Nichols Institute San Juan Capistrano & USA & 1 \\
+94 & Undiagnosed Diseases Network, NIH & USA & 1 \\
+95 & Suzhou Clinical Center for Rare Diseases in Children, Children's Hospital of Soochow University & China & 1 \\
+96 & Suma Genomics & India & 1 \\
+97 & Zotz-Klimas Genetics Lab, MVZ Zotz Klimas & Germany & 1 \\
 \midrule
- & \textbf{SUMA} & & \textbf{612} \\
+ & \textbf{SUMA} & & \textbf{549} \\
 \end{longtable}
 \newpage 
 \subsection{Statystyki krajowe}
@@ -411,31 +413,31 @@ Tabela \ref{tab:countries} przedstawia statystyki wg kraju.
 \textbf{Lp.} & \textbf{Kraj} & \textbf{Liczba zgłoszeń} \\
 \midrule
 \endhead
-1 & USA & 402 \\
-2 & Germany & 57 \\
-3 & Australia & 30 \\
+1 & USA & 347 \\
+2 & Germany & 47 \\
+3 & Australia & 29 \\
 4 & South Korea & 20 \\
 5 & China & 14 \\
-6 & France & 12 \\
-7 & Saudi Arabia & 12 \\
+6 & Saudi Arabia & 12 \\
+7 & France & 12 \\
 8 & Brazil & 11 \\
 9 & India & 10 \\
-10 & Latvia & 6 \\
-11 & Canada & 5 \\
-12 & UK & 5 \\
-13 & Nieznany & 4 \\
-14 & Estonia & 4 \\
-15 & Greece & 4 \\
+10 & Nieznany & 7 \\
+11 & Latvia & 6 \\
+12 & Canada & 5 \\
+13 & UK & 5 \\
+14 & Greece & 4 \\
+15 & Estonia & 4 \\
 16 & Sweden & 3 \\
-17 & Spain & 2 \\
-18 & Italy & 2 \\
-19 & Denmark & 2 \\
-20 & Iran & 2 \\
-21 & Lebanon & 1 \\
-22 & Japan & 1 \\
+17 & Denmark & 2 \\
+18 & Spain & 2 \\
+19 & Iran & 2 \\
+20 & Italy & 2 \\
+21 & Belgium & 1 \\
+22 & Colombia & 1 \\
 23 & Israel & 1 \\
-24 & Belgium & 1 \\
-25 & Colombia & 1 \\
+24 & Japan & 1 \\
+25 & Lebanon & 1 \\
 \bottomrule
 \end{longtable}
 
