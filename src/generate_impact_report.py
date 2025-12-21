@@ -18,14 +18,14 @@ def parse_date(date_str):
     except:
         return pd.NaT
 
-df['Submission Date'] = df['Submission Date'].apply(parse_date)
-df = df.dropna(subset=['Submission Date'])
-df = df[df['Submission Date'].dt.year.isin([2022, 2023, 2024, 2025])]
+df['Date Created'] = df['Date Created'].apply(parse_date)
+df = df.dropna(subset=['Date Created'])
+df = df[df['Date Created'].dt.year.isin([2022, 2023, 2024, 2025])]
 
 print(f"Filtered data (2022-2025): {len(df)} records")
 
 # 1. Diagnoses over Time (Yearly) - Polish
-yearly_counts = df['Submission Date'].dt.year.value_counts().sort_index()
+yearly_counts = df['Date Created'].dt.year.value_counts().sort_index()
 plt.figure(figsize=(10, 6))
 yearly_counts.plot(kind='bar', color='#4C72B0')
 plt.title('Liczba zgłoszeń wariantów sklasyfikowanych jako Pathogenic lub Likely Pathogenic w latach 2022-2025')
